@@ -1,0 +1,109 @@
+10
+
+dir
+7
+svn+ssh://alexsantos@grey.msrg.utoronto.ca/home/cvsuser/svnrepository/kvView/cassandra-trunk/src/java/org/apache/cassandra
+svn+ssh://alexsantos@grey.msrg.utoronto.ca/home/cvsuser/svnrepository/kvView
+
+
+
+2013-08-29T01:49:41.916245Z
+4
+alexsantos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+852ae806-b4e3-40dc-9377-c2166665c15a
+
+gms
+dir
+
+net
+dir
+
+tracing
+dir
+
+streaming
+dir
+
+transport
+dir
+
+service
+dir
+
+thrift
+dir
+
+tools
+dir
+
+utils
+dir
+
+auth
+dir
+
+cql3
+dir
+
+locator
+dir
+
+cache
+dir
+
+config
+dir
+
+metrics
+dir
+
+io
+dir
+
+cli
+dir
+
+security
+dir
+
+notifications
+dir
+
+hadoop
+dir
+
+client
+dir
+
+scheduler
+dir
+
+dht
+dir
+
+cql
+dir
+
+exceptions
+dir
+
+concurrent
+dir
+
+db
+dir
+

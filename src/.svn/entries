@@ -1,0 +1,40 @@
+10
+
+dir
+7
+svn+ssh://alexsantos@grey.msrg.utoronto.ca/home/cvsuser/svnrepository/kvView/cassandra-trunk/src
+svn+ssh://alexsantos@grey.msrg.utoronto.ca/home/cvsuser/svnrepository/kvView
+
+
+
+2013-08-29T01:49:41.916245Z
+4
+alexsantos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+852ae806-b4e3-40dc-9377-c2166665c15a
+
+java
+dir
+
+avro
+dir
+
+gen-java
+dir
+
+resources
+dir
+

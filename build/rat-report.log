@@ -1,0 +1,78 @@
+
+*****************************************************
+Summary
+-------
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 41
+
+Apache Licensed: 41
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives (+ indicates readable, $ unreadable): 
+
+ 
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/AuthenticationException.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/AuthenticationRequest.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/AuthorizationException.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/Cassandra.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/CfDef.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/CfSplit.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/Column.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/ColumnDef.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/ColumnOrSuperColumn.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/ColumnParent.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/ColumnPath.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/Compression.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/ConsistencyLevel.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/CounterColumn.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/CounterSuperColumn.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/CqlMetadata.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/CqlPreparedResult.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/CqlResult.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/CqlResultType.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/CqlRow.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/Deletion.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/EndpointDetails.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/IndexClause.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/IndexExpression.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/IndexOperator.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/IndexType.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/InvalidRequestException.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/KeyCount.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/KeyRange.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/KeySlice.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/KsDef.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/Mutation.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/NotFoundException.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/SchemaDisagreementException.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/SlicePredicate.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/SliceRange.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/SuperColumn.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/TimedOutException.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/TokenRange.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/UnavailableException.java
+  AL    interface/thrift/gen-java/org/apache/cassandra/thrift/cassandraConstants.java
+ 
+ *****************************************************
+ Printing headers for files without AL header...
+ 
+ 
