@@ -1,4 +1,4 @@
-// $ANTLR 3.2 Sep 23, 2009 12:02:23 /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g 2013-10-30 14:10:26
+// $ANTLR 3.2 Sep 23, 2009 12:02:23 /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g 2013-12-08 22:32:46
 
     package org.apache.cassandra.cql3;
 
@@ -34,9 +34,9 @@ public class CqlLexer extends Lexer {
     public static final int K_TRUNCATE=51;
     public static final int COMMENT=124;
     public static final int K_ORDER=9;
+    public static final int HEXNUMBER=73;
     public static final int K_ALL=59;
     public static final int K_OF=55;
-    public static final int HEXNUMBER=73;
     public static final int T__139=139;
     public static final int D=106;
     public static final int T__138=138;
@@ -201,15 +201,15 @@ public class CqlLexer extends Lexer {
         super(input,state);
 
     }
-    public String getGrammarFileName() { return "/home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g"; }
+    public String getGrammarFileName() { return "/home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g"; }
 
     // $ANTLR start "T__126"
     public final void mT__126() throws RecognitionException {
         try {
             int _type = T__126;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:50:8: ( ';' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:50:10: ';'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:50:8: ( ';' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:50:10: ';'
             {
             match(';'); 
 
@@ -228,8 +228,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = T__127;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:51:8: ( '(' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:51:10: '('
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:51:8: ( '(' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:51:10: '('
             {
             match('('); 
 
@@ -248,8 +248,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = T__128;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:52:8: ( ')' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:52:10: ')'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:52:8: ( ')' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:52:10: ')'
             {
             match(')'); 
 
@@ -268,8 +268,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = T__129;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:53:8: ( ',' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:53:10: ','
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:53:8: ( ',' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:53:10: ','
             {
             match(','); 
 
@@ -288,8 +288,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = T__130;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:54:8: ( '\\*' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:54:10: '\\*'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:54:8: ( '\\*' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:54:10: '\\*'
             {
             match('*'); 
 
@@ -308,8 +308,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = T__131;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:55:8: ( '[' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:55:10: '['
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:55:8: ( '[' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:55:10: '['
             {
             match('['); 
 
@@ -328,8 +328,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = T__132;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:56:8: ( ']' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:56:10: ']'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:56:8: ( ']' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:56:10: ']'
             {
             match(']'); 
 
@@ -348,8 +348,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = T__133;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:57:8: ( '.' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:57:10: '.'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:57:8: ( '.' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:57:10: '.'
             {
             match('.'); 
 
@@ -368,8 +368,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = T__134;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:58:8: ( '}' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:58:10: '}'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:58:8: ( '}' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:58:10: '}'
             {
             match('}'); 
 
@@ -388,8 +388,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = T__135;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:59:8: ( ':' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:59:10: ':'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:59:8: ( ':' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:59:10: ':'
             {
             match(':'); 
 
@@ -408,8 +408,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = T__136;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:60:8: ( '{' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:60:10: '{'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:60:8: ( '{' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:60:10: '{'
             {
             match('{'); 
 
@@ -428,8 +428,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = T__137;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:61:8: ( '=' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:61:10: '='
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:61:8: ( '=' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:61:10: '='
             {
             match('='); 
 
@@ -448,8 +448,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = T__138;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:62:8: ( '+' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:62:10: '+'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:62:8: ( '+' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:62:10: '+'
             {
             match('+'); 
 
@@ -468,8 +468,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = T__139;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:63:8: ( '-' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:63:10: '-'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:63:8: ( '-' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:63:10: '-'
             {
             match('-'); 
 
@@ -488,8 +488,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = T__140;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:64:8: ( '<' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:64:10: '<'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:64:8: ( '<' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:64:10: '<'
             {
             match('<'); 
 
@@ -508,8 +508,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = T__141;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:65:8: ( '<=' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:65:10: '<='
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:65:8: ( '<=' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:65:10: '<='
             {
             match("<="); 
 
@@ -529,8 +529,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = T__142;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:66:8: ( '>' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:66:10: '>'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:66:8: ( '>' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:66:10: '>'
             {
             match('>'); 
 
@@ -549,8 +549,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = T__143;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:67:8: ( '>=' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:67:10: '>='
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:67:8: ( '>=' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:67:10: '>='
             {
             match(">="); 
 
@@ -570,8 +570,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_SELECT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:882:9: ( S E L E C T )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:882:16: S E L E C T
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:882:9: ( S E L E C T )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:882:16: S E L E C T
             {
             mS(); 
             mE(); 
@@ -595,8 +595,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_FROM;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:883:7: ( F R O M )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:883:16: F R O M
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:883:7: ( F R O M )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:883:16: F R O M
             {
             mF(); 
             mR(); 
@@ -618,8 +618,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_WHERE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:884:8: ( W H E R E )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:884:16: W H E R E
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:884:8: ( W H E R E )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:884:16: W H E R E
             {
             mW(); 
             mH(); 
@@ -642,8 +642,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_AND;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:885:6: ( A N D )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:885:16: A N D
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:885:6: ( A N D )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:885:16: A N D
             {
             mA(); 
             mN(); 
@@ -664,8 +664,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_KEY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:886:6: ( K E Y )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:886:16: K E Y
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:886:6: ( K E Y )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:886:16: K E Y
             {
             mK(); 
             mE(); 
@@ -686,8 +686,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_INSERT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:887:9: ( I N S E R T )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:887:16: I N S E R T
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:887:9: ( I N S E R T )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:887:16: I N S E R T
             {
             mI(); 
             mN(); 
@@ -711,8 +711,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_UPDATE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:888:9: ( U P D A T E )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:888:16: U P D A T E
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:888:9: ( U P D A T E )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:888:16: U P D A T E
             {
             mU(); 
             mP(); 
@@ -736,8 +736,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_WITH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:889:7: ( W I T H )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:889:16: W I T H
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:889:7: ( W I T H )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:889:16: W I T H
             {
             mW(); 
             mI(); 
@@ -759,8 +759,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_LIMIT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:890:8: ( L I M I T )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:890:16: L I M I T
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:890:8: ( L I M I T )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:890:16: L I M I T
             {
             mL(); 
             mI(); 
@@ -783,8 +783,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_USING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:891:8: ( U S I N G )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:891:16: U S I N G
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:891:8: ( U S I N G )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:891:16: U S I N G
             {
             mU(); 
             mS(); 
@@ -807,8 +807,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_USE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:892:6: ( U S E )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:892:16: U S E
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:892:6: ( U S E )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:892:16: U S E
             {
             mU(); 
             mS(); 
@@ -829,8 +829,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_COUNT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:893:8: ( C O U N T )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:893:16: C O U N T
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:893:8: ( C O U N T )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:893:16: C O U N T
             {
             mC(); 
             mO(); 
@@ -853,8 +853,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_SET;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:894:6: ( S E T )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:894:16: S E T
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:894:6: ( S E T )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:894:16: S E T
             {
             mS(); 
             mE(); 
@@ -875,8 +875,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_BEGIN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:895:8: ( B E G I N )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:895:16: B E G I N
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:895:8: ( B E G I N )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:895:16: B E G I N
             {
             mB(); 
             mE(); 
@@ -899,8 +899,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_UNLOGGED;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:896:11: ( U N L O G G E D )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:896:16: U N L O G G E D
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:896:11: ( U N L O G G E D )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:896:16: U N L O G G E D
             {
             mU(); 
             mN(); 
@@ -926,8 +926,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_BATCH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:897:8: ( B A T C H )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:897:16: B A T C H
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:897:8: ( B A T C H )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:897:16: B A T C H
             {
             mB(); 
             mA(); 
@@ -950,8 +950,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_APPLY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:898:8: ( A P P L Y )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:898:16: A P P L Y
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:898:8: ( A P P L Y )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:898:16: A P P L Y
             {
             mA(); 
             mP(); 
@@ -974,8 +974,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_TRUNCATE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:899:11: ( T R U N C A T E )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:899:16: T R U N C A T E
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:899:11: ( T R U N C A T E )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:899:16: T R U N C A T E
             {
             mT(); 
             mR(); 
@@ -1001,8 +1001,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_DELETE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:900:9: ( D E L E T E )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:900:16: D E L E T E
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:900:9: ( D E L E T E )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:900:16: D E L E T E
             {
             mD(); 
             mE(); 
@@ -1026,8 +1026,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_IN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:901:5: ( I N )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:901:16: I N
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:901:5: ( I N )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:901:16: I N
             {
             mI(); 
             mN(); 
@@ -1047,8 +1047,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_CREATE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:902:9: ( C R E A T E )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:902:16: C R E A T E
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:902:9: ( C R E A T E )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:902:16: C R E A T E
             {
             mC(); 
             mR(); 
@@ -1072,10 +1072,10 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_KEYSPACE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:903:11: ( ( K E Y S P A C E | S C H E M A ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:903:16: ( K E Y S P A C E | S C H E M A )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:903:11: ( ( K E Y S P A C E | S C H E M A ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:903:16: ( K E Y S P A C E | S C H E M A )
             {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:903:16: ( K E Y S P A C E | S C H E M A )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:903:16: ( K E Y S P A C E | S C H E M A )
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -1093,7 +1093,7 @@ public class CqlLexer extends Lexer {
             }
             switch (alt1) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:903:18: K E Y S P A C E
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:903:18: K E Y S P A C E
                     {
                     mK(); 
                     mE(); 
@@ -1107,7 +1107,7 @@ public class CqlLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:904:20: S C H E M A
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:904:20: S C H E M A
                     {
                     mS(); 
                     mC(); 
@@ -1137,8 +1137,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_KEYSPACES;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:905:12: ( K E Y S P A C E S )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:905:16: K E Y S P A C E S
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:905:12: ( K E Y S P A C E S )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:905:16: K E Y S P A C E S
             {
             mK(); 
             mE(); 
@@ -1165,10 +1165,10 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_COLUMNFAMILY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:906:15: ( ( C O L U M N F A M I L Y | T A B L E ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:906:16: ( C O L U M N F A M I L Y | T A B L E )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:906:15: ( ( C O L U M N F A M I L Y | T A B L E ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:906:16: ( C O L U M N F A M I L Y | T A B L E )
             {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:906:16: ( C O L U M N F A M I L Y | T A B L E )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:906:16: ( C O L U M N F A M I L Y | T A B L E )
             int alt2=2;
             int LA2_0 = input.LA(1);
 
@@ -1186,7 +1186,7 @@ public class CqlLexer extends Lexer {
             }
             switch (alt2) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:906:18: C O L U M N F A M I L Y
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:906:18: C O L U M N F A M I L Y
                     {
                     mC(); 
                     mO(); 
@@ -1204,7 +1204,7 @@ public class CqlLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:907:20: T A B L E
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:907:20: T A B L E
                     {
                     mT(); 
                     mA(); 
@@ -1233,8 +1233,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_INDEX;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:908:8: ( I N D E X )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:908:16: I N D E X
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:908:8: ( I N D E X )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:908:16: I N D E X
             {
             mI(); 
             mN(); 
@@ -1257,8 +1257,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_ON;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:909:5: ( O N )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:909:16: O N
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:909:5: ( O N )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:909:16: O N
             {
             mO(); 
             mN(); 
@@ -1278,8 +1278,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_TO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:910:5: ( T O )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:910:16: T O
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:910:5: ( T O )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:910:16: T O
             {
             mT(); 
             mO(); 
@@ -1299,8 +1299,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_DROP;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:911:7: ( D R O P )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:911:16: D R O P
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:911:7: ( D R O P )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:911:16: D R O P
             {
             mD(); 
             mR(); 
@@ -1322,8 +1322,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_PRIMARY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:912:10: ( P R I M A R Y )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:912:16: P R I M A R Y
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:912:10: ( P R I M A R Y )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:912:16: P R I M A R Y
             {
             mP(); 
             mR(); 
@@ -1348,8 +1348,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_INTO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:913:7: ( I N T O )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:913:16: I N T O
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:913:7: ( I N T O )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:913:16: I N T O
             {
             mI(); 
             mN(); 
@@ -1371,8 +1371,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_VALUES;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:914:9: ( V A L U E S )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:914:16: V A L U E S
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:914:9: ( V A L U E S )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:914:16: V A L U E S
             {
             mV(); 
             mA(); 
@@ -1396,8 +1396,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_TIMESTAMP;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:915:12: ( T I M E S T A M P )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:915:16: T I M E S T A M P
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:915:12: ( T I M E S T A M P )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:915:16: T I M E S T A M P
             {
             mT(); 
             mI(); 
@@ -1424,8 +1424,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_TTL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:916:6: ( T T L )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:916:16: T T L
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:916:6: ( T T L )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:916:16: T T L
             {
             mT(); 
             mT(); 
@@ -1446,8 +1446,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_ALTER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:917:8: ( A L T E R )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:917:16: A L T E R
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:917:8: ( A L T E R )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:917:16: A L T E R
             {
             mA(); 
             mL(); 
@@ -1470,8 +1470,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_RENAME;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:918:9: ( R E N A M E )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:918:16: R E N A M E
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:918:9: ( R E N A M E )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:918:16: R E N A M E
             {
             mR(); 
             mE(); 
@@ -1495,8 +1495,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_ADD;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:919:6: ( A D D )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:919:16: A D D
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:919:6: ( A D D )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:919:16: A D D
             {
             mA(); 
             mD(); 
@@ -1517,8 +1517,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_TYPE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:920:7: ( T Y P E )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:920:16: T Y P E
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:920:7: ( T Y P E )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:920:16: T Y P E
             {
             mT(); 
             mY(); 
@@ -1540,8 +1540,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_COMPACT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:921:10: ( C O M P A C T )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:921:16: C O M P A C T
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:921:10: ( C O M P A C T )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:921:16: C O M P A C T
             {
             mC(); 
             mO(); 
@@ -1566,8 +1566,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_STORAGE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:922:10: ( S T O R A G E )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:922:16: S T O R A G E
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:922:10: ( S T O R A G E )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:922:16: S T O R A G E
             {
             mS(); 
             mT(); 
@@ -1592,8 +1592,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_ORDER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:923:8: ( O R D E R )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:923:16: O R D E R
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:923:8: ( O R D E R )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:923:16: O R D E R
             {
             mO(); 
             mR(); 
@@ -1616,8 +1616,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_BY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:924:5: ( B Y )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:924:16: B Y
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:924:5: ( B Y )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:924:16: B Y
             {
             mB(); 
             mY(); 
@@ -1637,8 +1637,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_ASC;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:925:6: ( A S C )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:925:16: A S C
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:925:6: ( A S C )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:925:16: A S C
             {
             mA(); 
             mS(); 
@@ -1659,8 +1659,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_DESC;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:926:7: ( D E S C )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:926:16: D E S C
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:926:7: ( D E S C )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:926:16: D E S C
             {
             mD(); 
             mE(); 
@@ -1682,8 +1682,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_ALLOW;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:927:8: ( A L L O W )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:927:16: A L L O W
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:927:8: ( A L L O W )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:927:16: A L L O W
             {
             mA(); 
             mL(); 
@@ -1706,8 +1706,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_FILTERING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:928:12: ( F I L T E R I N G )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:928:16: F I L T E R I N G
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:928:12: ( F I L T E R I N G )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:928:16: F I L T E R I N G
             {
             mF(); 
             mI(); 
@@ -1734,8 +1734,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_GRANT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:930:8: ( G R A N T )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:930:16: G R A N T
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:930:8: ( G R A N T )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:930:16: G R A N T
             {
             mG(); 
             mR(); 
@@ -1758,8 +1758,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_ALL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:931:6: ( A L L )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:931:16: A L L
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:931:6: ( A L L )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:931:16: A L L
             {
             mA(); 
             mL(); 
@@ -1780,8 +1780,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_PERMISSION;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:932:13: ( P E R M I S S I O N )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:932:16: P E R M I S S I O N
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:932:13: ( P E R M I S S I O N )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:932:16: P E R M I S S I O N
             {
             mP(); 
             mE(); 
@@ -1809,8 +1809,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_PERMISSIONS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:933:14: ( P E R M I S S I O N S )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:933:16: P E R M I S S I O N S
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:933:14: ( P E R M I S S I O N S )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:933:16: P E R M I S S I O N S
             {
             mP(); 
             mE(); 
@@ -1839,8 +1839,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_OF;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:934:5: ( O F )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:934:16: O F
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:934:5: ( O F )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:934:16: O F
             {
             mO(); 
             mF(); 
@@ -1860,8 +1860,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_REVOKE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:935:9: ( R E V O K E )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:935:16: R E V O K E
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:935:9: ( R E V O K E )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:935:16: R E V O K E
             {
             mR(); 
             mE(); 
@@ -1885,8 +1885,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_MODIFY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:936:9: ( M O D I F Y )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:936:16: M O D I F Y
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:936:9: ( M O D I F Y )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:936:16: M O D I F Y
             {
             mM(); 
             mO(); 
@@ -1910,8 +1910,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_AUTHORIZE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:937:12: ( A U T H O R I Z E )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:937:16: A U T H O R I Z E
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:937:12: ( A U T H O R I Z E )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:937:16: A U T H O R I Z E
             {
             mA(); 
             mU(); 
@@ -1938,8 +1938,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_NORECURSIVE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:938:14: ( N O R E C U R S I V E )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:938:16: N O R E C U R S I V E
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:938:14: ( N O R E C U R S I V E )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:938:16: N O R E C U R S I V E
             {
             mN(); 
             mO(); 
@@ -1968,8 +1968,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_USER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:940:7: ( U S E R )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:940:16: U S E R
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:940:7: ( U S E R )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:940:16: U S E R
             {
             mU(); 
             mS(); 
@@ -1991,8 +1991,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_USERS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:941:8: ( U S E R S )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:941:16: U S E R S
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:941:8: ( U S E R S )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:941:16: U S E R S
             {
             mU(); 
             mS(); 
@@ -2015,8 +2015,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_SUPERUSER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:942:12: ( S U P E R U S E R )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:942:16: S U P E R U S E R
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:942:12: ( S U P E R U S E R )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:942:16: S U P E R U S E R
             {
             mS(); 
             mU(); 
@@ -2043,8 +2043,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_NOSUPERUSER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:943:14: ( N O S U P E R U S E R )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:943:16: N O S U P E R U S E R
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:943:14: ( N O S U P E R U S E R )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:943:16: N O S U P E R U S E R
             {
             mN(); 
             mO(); 
@@ -2073,8 +2073,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_PASSWORD;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:944:11: ( P A S S W O R D )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:944:16: P A S S W O R D
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:944:11: ( P A S S W O R D )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:944:16: P A S S W O R D
             {
             mP(); 
             mA(); 
@@ -2100,8 +2100,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_CLUSTERING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:946:13: ( C L U S T E R I N G )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:946:16: C L U S T E R I N G
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:946:13: ( C L U S T E R I N G )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:946:16: C L U S T E R I N G
             {
             mC(); 
             mL(); 
@@ -2129,8 +2129,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_ASCII;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:947:8: ( A S C I I )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:947:16: A S C I I
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:947:8: ( A S C I I )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:947:16: A S C I I
             {
             mA(); 
             mS(); 
@@ -2153,8 +2153,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_BIGINT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:948:9: ( B I G I N T )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:948:16: B I G I N T
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:948:9: ( B I G I N T )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:948:16: B I G I N T
             {
             mB(); 
             mI(); 
@@ -2178,8 +2178,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_BLOB;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:949:7: ( B L O B )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:949:16: B L O B
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:949:7: ( B L O B )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:949:16: B L O B
             {
             mB(); 
             mL(); 
@@ -2201,8 +2201,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_BOOLEAN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:950:10: ( B O O L E A N )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:950:16: B O O L E A N
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:950:10: ( B O O L E A N )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:950:16: B O O L E A N
             {
             mB(); 
             mO(); 
@@ -2227,8 +2227,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_COUNTER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:951:10: ( C O U N T E R )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:951:16: C O U N T E R
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:951:10: ( C O U N T E R )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:951:16: C O U N T E R
             {
             mC(); 
             mO(); 
@@ -2253,8 +2253,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_DECIMAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:952:10: ( D E C I M A L )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:952:16: D E C I M A L
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:952:10: ( D E C I M A L )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:952:16: D E C I M A L
             {
             mD(); 
             mE(); 
@@ -2279,8 +2279,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_DOUBLE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:953:9: ( D O U B L E )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:953:16: D O U B L E
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:953:9: ( D O U B L E )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:953:16: D O U B L E
             {
             mD(); 
             mO(); 
@@ -2304,8 +2304,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_FLOAT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:954:8: ( F L O A T )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:954:16: F L O A T
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:954:8: ( F L O A T )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:954:16: F L O A T
             {
             mF(); 
             mL(); 
@@ -2328,8 +2328,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_INET;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:955:7: ( I N E T )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:955:16: I N E T
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:955:7: ( I N E T )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:955:16: I N E T
             {
             mI(); 
             mN(); 
@@ -2351,8 +2351,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:956:6: ( I N T )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:956:16: I N T
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:956:6: ( I N T )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:956:16: I N T
             {
             mI(); 
             mN(); 
@@ -2373,8 +2373,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_TEXT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:957:7: ( T E X T )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:957:16: T E X T
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:957:7: ( T E X T )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:957:16: T E X T
             {
             mT(); 
             mE(); 
@@ -2396,8 +2396,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_UUID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:958:7: ( U U I D )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:958:16: U U I D
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:958:7: ( U U I D )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:958:16: U U I D
             {
             mU(); 
             mU(); 
@@ -2419,8 +2419,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_VARCHAR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:959:10: ( V A R C H A R )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:959:16: V A R C H A R
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:959:10: ( V A R C H A R )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:959:16: V A R C H A R
             {
             mV(); 
             mA(); 
@@ -2445,8 +2445,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_VARINT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:960:9: ( V A R I N T )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:960:16: V A R I N T
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:960:9: ( V A R I N T )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:960:16: V A R I N T
             {
             mV(); 
             mA(); 
@@ -2470,8 +2470,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_TIMEUUID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:961:11: ( T I M E U U I D )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:961:16: T I M E U U I D
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:961:11: ( T I M E U U I D )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:961:16: T I M E U U I D
             {
             mT(); 
             mI(); 
@@ -2497,8 +2497,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_TOKEN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:962:8: ( T O K E N )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:962:16: T O K E N
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:962:8: ( T O K E N )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:962:16: T O K E N
             {
             mT(); 
             mO(); 
@@ -2521,8 +2521,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_WRITETIME;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:963:12: ( W R I T E T I M E )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:963:16: W R I T E T I M E
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:963:12: ( W R I T E T I M E )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:963:16: W R I T E T I M E
             {
             mW(); 
             mR(); 
@@ -2549,8 +2549,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_NULL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:965:7: ( N U L L )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:965:16: N U L L
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:965:7: ( N U L L )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:965:16: N U L L
             {
             mN(); 
             mU(); 
@@ -2572,8 +2572,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_MAP;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:967:6: ( M A P )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:967:16: M A P
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:967:6: ( M A P )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:967:16: M A P
             {
             mM(); 
             mA(); 
@@ -2594,8 +2594,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = K_LIST;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:968:7: ( L I S T )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:968:16: L I S T
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:968:7: ( L I S T )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:968:16: L I S T
             {
             mL(); 
             mI(); 
@@ -2615,8 +2615,8 @@ public class CqlLexer extends Lexer {
     // $ANTLR start "A"
     public final void mA() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:971:11: ( ( 'a' | 'A' ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:971:13: ( 'a' | 'A' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:971:11: ( ( 'a' | 'A' ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:971:13: ( 'a' | 'A' )
             {
             if ( input.LA(1)=='A'||input.LA(1)=='a' ) {
                 input.consume();
@@ -2639,8 +2639,8 @@ public class CqlLexer extends Lexer {
     // $ANTLR start "B"
     public final void mB() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:972:11: ( ( 'b' | 'B' ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:972:13: ( 'b' | 'B' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:972:11: ( ( 'b' | 'B' ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:972:13: ( 'b' | 'B' )
             {
             if ( input.LA(1)=='B'||input.LA(1)=='b' ) {
                 input.consume();
@@ -2663,8 +2663,8 @@ public class CqlLexer extends Lexer {
     // $ANTLR start "C"
     public final void mC() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:973:11: ( ( 'c' | 'C' ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:973:13: ( 'c' | 'C' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:973:11: ( ( 'c' | 'C' ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:973:13: ( 'c' | 'C' )
             {
             if ( input.LA(1)=='C'||input.LA(1)=='c' ) {
                 input.consume();
@@ -2687,8 +2687,8 @@ public class CqlLexer extends Lexer {
     // $ANTLR start "D"
     public final void mD() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:974:11: ( ( 'd' | 'D' ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:974:13: ( 'd' | 'D' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:974:11: ( ( 'd' | 'D' ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:974:13: ( 'd' | 'D' )
             {
             if ( input.LA(1)=='D'||input.LA(1)=='d' ) {
                 input.consume();
@@ -2711,8 +2711,8 @@ public class CqlLexer extends Lexer {
     // $ANTLR start "E"
     public final void mE() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:975:11: ( ( 'e' | 'E' ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:975:13: ( 'e' | 'E' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:975:11: ( ( 'e' | 'E' ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:975:13: ( 'e' | 'E' )
             {
             if ( input.LA(1)=='E'||input.LA(1)=='e' ) {
                 input.consume();
@@ -2735,8 +2735,8 @@ public class CqlLexer extends Lexer {
     // $ANTLR start "F"
     public final void mF() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:976:11: ( ( 'f' | 'F' ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:976:13: ( 'f' | 'F' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:976:11: ( ( 'f' | 'F' ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:976:13: ( 'f' | 'F' )
             {
             if ( input.LA(1)=='F'||input.LA(1)=='f' ) {
                 input.consume();
@@ -2759,8 +2759,8 @@ public class CqlLexer extends Lexer {
     // $ANTLR start "G"
     public final void mG() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:977:11: ( ( 'g' | 'G' ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:977:13: ( 'g' | 'G' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:977:11: ( ( 'g' | 'G' ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:977:13: ( 'g' | 'G' )
             {
             if ( input.LA(1)=='G'||input.LA(1)=='g' ) {
                 input.consume();
@@ -2783,8 +2783,8 @@ public class CqlLexer extends Lexer {
     // $ANTLR start "H"
     public final void mH() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:978:11: ( ( 'h' | 'H' ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:978:13: ( 'h' | 'H' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:978:11: ( ( 'h' | 'H' ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:978:13: ( 'h' | 'H' )
             {
             if ( input.LA(1)=='H'||input.LA(1)=='h' ) {
                 input.consume();
@@ -2807,8 +2807,8 @@ public class CqlLexer extends Lexer {
     // $ANTLR start "I"
     public final void mI() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:979:11: ( ( 'i' | 'I' ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:979:13: ( 'i' | 'I' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:979:11: ( ( 'i' | 'I' ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:979:13: ( 'i' | 'I' )
             {
             if ( input.LA(1)=='I'||input.LA(1)=='i' ) {
                 input.consume();
@@ -2831,8 +2831,8 @@ public class CqlLexer extends Lexer {
     // $ANTLR start "J"
     public final void mJ() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:980:11: ( ( 'j' | 'J' ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:980:13: ( 'j' | 'J' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:980:11: ( ( 'j' | 'J' ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:980:13: ( 'j' | 'J' )
             {
             if ( input.LA(1)=='J'||input.LA(1)=='j' ) {
                 input.consume();
@@ -2855,8 +2855,8 @@ public class CqlLexer extends Lexer {
     // $ANTLR start "K"
     public final void mK() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:981:11: ( ( 'k' | 'K' ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:981:13: ( 'k' | 'K' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:981:11: ( ( 'k' | 'K' ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:981:13: ( 'k' | 'K' )
             {
             if ( input.LA(1)=='K'||input.LA(1)=='k' ) {
                 input.consume();
@@ -2879,8 +2879,8 @@ public class CqlLexer extends Lexer {
     // $ANTLR start "L"
     public final void mL() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:982:11: ( ( 'l' | 'L' ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:982:13: ( 'l' | 'L' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:982:11: ( ( 'l' | 'L' ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:982:13: ( 'l' | 'L' )
             {
             if ( input.LA(1)=='L'||input.LA(1)=='l' ) {
                 input.consume();
@@ -2903,8 +2903,8 @@ public class CqlLexer extends Lexer {
     // $ANTLR start "M"
     public final void mM() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:983:11: ( ( 'm' | 'M' ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:983:13: ( 'm' | 'M' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:983:11: ( ( 'm' | 'M' ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:983:13: ( 'm' | 'M' )
             {
             if ( input.LA(1)=='M'||input.LA(1)=='m' ) {
                 input.consume();
@@ -2927,8 +2927,8 @@ public class CqlLexer extends Lexer {
     // $ANTLR start "N"
     public final void mN() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:984:11: ( ( 'n' | 'N' ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:984:13: ( 'n' | 'N' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:984:11: ( ( 'n' | 'N' ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:984:13: ( 'n' | 'N' )
             {
             if ( input.LA(1)=='N'||input.LA(1)=='n' ) {
                 input.consume();
@@ -2951,8 +2951,8 @@ public class CqlLexer extends Lexer {
     // $ANTLR start "O"
     public final void mO() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:985:11: ( ( 'o' | 'O' ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:985:13: ( 'o' | 'O' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:985:11: ( ( 'o' | 'O' ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:985:13: ( 'o' | 'O' )
             {
             if ( input.LA(1)=='O'||input.LA(1)=='o' ) {
                 input.consume();
@@ -2975,8 +2975,8 @@ public class CqlLexer extends Lexer {
     // $ANTLR start "P"
     public final void mP() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:986:11: ( ( 'p' | 'P' ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:986:13: ( 'p' | 'P' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:986:11: ( ( 'p' | 'P' ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:986:13: ( 'p' | 'P' )
             {
             if ( input.LA(1)=='P'||input.LA(1)=='p' ) {
                 input.consume();
@@ -2999,8 +2999,8 @@ public class CqlLexer extends Lexer {
     // $ANTLR start "Q"
     public final void mQ() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:987:11: ( ( 'q' | 'Q' ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:987:13: ( 'q' | 'Q' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:987:11: ( ( 'q' | 'Q' ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:987:13: ( 'q' | 'Q' )
             {
             if ( input.LA(1)=='Q'||input.LA(1)=='q' ) {
                 input.consume();
@@ -3023,8 +3023,8 @@ public class CqlLexer extends Lexer {
     // $ANTLR start "R"
     public final void mR() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:988:11: ( ( 'r' | 'R' ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:988:13: ( 'r' | 'R' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:988:11: ( ( 'r' | 'R' ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:988:13: ( 'r' | 'R' )
             {
             if ( input.LA(1)=='R'||input.LA(1)=='r' ) {
                 input.consume();
@@ -3047,8 +3047,8 @@ public class CqlLexer extends Lexer {
     // $ANTLR start "S"
     public final void mS() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:989:11: ( ( 's' | 'S' ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:989:13: ( 's' | 'S' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:989:11: ( ( 's' | 'S' ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:989:13: ( 's' | 'S' )
             {
             if ( input.LA(1)=='S'||input.LA(1)=='s' ) {
                 input.consume();
@@ -3071,8 +3071,8 @@ public class CqlLexer extends Lexer {
     // $ANTLR start "T"
     public final void mT() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:990:11: ( ( 't' | 'T' ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:990:13: ( 't' | 'T' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:990:11: ( ( 't' | 'T' ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:990:13: ( 't' | 'T' )
             {
             if ( input.LA(1)=='T'||input.LA(1)=='t' ) {
                 input.consume();
@@ -3095,8 +3095,8 @@ public class CqlLexer extends Lexer {
     // $ANTLR start "U"
     public final void mU() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:991:11: ( ( 'u' | 'U' ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:991:13: ( 'u' | 'U' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:991:11: ( ( 'u' | 'U' ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:991:13: ( 'u' | 'U' )
             {
             if ( input.LA(1)=='U'||input.LA(1)=='u' ) {
                 input.consume();
@@ -3119,8 +3119,8 @@ public class CqlLexer extends Lexer {
     // $ANTLR start "V"
     public final void mV() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:992:11: ( ( 'v' | 'V' ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:992:13: ( 'v' | 'V' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:992:11: ( ( 'v' | 'V' ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:992:13: ( 'v' | 'V' )
             {
             if ( input.LA(1)=='V'||input.LA(1)=='v' ) {
                 input.consume();
@@ -3143,8 +3143,8 @@ public class CqlLexer extends Lexer {
     // $ANTLR start "W"
     public final void mW() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:993:11: ( ( 'w' | 'W' ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:993:13: ( 'w' | 'W' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:993:11: ( ( 'w' | 'W' ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:993:13: ( 'w' | 'W' )
             {
             if ( input.LA(1)=='W'||input.LA(1)=='w' ) {
                 input.consume();
@@ -3167,8 +3167,8 @@ public class CqlLexer extends Lexer {
     // $ANTLR start "X"
     public final void mX() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:994:11: ( ( 'x' | 'X' ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:994:13: ( 'x' | 'X' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:994:11: ( ( 'x' | 'X' ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:994:13: ( 'x' | 'X' )
             {
             if ( input.LA(1)=='X'||input.LA(1)=='x' ) {
                 input.consume();
@@ -3191,8 +3191,8 @@ public class CqlLexer extends Lexer {
     // $ANTLR start "Y"
     public final void mY() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:995:11: ( ( 'y' | 'Y' ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:995:13: ( 'y' | 'Y' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:995:11: ( ( 'y' | 'Y' ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:995:13: ( 'y' | 'Y' )
             {
             if ( input.LA(1)=='Y'||input.LA(1)=='y' ) {
                 input.consume();
@@ -3215,8 +3215,8 @@ public class CqlLexer extends Lexer {
     // $ANTLR start "Z"
     public final void mZ() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:996:11: ( ( 'z' | 'Z' ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:996:13: ( 'z' | 'Z' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:996:11: ( ( 'z' | 'Z' ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:996:13: ( 'z' | 'Z' )
             {
             if ( input.LA(1)=='Z'||input.LA(1)=='z' ) {
                 input.consume();
@@ -3244,11 +3244,11 @@ public class CqlLexer extends Lexer {
             int c;
 
              StringBuilder b = new StringBuilder(); 
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1001:5: ( '\\'' (c=~ ( '\\'' ) | '\\'' '\\'' )* '\\'' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1001:7: '\\'' (c=~ ( '\\'' ) | '\\'' '\\'' )* '\\''
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1001:5: ( '\\'' (c=~ ( '\\'' ) | '\\'' '\\'' )* '\\'' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1001:7: '\\'' (c=~ ( '\\'' ) | '\\'' '\\'' )* '\\''
             {
             match('\''); 
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1001:12: (c=~ ( '\\'' ) | '\\'' '\\'' )*
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1001:12: (c=~ ( '\\'' ) | '\\'' '\\'' )*
             loop3:
             do {
                 int alt3=3;
@@ -3270,7 +3270,7 @@ public class CqlLexer extends Lexer {
 
                 switch (alt3) {
             	case 1 :
-            	    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1001:13: c=~ ( '\\'' )
+            	    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1001:13: c=~ ( '\\'' )
             	    {
             	    c= input.LA(1);
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='\uFFFF') ) {
@@ -3287,7 +3287,7 @@ public class CqlLexer extends Lexer {
             	    }
             	    break;
             	case 2 :
-            	    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1001:50: '\\'' '\\''
+            	    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1001:50: '\\'' '\\''
             	    {
             	    match('\''); 
             	    match('\''); 
@@ -3321,11 +3321,11 @@ public class CqlLexer extends Lexer {
             int c;
 
              StringBuilder b = new StringBuilder(); 
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1007:5: ( '\\\"' (c=~ ( '\\\"' ) | '\\\"' '\\\"' )* '\\\"' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1007:7: '\\\"' (c=~ ( '\\\"' ) | '\\\"' '\\\"' )* '\\\"'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1007:5: ( '\\\"' (c=~ ( '\\\"' ) | '\\\"' '\\\"' )* '\\\"' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1007:7: '\\\"' (c=~ ( '\\\"' ) | '\\\"' '\\\"' )* '\\\"'
             {
             match('\"'); 
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1007:12: (c=~ ( '\\\"' ) | '\\\"' '\\\"' )*
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1007:12: (c=~ ( '\\\"' ) | '\\\"' '\\\"' )*
             loop4:
             do {
                 int alt4=3;
@@ -3347,7 +3347,7 @@ public class CqlLexer extends Lexer {
 
                 switch (alt4) {
             	case 1 :
-            	    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1007:13: c=~ ( '\\\"' )
+            	    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1007:13: c=~ ( '\\\"' )
             	    {
             	    c= input.LA(1);
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='\uFFFF') ) {
@@ -3364,7 +3364,7 @@ public class CqlLexer extends Lexer {
             	    }
             	    break;
             	case 2 :
-            	    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1007:51: '\\\"' '\\\"'
+            	    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1007:51: '\\\"' '\\\"'
             	    {
             	    match('\"'); 
             	    match('\"'); 
@@ -3393,8 +3393,8 @@ public class CqlLexer extends Lexer {
     // $ANTLR start "DIGIT"
     public final void mDIGIT() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1011:5: ( '0' .. '9' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1011:7: '0' .. '9'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1011:5: ( '0' .. '9' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1011:7: '0' .. '9'
             {
             matchRange('0','9'); 
 
@@ -3409,8 +3409,8 @@ public class CqlLexer extends Lexer {
     // $ANTLR start "LETTER"
     public final void mLETTER() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1015:5: ( ( 'A' .. 'Z' | 'a' .. 'z' ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1015:7: ( 'A' .. 'Z' | 'a' .. 'z' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1015:5: ( ( 'A' .. 'Z' | 'a' .. 'z' ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1015:7: ( 'A' .. 'Z' | 'a' .. 'z' )
             {
             if ( (input.LA(1)>='A' && input.LA(1)<='Z')||(input.LA(1)>='a' && input.LA(1)<='z') ) {
                 input.consume();
@@ -3433,8 +3433,8 @@ public class CqlLexer extends Lexer {
     // $ANTLR start "HEX"
     public final void mHEX() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1019:5: ( ( 'A' .. 'F' | 'a' .. 'f' | '0' .. '9' ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1019:7: ( 'A' .. 'F' | 'a' .. 'f' | '0' .. '9' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1019:5: ( ( 'A' .. 'F' | 'a' .. 'f' | '0' .. '9' ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1019:7: ( 'A' .. 'F' | 'a' .. 'f' | '0' .. '9' )
             {
             if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='F')||(input.LA(1)>='a' && input.LA(1)<='f') ) {
                 input.consume();
@@ -3457,11 +3457,11 @@ public class CqlLexer extends Lexer {
     // $ANTLR start "EXPONENT"
     public final void mEXPONENT() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1023:5: ( E ( '+' | '-' )? ( DIGIT )+ )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1023:7: E ( '+' | '-' )? ( DIGIT )+
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1023:5: ( E ( '+' | '-' )? ( DIGIT )+ )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1023:7: E ( '+' | '-' )? ( DIGIT )+
             {
             mE(); 
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1023:9: ( '+' | '-' )?
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1023:9: ( '+' | '-' )?
             int alt5=2;
             int LA5_0 = input.LA(1);
 
@@ -3470,7 +3470,7 @@ public class CqlLexer extends Lexer {
             }
             switch (alt5) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:
                     {
                     if ( input.LA(1)=='+'||input.LA(1)=='-' ) {
                         input.consume();
@@ -3487,7 +3487,7 @@ public class CqlLexer extends Lexer {
 
             }
 
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1023:22: ( DIGIT )+
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1023:22: ( DIGIT )+
             int cnt6=0;
             loop6:
             do {
@@ -3501,7 +3501,7 @@ public class CqlLexer extends Lexer {
 
                 switch (alt6) {
             	case 1 :
-            	    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1023:22: DIGIT
+            	    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1023:22: DIGIT
             	    {
             	    mDIGIT(); 
 
@@ -3531,10 +3531,10 @@ public class CqlLexer extends Lexer {
         try {
             int _type = INTEGER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1027:5: ( ( '-' )? ( DIGIT )+ )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1027:7: ( '-' )? ( DIGIT )+
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1027:5: ( ( '-' )? ( DIGIT )+ )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1027:7: ( '-' )? ( DIGIT )+
             {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1027:7: ( '-' )?
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1027:7: ( '-' )?
             int alt7=2;
             int LA7_0 = input.LA(1);
 
@@ -3543,7 +3543,7 @@ public class CqlLexer extends Lexer {
             }
             switch (alt7) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1027:7: '-'
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1027:7: '-'
                     {
                     match('-'); 
 
@@ -3552,7 +3552,7 @@ public class CqlLexer extends Lexer {
 
             }
 
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1027:12: ( DIGIT )+
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1027:12: ( DIGIT )+
             int cnt8=0;
             loop8:
             do {
@@ -3566,7 +3566,7 @@ public class CqlLexer extends Lexer {
 
                 switch (alt8) {
             	case 1 :
-            	    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1027:12: DIGIT
+            	    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1027:12: DIGIT
             	    {
             	    mDIGIT(); 
 
@@ -3598,8 +3598,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = QMARK;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1031:5: ( '?' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1031:7: '?'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1031:5: ( '?' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1031:7: '?'
             {
             match('?'); 
 
@@ -3618,12 +3618,12 @@ public class CqlLexer extends Lexer {
         try {
             int _type = FLOAT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1039:5: ( INTEGER EXPONENT | INTEGER '.' ( DIGIT )* ( EXPONENT )? )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1039:5: ( INTEGER EXPONENT | INTEGER '.' ( DIGIT )* ( EXPONENT )? )
             int alt11=2;
             alt11 = dfa11.predict(input);
             switch (alt11) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1039:7: INTEGER EXPONENT
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1039:7: INTEGER EXPONENT
                     {
                     mINTEGER(); 
                     mEXPONENT(); 
@@ -3631,11 +3631,11 @@ public class CqlLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1040:7: INTEGER '.' ( DIGIT )* ( EXPONENT )?
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1040:7: INTEGER '.' ( DIGIT )* ( EXPONENT )?
                     {
                     mINTEGER(); 
                     match('.'); 
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1040:19: ( DIGIT )*
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1040:19: ( DIGIT )*
                     loop9:
                     do {
                         int alt9=2;
@@ -3648,7 +3648,7 @@ public class CqlLexer extends Lexer {
 
                         switch (alt9) {
                     	case 1 :
-                    	    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1040:19: DIGIT
+                    	    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1040:19: DIGIT
                     	    {
                     	    mDIGIT(); 
 
@@ -3660,7 +3660,7 @@ public class CqlLexer extends Lexer {
                         }
                     } while (true);
 
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1040:26: ( EXPONENT )?
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1040:26: ( EXPONENT )?
                     int alt10=2;
                     int LA10_0 = input.LA(1);
 
@@ -3669,7 +3669,7 @@ public class CqlLexer extends Lexer {
                     }
                     switch (alt10) {
                         case 1 :
-                            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1040:26: EXPONENT
+                            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1040:26: EXPONENT
                             {
                             mEXPONENT(); 
 
@@ -3696,7 +3696,7 @@ public class CqlLexer extends Lexer {
         try {
             int _type = BOOLEAN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1047:5: ( T R U E | F A L S E )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1047:5: ( T R U E | F A L S E )
             int alt12=2;
             int LA12_0 = input.LA(1);
 
@@ -3714,7 +3714,7 @@ public class CqlLexer extends Lexer {
             }
             switch (alt12) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1047:7: T R U E
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1047:7: T R U E
                     {
                     mT(); 
                     mR(); 
@@ -3724,7 +3724,7 @@ public class CqlLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1047:17: F A L S E
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1047:17: F A L S E
                     {
                     mF(); 
                     mA(); 
@@ -3749,11 +3749,11 @@ public class CqlLexer extends Lexer {
         try {
             int _type = IDENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1051:5: ( LETTER ( LETTER | DIGIT | '_' )* )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1051:7: LETTER ( LETTER | DIGIT | '_' )*
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1051:5: ( LETTER ( LETTER | DIGIT | '_' )* )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1051:7: LETTER ( LETTER | DIGIT | '_' )*
             {
             mLETTER(); 
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1051:14: ( LETTER | DIGIT | '_' )*
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1051:14: ( LETTER | DIGIT | '_' )*
             loop13:
             do {
                 int alt13=2;
@@ -3766,7 +3766,7 @@ public class CqlLexer extends Lexer {
 
                 switch (alt13) {
             	case 1 :
-            	    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:
+            	    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:
             	    {
             	    if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z') ) {
             	        input.consume();
@@ -3802,12 +3802,12 @@ public class CqlLexer extends Lexer {
         try {
             int _type = HEXNUMBER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1055:5: ( '0' X ( HEX )+ )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1055:7: '0' X ( HEX )+
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1055:5: ( '0' X ( HEX )+ )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1055:7: '0' X ( HEX )+
             {
             match('0'); 
             mX(); 
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1055:13: ( HEX )+
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1055:13: ( HEX )+
             int cnt14=0;
             loop14:
             do {
@@ -3821,7 +3821,7 @@ public class CqlLexer extends Lexer {
 
                 switch (alt14) {
             	case 1 :
-            	    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1055:13: HEX
+            	    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1055:13: HEX
             	    {
             	    mHEX(); 
 
@@ -3853,8 +3853,8 @@ public class CqlLexer extends Lexer {
         try {
             int _type = UUID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1059:5: ( HEX HEX HEX HEX HEX HEX HEX HEX '-' HEX HEX HEX HEX '-' HEX HEX HEX HEX '-' HEX HEX HEX HEX '-' HEX HEX HEX HEX HEX HEX HEX HEX HEX HEX HEX HEX )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1059:7: HEX HEX HEX HEX HEX HEX HEX HEX '-' HEX HEX HEX HEX '-' HEX HEX HEX HEX '-' HEX HEX HEX HEX '-' HEX HEX HEX HEX HEX HEX HEX HEX HEX HEX HEX HEX
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1059:5: ( HEX HEX HEX HEX HEX HEX HEX HEX '-' HEX HEX HEX HEX '-' HEX HEX HEX HEX '-' HEX HEX HEX HEX '-' HEX HEX HEX HEX HEX HEX HEX HEX HEX HEX HEX HEX )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1059:7: HEX HEX HEX HEX HEX HEX HEX HEX '-' HEX HEX HEX HEX '-' HEX HEX HEX HEX '-' HEX HEX HEX HEX '-' HEX HEX HEX HEX HEX HEX HEX HEX HEX HEX HEX HEX
             {
             mHEX(); 
             mHEX(); 
@@ -3908,10 +3908,10 @@ public class CqlLexer extends Lexer {
         try {
             int _type = WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1067:5: ( ( ' ' | '\\t' | '\\n' | '\\r' )+ )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1067:7: ( ' ' | '\\t' | '\\n' | '\\r' )+
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1067:5: ( ( ' ' | '\\t' | '\\n' | '\\r' )+ )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1067:7: ( ' ' | '\\t' | '\\n' | '\\r' )+
             {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1067:7: ( ' ' | '\\t' | '\\n' | '\\r' )+
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1067:7: ( ' ' | '\\t' | '\\n' | '\\r' )+
             int cnt15=0;
             loop15:
             do {
@@ -3925,7 +3925,7 @@ public class CqlLexer extends Lexer {
 
                 switch (alt15) {
             	case 1 :
-            	    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:
+            	    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:
             	    {
             	    if ( (input.LA(1)>='\t' && input.LA(1)<='\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
             	        input.consume();
@@ -3966,10 +3966,10 @@ public class CqlLexer extends Lexer {
         try {
             int _type = COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1071:5: ( ( '--' | '//' ) ( . )* ( '\\n' | '\\r' ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1071:7: ( '--' | '//' ) ( . )* ( '\\n' | '\\r' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1071:5: ( ( '--' | '//' ) ( . )* ( '\\n' | '\\r' ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1071:7: ( '--' | '//' ) ( . )* ( '\\n' | '\\r' )
             {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1071:7: ( '--' | '//' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1071:7: ( '--' | '//' )
             int alt16=2;
             int LA16_0 = input.LA(1);
 
@@ -3987,7 +3987,7 @@ public class CqlLexer extends Lexer {
             }
             switch (alt16) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1071:8: '--'
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1071:8: '--'
                     {
                     match("--"); 
 
@@ -3995,7 +3995,7 @@ public class CqlLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1071:15: '//'
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1071:15: '//'
                     {
                     match("//"); 
 
@@ -4005,7 +4005,7 @@ public class CqlLexer extends Lexer {
 
             }
 
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1071:21: ( . )*
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1071:21: ( . )*
             loop17:
             do {
                 int alt17=2;
@@ -4021,7 +4021,7 @@ public class CqlLexer extends Lexer {
 
                 switch (alt17) {
             	case 1 :
-            	    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1071:21: .
+            	    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1071:21: .
             	    {
             	    matchAny(); 
 
@@ -4059,12 +4059,12 @@ public class CqlLexer extends Lexer {
         try {
             int _type = MULTILINE_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1075:5: ( '/*' ( . )* '*/' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1075:7: '/*' ( . )* '*/'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1075:5: ( '/*' ( . )* '*/' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1075:7: '/*' ( . )* '*/'
             {
             match("/*"); 
 
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1075:12: ( . )*
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1075:12: ( . )*
             loop18:
             do {
                 int alt18=2;
@@ -4089,7 +4089,7 @@ public class CqlLexer extends Lexer {
 
                 switch (alt18) {
             	case 1 :
-            	    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1075:12: .
+            	    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1075:12: .
             	    {
             	    matchAny(); 
 
@@ -4116,775 +4116,775 @@ public class CqlLexer extends Lexer {
     // $ANTLR end "MULTILINE_COMMENT"
 
     public void mTokens() throws RecognitionException {
-        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:8: ( T__126 | T__127 | T__128 | T__129 | T__130 | T__131 | T__132 | T__133 | T__134 | T__135 | T__136 | T__137 | T__138 | T__139 | T__140 | T__141 | T__142 | T__143 | K_SELECT | K_FROM | K_WHERE | K_AND | K_KEY | K_INSERT | K_UPDATE | K_WITH | K_LIMIT | K_USING | K_USE | K_COUNT | K_SET | K_BEGIN | K_UNLOGGED | K_BATCH | K_APPLY | K_TRUNCATE | K_DELETE | K_IN | K_CREATE | K_KEYSPACE | K_KEYSPACES | K_COLUMNFAMILY | K_INDEX | K_ON | K_TO | K_DROP | K_PRIMARY | K_INTO | K_VALUES | K_TIMESTAMP | K_TTL | K_ALTER | K_RENAME | K_ADD | K_TYPE | K_COMPACT | K_STORAGE | K_ORDER | K_BY | K_ASC | K_DESC | K_ALLOW | K_FILTERING | K_GRANT | K_ALL | K_PERMISSION | K_PERMISSIONS | K_OF | K_REVOKE | K_MODIFY | K_AUTHORIZE | K_NORECURSIVE | K_USER | K_USERS | K_SUPERUSER | K_NOSUPERUSER | K_PASSWORD | K_CLUSTERING | K_ASCII | K_BIGINT | K_BLOB | K_BOOLEAN | K_COUNTER | K_DECIMAL | K_DOUBLE | K_FLOAT | K_INET | K_INT | K_TEXT | K_UUID | K_VARCHAR | K_VARINT | K_TIMEUUID | K_TOKEN | K_WRITETIME | K_NULL | K_MAP | K_LIST | STRING_LITERAL | QUOTED_NAME | INTEGER | QMARK | FLOAT | BOOLEAN | IDENT | HEXNUMBER | UUID | WS | COMMENT | MULTILINE_COMMENT )
+        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:8: ( T__126 | T__127 | T__128 | T__129 | T__130 | T__131 | T__132 | T__133 | T__134 | T__135 | T__136 | T__137 | T__138 | T__139 | T__140 | T__141 | T__142 | T__143 | K_SELECT | K_FROM | K_WHERE | K_AND | K_KEY | K_INSERT | K_UPDATE | K_WITH | K_LIMIT | K_USING | K_USE | K_COUNT | K_SET | K_BEGIN | K_UNLOGGED | K_BATCH | K_APPLY | K_TRUNCATE | K_DELETE | K_IN | K_CREATE | K_KEYSPACE | K_KEYSPACES | K_COLUMNFAMILY | K_INDEX | K_ON | K_TO | K_DROP | K_PRIMARY | K_INTO | K_VALUES | K_TIMESTAMP | K_TTL | K_ALTER | K_RENAME | K_ADD | K_TYPE | K_COMPACT | K_STORAGE | K_ORDER | K_BY | K_ASC | K_DESC | K_ALLOW | K_FILTERING | K_GRANT | K_ALL | K_PERMISSION | K_PERMISSIONS | K_OF | K_REVOKE | K_MODIFY | K_AUTHORIZE | K_NORECURSIVE | K_USER | K_USERS | K_SUPERUSER | K_NOSUPERUSER | K_PASSWORD | K_CLUSTERING | K_ASCII | K_BIGINT | K_BLOB | K_BOOLEAN | K_COUNTER | K_DECIMAL | K_DOUBLE | K_FLOAT | K_INET | K_INT | K_TEXT | K_UUID | K_VARCHAR | K_VARINT | K_TIMEUUID | K_TOKEN | K_WRITETIME | K_NULL | K_MAP | K_LIST | STRING_LITERAL | QUOTED_NAME | INTEGER | QMARK | FLOAT | BOOLEAN | IDENT | HEXNUMBER | UUID | WS | COMMENT | MULTILINE_COMMENT )
         int alt19=110;
         alt19 = dfa19.predict(input);
         switch (alt19) {
             case 1 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:10: T__126
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:10: T__126
                 {
                 mT__126(); 
 
                 }
                 break;
             case 2 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:17: T__127
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:17: T__127
                 {
                 mT__127(); 
 
                 }
                 break;
             case 3 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:24: T__128
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:24: T__128
                 {
                 mT__128(); 
 
                 }
                 break;
             case 4 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:31: T__129
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:31: T__129
                 {
                 mT__129(); 
 
                 }
                 break;
             case 5 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:38: T__130
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:38: T__130
                 {
                 mT__130(); 
 
                 }
                 break;
             case 6 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:45: T__131
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:45: T__131
                 {
                 mT__131(); 
 
                 }
                 break;
             case 7 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:52: T__132
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:52: T__132
                 {
                 mT__132(); 
 
                 }
                 break;
             case 8 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:59: T__133
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:59: T__133
                 {
                 mT__133(); 
 
                 }
                 break;
             case 9 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:66: T__134
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:66: T__134
                 {
                 mT__134(); 
 
                 }
                 break;
             case 10 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:73: T__135
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:73: T__135
                 {
                 mT__135(); 
 
                 }
                 break;
             case 11 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:80: T__136
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:80: T__136
                 {
                 mT__136(); 
 
                 }
                 break;
             case 12 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:87: T__137
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:87: T__137
                 {
                 mT__137(); 
 
                 }
                 break;
             case 13 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:94: T__138
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:94: T__138
                 {
                 mT__138(); 
 
                 }
                 break;
             case 14 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:101: T__139
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:101: T__139
                 {
                 mT__139(); 
 
                 }
                 break;
             case 15 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:108: T__140
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:108: T__140
                 {
                 mT__140(); 
 
                 }
                 break;
             case 16 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:115: T__141
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:115: T__141
                 {
                 mT__141(); 
 
                 }
                 break;
             case 17 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:122: T__142
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:122: T__142
                 {
                 mT__142(); 
 
                 }
                 break;
             case 18 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:129: T__143
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:129: T__143
                 {
                 mT__143(); 
 
                 }
                 break;
             case 19 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:136: K_SELECT
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:136: K_SELECT
                 {
                 mK_SELECT(); 
 
                 }
                 break;
             case 20 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:145: K_FROM
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:145: K_FROM
                 {
                 mK_FROM(); 
 
                 }
                 break;
             case 21 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:152: K_WHERE
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:152: K_WHERE
                 {
                 mK_WHERE(); 
 
                 }
                 break;
             case 22 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:160: K_AND
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:160: K_AND
                 {
                 mK_AND(); 
 
                 }
                 break;
             case 23 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:166: K_KEY
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:166: K_KEY
                 {
                 mK_KEY(); 
 
                 }
                 break;
             case 24 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:172: K_INSERT
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:172: K_INSERT
                 {
                 mK_INSERT(); 
 
                 }
                 break;
             case 25 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:181: K_UPDATE
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:181: K_UPDATE
                 {
                 mK_UPDATE(); 
 
                 }
                 break;
             case 26 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:190: K_WITH
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:190: K_WITH
                 {
                 mK_WITH(); 
 
                 }
                 break;
             case 27 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:197: K_LIMIT
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:197: K_LIMIT
                 {
                 mK_LIMIT(); 
 
                 }
                 break;
             case 28 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:205: K_USING
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:205: K_USING
                 {
                 mK_USING(); 
 
                 }
                 break;
             case 29 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:213: K_USE
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:213: K_USE
                 {
                 mK_USE(); 
 
                 }
                 break;
             case 30 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:219: K_COUNT
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:219: K_COUNT
                 {
                 mK_COUNT(); 
 
                 }
                 break;
             case 31 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:227: K_SET
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:227: K_SET
                 {
                 mK_SET(); 
 
                 }
                 break;
             case 32 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:233: K_BEGIN
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:233: K_BEGIN
                 {
                 mK_BEGIN(); 
 
                 }
                 break;
             case 33 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:241: K_UNLOGGED
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:241: K_UNLOGGED
                 {
                 mK_UNLOGGED(); 
 
                 }
                 break;
             case 34 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:252: K_BATCH
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:252: K_BATCH
                 {
                 mK_BATCH(); 
 
                 }
                 break;
             case 35 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:260: K_APPLY
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:260: K_APPLY
                 {
                 mK_APPLY(); 
 
                 }
                 break;
             case 36 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:268: K_TRUNCATE
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:268: K_TRUNCATE
                 {
                 mK_TRUNCATE(); 
 
                 }
                 break;
             case 37 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:279: K_DELETE
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:279: K_DELETE
                 {
                 mK_DELETE(); 
 
                 }
                 break;
             case 38 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:288: K_IN
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:288: K_IN
                 {
                 mK_IN(); 
 
                 }
                 break;
             case 39 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:293: K_CREATE
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:293: K_CREATE
                 {
                 mK_CREATE(); 
 
                 }
                 break;
             case 40 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:302: K_KEYSPACE
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:302: K_KEYSPACE
                 {
                 mK_KEYSPACE(); 
 
                 }
                 break;
             case 41 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:313: K_KEYSPACES
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:313: K_KEYSPACES
                 {
                 mK_KEYSPACES(); 
 
                 }
                 break;
             case 42 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:325: K_COLUMNFAMILY
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:325: K_COLUMNFAMILY
                 {
                 mK_COLUMNFAMILY(); 
 
                 }
                 break;
             case 43 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:340: K_INDEX
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:340: K_INDEX
                 {
                 mK_INDEX(); 
 
                 }
                 break;
             case 44 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:348: K_ON
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:348: K_ON
                 {
                 mK_ON(); 
 
                 }
                 break;
             case 45 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:353: K_TO
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:353: K_TO
                 {
                 mK_TO(); 
 
                 }
                 break;
             case 46 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:358: K_DROP
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:358: K_DROP
                 {
                 mK_DROP(); 
 
                 }
                 break;
             case 47 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:365: K_PRIMARY
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:365: K_PRIMARY
                 {
                 mK_PRIMARY(); 
 
                 }
                 break;
             case 48 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:375: K_INTO
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:375: K_INTO
                 {
                 mK_INTO(); 
 
                 }
                 break;
             case 49 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:382: K_VALUES
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:382: K_VALUES
                 {
                 mK_VALUES(); 
 
                 }
                 break;
             case 50 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:391: K_TIMESTAMP
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:391: K_TIMESTAMP
                 {
                 mK_TIMESTAMP(); 
 
                 }
                 break;
             case 51 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:403: K_TTL
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:403: K_TTL
                 {
                 mK_TTL(); 
 
                 }
                 break;
             case 52 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:409: K_ALTER
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:409: K_ALTER
                 {
                 mK_ALTER(); 
 
                 }
                 break;
             case 53 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:417: K_RENAME
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:417: K_RENAME
                 {
                 mK_RENAME(); 
 
                 }
                 break;
             case 54 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:426: K_ADD
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:426: K_ADD
                 {
                 mK_ADD(); 
 
                 }
                 break;
             case 55 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:432: K_TYPE
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:432: K_TYPE
                 {
                 mK_TYPE(); 
 
                 }
                 break;
             case 56 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:439: K_COMPACT
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:439: K_COMPACT
                 {
                 mK_COMPACT(); 
 
                 }
                 break;
             case 57 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:449: K_STORAGE
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:449: K_STORAGE
                 {
                 mK_STORAGE(); 
 
                 }
                 break;
             case 58 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:459: K_ORDER
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:459: K_ORDER
                 {
                 mK_ORDER(); 
 
                 }
                 break;
             case 59 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:467: K_BY
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:467: K_BY
                 {
                 mK_BY(); 
 
                 }
                 break;
             case 60 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:472: K_ASC
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:472: K_ASC
                 {
                 mK_ASC(); 
 
                 }
                 break;
             case 61 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:478: K_DESC
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:478: K_DESC
                 {
                 mK_DESC(); 
 
                 }
                 break;
             case 62 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:485: K_ALLOW
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:485: K_ALLOW
                 {
                 mK_ALLOW(); 
 
                 }
                 break;
             case 63 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:493: K_FILTERING
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:493: K_FILTERING
                 {
                 mK_FILTERING(); 
 
                 }
                 break;
             case 64 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:505: K_GRANT
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:505: K_GRANT
                 {
                 mK_GRANT(); 
 
                 }
                 break;
             case 65 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:513: K_ALL
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:513: K_ALL
                 {
                 mK_ALL(); 
 
                 }
                 break;
             case 66 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:519: K_PERMISSION
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:519: K_PERMISSION
                 {
                 mK_PERMISSION(); 
 
                 }
                 break;
             case 67 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:532: K_PERMISSIONS
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:532: K_PERMISSIONS
                 {
                 mK_PERMISSIONS(); 
 
                 }
                 break;
             case 68 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:546: K_OF
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:546: K_OF
                 {
                 mK_OF(); 
 
                 }
                 break;
             case 69 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:551: K_REVOKE
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:551: K_REVOKE
                 {
                 mK_REVOKE(); 
 
                 }
                 break;
             case 70 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:560: K_MODIFY
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:560: K_MODIFY
                 {
                 mK_MODIFY(); 
 
                 }
                 break;
             case 71 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:569: K_AUTHORIZE
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:569: K_AUTHORIZE
                 {
                 mK_AUTHORIZE(); 
 
                 }
                 break;
             case 72 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:581: K_NORECURSIVE
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:581: K_NORECURSIVE
                 {
                 mK_NORECURSIVE(); 
 
                 }
                 break;
             case 73 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:595: K_USER
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:595: K_USER
                 {
                 mK_USER(); 
 
                 }
                 break;
             case 74 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:602: K_USERS
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:602: K_USERS
                 {
                 mK_USERS(); 
 
                 }
                 break;
             case 75 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:610: K_SUPERUSER
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:610: K_SUPERUSER
                 {
                 mK_SUPERUSER(); 
 
                 }
                 break;
             case 76 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:622: K_NOSUPERUSER
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:622: K_NOSUPERUSER
                 {
                 mK_NOSUPERUSER(); 
 
                 }
                 break;
             case 77 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:636: K_PASSWORD
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:636: K_PASSWORD
                 {
                 mK_PASSWORD(); 
 
                 }
                 break;
             case 78 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:647: K_CLUSTERING
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:647: K_CLUSTERING
                 {
                 mK_CLUSTERING(); 
 
                 }
                 break;
             case 79 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:660: K_ASCII
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:660: K_ASCII
                 {
                 mK_ASCII(); 
 
                 }
                 break;
             case 80 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:668: K_BIGINT
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:668: K_BIGINT
                 {
                 mK_BIGINT(); 
 
                 }
                 break;
             case 81 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:677: K_BLOB
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:677: K_BLOB
                 {
                 mK_BLOB(); 
 
                 }
                 break;
             case 82 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:684: K_BOOLEAN
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:684: K_BOOLEAN
                 {
                 mK_BOOLEAN(); 
 
                 }
                 break;
             case 83 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:694: K_COUNTER
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:694: K_COUNTER
                 {
                 mK_COUNTER(); 
 
                 }
                 break;
             case 84 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:704: K_DECIMAL
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:704: K_DECIMAL
                 {
                 mK_DECIMAL(); 
 
                 }
                 break;
             case 85 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:714: K_DOUBLE
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:714: K_DOUBLE
                 {
                 mK_DOUBLE(); 
 
                 }
                 break;
             case 86 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:723: K_FLOAT
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:723: K_FLOAT
                 {
                 mK_FLOAT(); 
 
                 }
                 break;
             case 87 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:731: K_INET
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:731: K_INET
                 {
                 mK_INET(); 
 
                 }
                 break;
             case 88 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:738: K_INT
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:738: K_INT
                 {
                 mK_INT(); 
 
                 }
                 break;
             case 89 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:744: K_TEXT
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:744: K_TEXT
                 {
                 mK_TEXT(); 
 
                 }
                 break;
             case 90 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:751: K_UUID
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:751: K_UUID
                 {
                 mK_UUID(); 
 
                 }
                 break;
             case 91 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:758: K_VARCHAR
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:758: K_VARCHAR
                 {
                 mK_VARCHAR(); 
 
                 }
                 break;
             case 92 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:768: K_VARINT
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:768: K_VARINT
                 {
                 mK_VARINT(); 
 
                 }
                 break;
             case 93 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:777: K_TIMEUUID
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:777: K_TIMEUUID
                 {
                 mK_TIMEUUID(); 
 
                 }
                 break;
             case 94 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:788: K_TOKEN
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:788: K_TOKEN
                 {
                 mK_TOKEN(); 
 
                 }
                 break;
             case 95 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:796: K_WRITETIME
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:796: K_WRITETIME
                 {
                 mK_WRITETIME(); 
 
                 }
                 break;
             case 96 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:808: K_NULL
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:808: K_NULL
                 {
                 mK_NULL(); 
 
                 }
                 break;
             case 97 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:815: K_MAP
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:815: K_MAP
                 {
                 mK_MAP(); 
 
                 }
                 break;
             case 98 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:821: K_LIST
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:821: K_LIST
                 {
                 mK_LIST(); 
 
                 }
                 break;
             case 99 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:828: STRING_LITERAL
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:828: STRING_LITERAL
                 {
                 mSTRING_LITERAL(); 
 
                 }
                 break;
             case 100 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:843: QUOTED_NAME
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:843: QUOTED_NAME
                 {
                 mQUOTED_NAME(); 
 
                 }
                 break;
             case 101 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:855: INTEGER
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:855: INTEGER
                 {
                 mINTEGER(); 
 
                 }
                 break;
             case 102 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:863: QMARK
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:863: QMARK
                 {
                 mQMARK(); 
 
                 }
                 break;
             case 103 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:869: FLOAT
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:869: FLOAT
                 {
                 mFLOAT(); 
 
                 }
                 break;
             case 104 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:875: BOOLEAN
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:875: BOOLEAN
                 {
                 mBOOLEAN(); 
 
                 }
                 break;
             case 105 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:883: IDENT
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:883: IDENT
                 {
                 mIDENT(); 
 
                 }
                 break;
             case 106 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:889: HEXNUMBER
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:889: HEXNUMBER
                 {
                 mHEXNUMBER(); 
 
                 }
                 break;
             case 107 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:899: UUID
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:899: UUID
                 {
                 mUUID(); 
 
                 }
                 break;
             case 108 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:904: WS
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:904: WS
                 {
                 mWS(); 
 
                 }
                 break;
             case 109 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:907: COMMENT
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:907: COMMENT
                 {
                 mCOMMENT(); 
 
                 }
                 break;
             case 110 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cql3/Cql.g:1:915: MULTILINE_COMMENT
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cql3/Cql.g:1:915: MULTILINE_COMMENT
                 {
                 mMULTILINE_COMMENT(); 
 

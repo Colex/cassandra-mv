@@ -1,4 +1,4 @@
-// $ANTLR 3.2 Sep 23, 2009 12:02:23 /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g 2013-10-30 14:10:22
+// $ANTLR 3.2 Sep 23, 2009 12:02:23 /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g 2013-12-08 22:32:42
 
 package org.apache.cassandra.cli;
 
@@ -48,8 +48,8 @@ public class CliLexer extends Lexer {
     public static final int IntegerNegativeLiteral=97;
     public static final int ON=95;
     public static final int COLUMN_FAMILY=48;
-    public static final int NODE_DROP_INDEX=34;
     public static final int SEMICOLON=53;
+    public static final int NODE_DROP_INDEX=34;
     public static final int KEYSPACES=66;
     public static final int CONDITIONS=44;
     public static final int FILE=101;
@@ -95,9 +95,9 @@ public class CliLexer extends Lexer {
     public static final int T__119=119;
     public static final int NODE_SHOW_SCHEMA=16;
     public static final int T__124=124;
-    public static final int NODE_LIST=30;
     public static final int UPDATE=71;
     public static final int T__123=123;
+    public static final int NODE_LIST=30;
     public static final int NODE_UPDATE_KEYSPACE=28;
     public static final int T__122=122;
     public static final int T__121=121;
@@ -179,15 +179,15 @@ public class CliLexer extends Lexer {
         super(input,state);
 
     }
-    public String getGrammarFileName() { return "/home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g"; }
+    public String getGrammarFileName() { return "/home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g"; }
 
     // $ANTLR start "T__118"
     public final void mT__118() throws RecognitionException {
         try {
             int _type = T__118;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:28:8: ( '/' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:28:10: '/'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:28:8: ( '/' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:28:10: '/'
             {
             match('/'); 
 
@@ -206,8 +206,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = T__119;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:29:8: ( 'CLUSTER' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:29:10: 'CLUSTER'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:29:8: ( 'CLUSTER' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:29:10: 'CLUSTER'
             {
             match("CLUSTER"); 
 
@@ -227,8 +227,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = T__120;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:30:8: ( 'CLUSTER NAME' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:30:10: 'CLUSTER NAME'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:30:8: ( 'CLUSTER NAME' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:30:10: 'CLUSTER NAME'
             {
             match("CLUSTER NAME"); 
 
@@ -248,8 +248,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = T__121;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:31:8: ( '?' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:31:10: '?'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:31:8: ( '?' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:31:10: '?'
             {
             match('?'); 
 
@@ -268,8 +268,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = T__122;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:32:8: ( 'AS' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:32:10: 'AS'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:32:8: ( 'AS' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:32:10: 'AS'
             {
             match("AS"); 
 
@@ -289,8 +289,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = T__123;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:33:8: ( 'WHERE' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:33:10: 'WHERE'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:33:8: ( 'WHERE' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:33:10: 'WHERE'
             {
             match("WHERE"); 
 
@@ -310,8 +310,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = T__124;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:34:8: ( '=' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:34:10: '='
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:34:8: ( '=' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:34:10: '='
             {
             match('='); 
 
@@ -330,8 +330,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = T__125;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:35:8: ( '>' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:35:10: '>'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:35:8: ( '>' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:35:10: '>'
             {
             match('>'); 
 
@@ -350,8 +350,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = T__126;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:36:8: ( '<' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:36:10: '<'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:36:8: ( '<' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:36:10: '<'
             {
             match('<'); 
 
@@ -370,8 +370,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = T__127;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:37:8: ( '>=' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:37:10: '>='
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:37:8: ( '>=' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:37:10: '>='
             {
             match(">="); 
 
@@ -391,8 +391,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = T__128;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:38:8: ( '<=' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:38:10: '<='
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:38:8: ( '<=' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:38:10: '<='
             {
             match("<="); 
 
@@ -412,8 +412,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = T__129;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:39:8: ( '.' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:39:10: '.'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:39:8: ( '.' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:39:10: '.'
             {
             match('.'); 
 
@@ -432,8 +432,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = T__130;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:40:8: ( '[' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:40:10: '['
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:40:8: ( '[' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:40:10: '['
             {
             match('['); 
 
@@ -452,8 +452,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = T__131;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:41:8: ( ',' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:41:10: ','
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:41:8: ( ',' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:41:10: ','
             {
             match(','); 
 
@@ -472,8 +472,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = T__132;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:42:8: ( ']' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:42:10: ']'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:42:8: ( ']' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:42:10: ']'
             {
             match(']'); 
 
@@ -492,8 +492,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = T__133;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:43:8: ( '{' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:43:10: '{'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:43:8: ( '{' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:43:10: '{'
             {
             match('{'); 
 
@@ -512,8 +512,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = T__134;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:44:8: ( '}' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:44:10: '}'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:44:8: ( '}' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:44:10: '}'
             {
             match('}'); 
 
@@ -532,8 +532,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = T__135;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:45:8: ( ':' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:45:10: ':'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:45:8: ( ':' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:45:10: ':'
             {
             match(':'); 
 
@@ -552,8 +552,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = T__136;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:46:8: ( 'COLUMNS' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:46:10: 'COLUMNS'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:46:8: ( 'COLUMNS' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:46:10: 'COLUMNS'
             {
             match("COLUMNS"); 
 
@@ -573,8 +573,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = T__137;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:47:8: ( 'REVERSED' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:47:10: 'REVERSED'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:47:8: ( 'REVERSED' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:47:10: 'REVERSED'
             {
             match("REVERSED"); 
 
@@ -594,8 +594,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = T__138;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:48:8: ( '(' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:48:10: '('
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:48:8: ( '(' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:48:10: '('
             {
             match('('); 
 
@@ -614,8 +614,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = T__139;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:49:8: ( ')' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:49:10: ')'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:49:8: ( ')' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:49:10: ')'
             {
             match(')'); 
 
@@ -634,8 +634,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = CONFIG;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:612:7: ( 'CONFIG' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:612:14: 'CONFIG'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:612:7: ( 'CONFIG' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:612:14: 'CONFIG'
             {
             match("CONFIG"); 
 
@@ -655,8 +655,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = CONNECT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:613:8: ( 'CONNECT' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:613:14: 'CONNECT'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:613:8: ( 'CONNECT' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:613:14: 'CONNECT'
             {
             match("CONNECT"); 
 
@@ -676,8 +676,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = COUNT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:614:6: ( 'COUNT' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:614:14: 'COUNT'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:614:6: ( 'COUNT' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:614:14: 'COUNT'
             {
             match("COUNT"); 
 
@@ -697,8 +697,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = DEL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:615:4: ( 'DEL' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:615:14: 'DEL'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:615:4: ( 'DEL' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:615:14: 'DEL'
             {
             match("DEL"); 
 
@@ -718,8 +718,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = DESCRIBE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:616:9: ( 'DESCRIBE' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:616:14: 'DESCRIBE'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:616:9: ( 'DESCRIBE' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:616:14: 'DESCRIBE'
             {
             match("DESCRIBE"); 
 
@@ -739,8 +739,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = USE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:617:4: ( 'USE' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:617:14: 'USE'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:617:4: ( 'USE' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:617:14: 'USE'
             {
             match("USE"); 
 
@@ -760,8 +760,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = TRACE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:618:6: ( 'TRACE' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:618:14: 'TRACE'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:618:6: ( 'TRACE' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:618:14: 'TRACE'
             {
             match("TRACE"); 
 
@@ -781,8 +781,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = PROBABILITY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:619:12: ( 'PROBABILITY' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:619:14: 'PROBABILITY'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:619:12: ( 'PROBABILITY' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:619:14: 'PROBABILITY'
             {
             match("PROBABILITY"); 
 
@@ -802,8 +802,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = NEXT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:620:5: ( 'NEXT' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:620:14: 'NEXT'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:620:5: ( 'NEXT' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:620:14: 'NEXT'
             {
             match("NEXT"); 
 
@@ -823,8 +823,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = QUERY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:621:6: ( 'QUERY' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:621:14: 'QUERY'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:621:6: ( 'QUERY' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:621:14: 'QUERY'
             {
             match("QUERY"); 
 
@@ -844,8 +844,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = GET;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:622:4: ( 'GET' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:622:14: 'GET'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:622:4: ( 'GET' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:622:14: 'GET'
             {
             match("GET"); 
 
@@ -865,8 +865,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = HELP;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:623:5: ( 'HELP' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:623:14: 'HELP'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:623:5: ( 'HELP' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:623:14: 'HELP'
             {
             match("HELP"); 
 
@@ -886,8 +886,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = EXIT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:624:5: ( 'EXIT' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:624:14: 'EXIT'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:624:5: ( 'EXIT' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:624:14: 'EXIT'
             {
             match("EXIT"); 
 
@@ -907,8 +907,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = FILE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:625:5: ( 'FILE' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:625:14: 'FILE'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:625:5: ( 'FILE' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:625:14: 'FILE'
             {
             match("FILE"); 
 
@@ -928,8 +928,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = QUIT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:626:5: ( 'QUIT' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:626:14: 'QUIT'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:626:5: ( 'QUIT' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:626:14: 'QUIT'
             {
             match("QUIT"); 
 
@@ -949,8 +949,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = SET;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:627:4: ( 'SET' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:627:14: 'SET'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:627:4: ( 'SET' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:627:14: 'SET'
             {
             match("SET"); 
 
@@ -970,8 +970,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = INCR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:628:5: ( 'INCR' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:628:14: 'INCR'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:628:5: ( 'INCR' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:628:14: 'INCR'
             {
             match("INCR"); 
 
@@ -991,8 +991,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = DECR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:629:5: ( 'DECR' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:629:14: 'DECR'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:629:5: ( 'DECR' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:629:14: 'DECR'
             {
             match("DECR"); 
 
@@ -1012,8 +1012,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = SHOW;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:630:5: ( 'SHOW' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:630:14: 'SHOW'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:630:5: ( 'SHOW' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:630:14: 'SHOW'
             {
             match("SHOW"); 
 
@@ -1033,8 +1033,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = KEYSPACE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:631:9: ( 'KEYSPACE' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:631:14: 'KEYSPACE'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:631:9: ( 'KEYSPACE' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:631:14: 'KEYSPACE'
             {
             match("KEYSPACE"); 
 
@@ -1054,8 +1054,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = KEYSPACES;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:632:10: ( 'KEYSPACES' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:632:14: 'KEYSPACES'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:632:10: ( 'KEYSPACES' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:632:14: 'KEYSPACES'
             {
             match("KEYSPACES"); 
 
@@ -1075,8 +1075,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = API_VERSION;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:633:12: ( 'API VERSION' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:633:14: 'API VERSION'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:633:12: ( 'API VERSION' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:633:14: 'API VERSION'
             {
             match("API VERSION"); 
 
@@ -1096,8 +1096,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = CREATE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:634:7: ( 'CREATE' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:634:14: 'CREATE'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:634:7: ( 'CREATE' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:634:14: 'CREATE'
             {
             match("CREATE"); 
 
@@ -1117,8 +1117,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = DROP;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:635:5: ( 'DROP' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:635:14: 'DROP'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:635:5: ( 'DROP' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:635:14: 'DROP'
             {
             match("DROP"); 
 
@@ -1138,8 +1138,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = COLUMN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:636:7: ( 'COLUMN' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:636:14: 'COLUMN'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:636:7: ( 'COLUMN' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:636:14: 'COLUMN'
             {
             match("COLUMN"); 
 
@@ -1159,8 +1159,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = FAMILY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:637:7: ( 'FAMILY' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:637:14: 'FAMILY'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:637:7: ( 'FAMILY' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:637:14: 'FAMILY'
             {
             match("FAMILY"); 
 
@@ -1180,8 +1180,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = WITH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:638:5: ( 'WITH' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:638:14: 'WITH'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:638:5: ( 'WITH' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:638:14: 'WITH'
             {
             match("WITH"); 
 
@@ -1201,8 +1201,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = BY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:639:3: ( 'BY' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:639:14: 'BY'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:639:3: ( 'BY' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:639:14: 'BY'
             {
             match("BY"); 
 
@@ -1222,8 +1222,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = AND;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:640:4: ( 'AND' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:640:14: 'AND'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:640:4: ( 'AND' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:640:14: 'AND'
             {
             match("AND"); 
 
@@ -1243,8 +1243,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = UPDATE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:641:7: ( 'UPDATE' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:641:14: 'UPDATE'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:641:7: ( 'UPDATE' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:641:14: 'UPDATE'
             {
             match("UPDATE"); 
 
@@ -1264,8 +1264,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = LIST;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:642:5: ( 'LIST' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:642:14: 'LIST'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:642:5: ( 'LIST' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:642:14: 'LIST'
             {
             match("LIST"); 
 
@@ -1285,8 +1285,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = LIMIT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:643:6: ( 'LIMIT' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:643:14: 'LIMIT'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:643:6: ( 'LIMIT' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:643:14: 'LIMIT'
             {
             match("LIMIT"); 
 
@@ -1306,8 +1306,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = TRUNCATE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:644:9: ( 'TRUNCATE' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:644:14: 'TRUNCATE'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:644:9: ( 'TRUNCATE' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:644:14: 'TRUNCATE'
             {
             match("TRUNCATE"); 
 
@@ -1327,8 +1327,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = ASSUME;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:645:7: ( 'ASSUME' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:645:14: 'ASSUME'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:645:7: ( 'ASSUME' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:645:14: 'ASSUME'
             {
             match("ASSUME"); 
 
@@ -1348,8 +1348,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = TTL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:646:4: ( 'TTL' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:646:14: 'TTL'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:646:4: ( 'TTL' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:646:14: 'TTL'
             {
             match("TTL"); 
 
@@ -1369,8 +1369,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = CONSISTENCYLEVEL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:647:17: ( 'CONSISTENCYLEVEL' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:647:21: 'CONSISTENCYLEVEL'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:647:17: ( 'CONSISTENCYLEVEL' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:647:21: 'CONSISTENCYLEVEL'
             {
             match("CONSISTENCYLEVEL"); 
 
@@ -1390,8 +1390,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = INDEX;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:648:6: ( 'INDEX' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:648:14: 'INDEX'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:648:6: ( 'INDEX' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:648:14: 'INDEX'
             {
             match("INDEX"); 
 
@@ -1411,8 +1411,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = ON;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:649:3: ( 'ON' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:649:14: 'ON'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:649:3: ( 'ON' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:649:14: 'ON'
             {
             match("ON"); 
 
@@ -1432,8 +1432,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = SCHEMA;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:650:7: ( 'SCHEMA' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:650:14: 'SCHEMA'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:650:7: ( 'SCHEMA' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:650:14: 'SCHEMA'
             {
             match("SCHEMA"); 
 
@@ -1453,8 +1453,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = JOIN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:653:5: ( 'JOIN' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:653:13: 'JOIN'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:653:5: ( 'JOIN' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:653:13: 'JOIN'
             {
             match("JOIN"); 
 
@@ -1474,8 +1474,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = OF;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:654:3: ( 'OF' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:654:13: 'OF'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:654:3: ( 'OF' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:654:13: 'OF'
             {
             match("OF"); 
 
@@ -1495,8 +1495,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = VIEW;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:655:5: ( 'VIEW' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:655:13: 'VIEW'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:655:5: ( 'VIEW' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:655:13: 'VIEW'
             {
             match("VIEW"); 
 
@@ -1516,8 +1516,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = IP_ADDRESS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:658:5: ( IntegerPositiveLiteral '.' IntegerPositiveLiteral '.' IntegerPositiveLiteral '.' IntegerPositiveLiteral )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:658:7: IntegerPositiveLiteral '.' IntegerPositiveLiteral '.' IntegerPositiveLiteral '.' IntegerPositiveLiteral
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:658:5: ( IntegerPositiveLiteral '.' IntegerPositiveLiteral '.' IntegerPositiveLiteral '.' IntegerPositiveLiteral )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:658:7: IntegerPositiveLiteral '.' IntegerPositiveLiteral '.' IntegerPositiveLiteral '.' IntegerPositiveLiteral
             {
             mIntegerPositiveLiteral(); 
             match('.'); 
@@ -1540,8 +1540,8 @@ public class CliLexer extends Lexer {
     // $ANTLR start "Letter"
     public final void mLetter() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:664:5: ( 'a' .. 'z' | 'A' .. 'Z' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:664:5: ( 'a' .. 'z' | 'A' .. 'Z' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:
             {
             if ( (input.LA(1)>='A' && input.LA(1)<='Z')||(input.LA(1)>='a' && input.LA(1)<='z') ) {
                 input.consume();
@@ -1564,8 +1564,8 @@ public class CliLexer extends Lexer {
     // $ANTLR start "Digit"
     public final void mDigit() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:670:5: ( '0' .. '9' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:670:7: '0' .. '9'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:670:5: ( '0' .. '9' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:670:7: '0' .. '9'
             {
             matchRange('0','9'); 
 
@@ -1580,8 +1580,8 @@ public class CliLexer extends Lexer {
     // $ANTLR start "Alnum"
     public final void mAlnum() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:675:5: ( Letter | Digit )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:675:5: ( Letter | Digit )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:
             {
             if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||(input.LA(1)>='a' && input.LA(1)<='z') ) {
                 input.consume();
@@ -1606,10 +1606,10 @@ public class CliLexer extends Lexer {
         try {
             int _type = IntegerPositiveLiteral;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:681:4: ( ( Digit )+ )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:681:6: ( Digit )+
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:681:4: ( ( Digit )+ )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:681:6: ( Digit )+
             {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:681:6: ( Digit )+
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:681:6: ( Digit )+
             int cnt1=0;
             loop1:
             do {
@@ -1623,7 +1623,7 @@ public class CliLexer extends Lexer {
 
                 switch (alt1) {
             	case 1 :
-            	    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:681:6: Digit
+            	    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:681:6: Digit
             	    {
             	    mDigit(); 
 
@@ -1655,11 +1655,11 @@ public class CliLexer extends Lexer {
         try {
             int _type = IntegerNegativeLiteral;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:685:4: ( '-' ( Digit )+ )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:685:6: '-' ( Digit )+
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:685:4: ( '-' ( Digit )+ )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:685:6: '-' ( Digit )+
             {
             match('-'); 
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:685:10: ( Digit )+
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:685:10: ( Digit )+
             int cnt2=0;
             loop2:
             do {
@@ -1673,7 +1673,7 @@ public class CliLexer extends Lexer {
 
                 switch (alt2) {
             	case 1 :
-            	    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:685:10: Digit
+            	    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:685:10: Digit
             	    {
             	    mDigit(); 
 
@@ -1705,7 +1705,7 @@ public class CliLexer extends Lexer {
         try {
             int _type = DoubleLiteral;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:689:4: ( ( Digit )+ ( '.' ( Digit )+ )? | ' ' '.' ( Digit )+ )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:689:4: ( ( Digit )+ ( '.' ( Digit )+ )? | ' ' '.' ( Digit )+ )
             int alt7=2;
             int LA7_0 = input.LA(1);
 
@@ -1723,9 +1723,9 @@ public class CliLexer extends Lexer {
             }
             switch (alt7) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:689:6: ( Digit )+ ( '.' ( Digit )+ )?
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:689:6: ( Digit )+ ( '.' ( Digit )+ )?
                     {
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:689:6: ( Digit )+
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:689:6: ( Digit )+
                     int cnt3=0;
                     loop3:
                     do {
@@ -1739,7 +1739,7 @@ public class CliLexer extends Lexer {
 
                         switch (alt3) {
                     	case 1 :
-                    	    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:689:6: Digit
+                    	    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:689:6: Digit
                     	    {
                     	    mDigit(); 
 
@@ -1755,7 +1755,7 @@ public class CliLexer extends Lexer {
                         cnt3++;
                     } while (true);
 
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:689:13: ( '.' ( Digit )+ )?
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:689:13: ( '.' ( Digit )+ )?
                     int alt5=2;
                     int LA5_0 = input.LA(1);
 
@@ -1764,10 +1764,10 @@ public class CliLexer extends Lexer {
                     }
                     switch (alt5) {
                         case 1 :
-                            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:689:14: '.' ( Digit )+
+                            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:689:14: '.' ( Digit )+
                             {
                             match('.'); 
-                            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:689:18: ( Digit )+
+                            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:689:18: ( Digit )+
                             int cnt4=0;
                             loop4:
                             do {
@@ -1781,7 +1781,7 @@ public class CliLexer extends Lexer {
 
                                 switch (alt4) {
                             	case 1 :
-                            	    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:689:18: Digit
+                            	    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:689:18: Digit
                             	    {
                             	    mDigit(); 
 
@@ -1807,11 +1807,11 @@ public class CliLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:690:6: ' ' '.' ( Digit )+
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:690:6: ' ' '.' ( Digit )+
                     {
                     match(' '); 
                     match('.'); 
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:690:14: ( Digit )+
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:690:14: ( Digit )+
                     int cnt6=0;
                     loop6:
                     do {
@@ -1825,7 +1825,7 @@ public class CliLexer extends Lexer {
 
                         switch (alt6) {
                     	case 1 :
-                    	    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:690:14: Digit
+                    	    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:690:14: Digit
                     	    {
                     	    mDigit(); 
 
@@ -1859,8 +1859,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = Identifier;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:694:5: ( ( Letter | Alnum ) ( Alnum | '_' | '-' )* )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:694:7: ( Letter | Alnum ) ( Alnum | '_' | '-' )*
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:694:5: ( ( Letter | Alnum ) ( Alnum | '_' | '-' )* )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:694:7: ( Letter | Alnum ) ( Alnum | '_' | '-' )*
             {
             if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||(input.LA(1)>='a' && input.LA(1)<='z') ) {
                 input.consume();
@@ -1871,7 +1871,7 @@ public class CliLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:694:24: ( Alnum | '_' | '-' )*
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:694:24: ( Alnum | '_' | '-' )*
             loop8:
             do {
                 int alt8=2;
@@ -1884,7 +1884,7 @@ public class CliLexer extends Lexer {
 
                 switch (alt8) {
             	case 1 :
-            	    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:
+            	    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:
             	    {
             	    if ( input.LA(1)=='-'||(input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z') ) {
             	        input.consume();
@@ -1920,11 +1920,11 @@ public class CliLexer extends Lexer {
         try {
             int _type = StringLiteral;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:699:5: ( '\\'' ( SingleStringCharacter )* '\\'' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:699:7: '\\'' ( SingleStringCharacter )* '\\''
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:699:5: ( '\\'' ( SingleStringCharacter )* '\\'' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:699:7: '\\'' ( SingleStringCharacter )* '\\''
             {
             match('\''); 
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:699:12: ( SingleStringCharacter )*
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:699:12: ( SingleStringCharacter )*
             loop9:
             do {
                 int alt9=2;
@@ -1937,7 +1937,7 @@ public class CliLexer extends Lexer {
 
                 switch (alt9) {
             	case 1 :
-            	    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:699:12: SingleStringCharacter
+            	    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:699:12: SingleStringCharacter
             	    {
             	    mSingleStringCharacter(); 
 
@@ -1964,7 +1964,7 @@ public class CliLexer extends Lexer {
     // $ANTLR start "SingleStringCharacter"
     public final void mSingleStringCharacter() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:703:5: (~ ( '\\'' | '\\\\' ) | '\\\\' EscapeSequence )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:703:5: (~ ( '\\'' | '\\\\' ) | '\\\\' EscapeSequence )
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -1982,7 +1982,7 @@ public class CliLexer extends Lexer {
             }
             switch (alt10) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:703:7: ~ ( '\\'' | '\\\\' )
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:703:7: ~ ( '\\'' | '\\\\' )
                     {
                     if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                         input.consume();
@@ -1997,7 +1997,7 @@ public class CliLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:704:7: '\\\\' EscapeSequence
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:704:7: '\\\\' EscapeSequence
                     {
                     match('\\'); 
                     mEscapeSequence(); 
@@ -2015,7 +2015,7 @@ public class CliLexer extends Lexer {
     // $ANTLR start "EscapeSequence"
     public final void mEscapeSequence() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:708:5: ( CharacterEscapeSequence | '0' | HexEscapeSequence | UnicodeEscapeSequence )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:708:5: ( CharacterEscapeSequence | '0' | HexEscapeSequence | UnicodeEscapeSequence )
             int alt11=4;
             int LA11_0 = input.LA(1);
 
@@ -2039,28 +2039,28 @@ public class CliLexer extends Lexer {
             }
             switch (alt11) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:708:7: CharacterEscapeSequence
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:708:7: CharacterEscapeSequence
                     {
                     mCharacterEscapeSequence(); 
 
                     }
                     break;
                 case 2 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:709:7: '0'
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:709:7: '0'
                     {
                     match('0'); 
 
                     }
                     break;
                 case 3 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:710:7: HexEscapeSequence
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:710:7: HexEscapeSequence
                     {
                     mHexEscapeSequence(); 
 
                     }
                     break;
                 case 4 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:711:7: UnicodeEscapeSequence
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:711:7: UnicodeEscapeSequence
                     {
                     mUnicodeEscapeSequence(); 
 
@@ -2077,7 +2077,7 @@ public class CliLexer extends Lexer {
     // $ANTLR start "CharacterEscapeSequence"
     public final void mCharacterEscapeSequence() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:715:5: ( SingleEscapeCharacter | NonEscapeCharacter )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:715:5: ( SingleEscapeCharacter | NonEscapeCharacter )
             int alt12=2;
             int LA12_0 = input.LA(1);
 
@@ -2095,14 +2095,14 @@ public class CliLexer extends Lexer {
             }
             switch (alt12) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:715:7: SingleEscapeCharacter
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:715:7: SingleEscapeCharacter
                     {
                     mSingleEscapeCharacter(); 
 
                     }
                     break;
                 case 2 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:716:7: NonEscapeCharacter
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:716:7: NonEscapeCharacter
                     {
                     mNonEscapeCharacter(); 
 
@@ -2119,8 +2119,8 @@ public class CliLexer extends Lexer {
     // $ANTLR start "NonEscapeCharacter"
     public final void mNonEscapeCharacter() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:720:5: (~ ( EscapeCharacter ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:720:7: ~ ( EscapeCharacter )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:720:5: (~ ( EscapeCharacter ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:720:7: ~ ( EscapeCharacter )
             {
             if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='/')||(input.LA(1)>=':' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='a')||(input.LA(1)>='c' && input.LA(1)<='e')||(input.LA(1)>='g' && input.LA(1)<='m')||(input.LA(1)>='o' && input.LA(1)<='q')||input.LA(1)=='s'||input.LA(1)=='w'||(input.LA(1)>='y' && input.LA(1)<='\uFFFF') ) {
                 input.consume();
@@ -2143,8 +2143,8 @@ public class CliLexer extends Lexer {
     // $ANTLR start "SingleEscapeCharacter"
     public final void mSingleEscapeCharacter() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:724:5: ( '\\'' | '\"' | '\\\\' | 'b' | 'f' | 'n' | 'r' | 't' | 'v' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:724:5: ( '\\'' | '\"' | '\\\\' | 'b' | 'f' | 'n' | 'r' | 't' | 'v' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:
             {
             if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||input.LA(1)=='t'||input.LA(1)=='v' ) {
                 input.consume();
@@ -2167,7 +2167,7 @@ public class CliLexer extends Lexer {
     // $ANTLR start "EscapeCharacter"
     public final void mEscapeCharacter() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:728:5: ( SingleEscapeCharacter | DecimalDigit | 'x' | 'u' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:728:5: ( SingleEscapeCharacter | DecimalDigit | 'x' | 'u' )
             int alt13=4;
             switch ( input.LA(1) ) {
             case '\"':
@@ -2216,28 +2216,28 @@ public class CliLexer extends Lexer {
 
             switch (alt13) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:728:7: SingleEscapeCharacter
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:728:7: SingleEscapeCharacter
                     {
                     mSingleEscapeCharacter(); 
 
                     }
                     break;
                 case 2 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:729:7: DecimalDigit
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:729:7: DecimalDigit
                     {
                     mDecimalDigit(); 
 
                     }
                     break;
                 case 3 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:730:7: 'x'
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:730:7: 'x'
                     {
                     match('x'); 
 
                     }
                     break;
                 case 4 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:731:7: 'u'
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:731:7: 'u'
                     {
                     match('u'); 
 
@@ -2254,8 +2254,8 @@ public class CliLexer extends Lexer {
     // $ANTLR start "HexEscapeSequence"
     public final void mHexEscapeSequence() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:735:5: ( 'x' HexDigit HexDigit )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:735:7: 'x' HexDigit HexDigit
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:735:5: ( 'x' HexDigit HexDigit )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:735:7: 'x' HexDigit HexDigit
             {
             match('x'); 
             mHexDigit(); 
@@ -2272,8 +2272,8 @@ public class CliLexer extends Lexer {
     // $ANTLR start "UnicodeEscapeSequence"
     public final void mUnicodeEscapeSequence() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:739:5: ( 'u' HexDigit HexDigit HexDigit HexDigit )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:739:7: 'u' HexDigit HexDigit HexDigit HexDigit
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:739:5: ( 'u' HexDigit HexDigit HexDigit HexDigit )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:739:7: 'u' HexDigit HexDigit HexDigit HexDigit
             {
             match('u'); 
             mHexDigit(); 
@@ -2292,7 +2292,7 @@ public class CliLexer extends Lexer {
     // $ANTLR start "HexDigit"
     public final void mHexDigit() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:743:5: ( DecimalDigit | ( 'a' .. 'f' ) | ( 'A' .. 'F' ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:743:5: ( DecimalDigit | ( 'a' .. 'f' ) | ( 'A' .. 'F' ) )
             int alt14=3;
             switch ( input.LA(1) ) {
             case '0':
@@ -2338,17 +2338,17 @@ public class CliLexer extends Lexer {
 
             switch (alt14) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:743:7: DecimalDigit
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:743:7: DecimalDigit
                     {
                     mDecimalDigit(); 
 
                     }
                     break;
                 case 2 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:743:22: ( 'a' .. 'f' )
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:743:22: ( 'a' .. 'f' )
                     {
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:743:22: ( 'a' .. 'f' )
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:743:23: 'a' .. 'f'
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:743:22: ( 'a' .. 'f' )
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:743:23: 'a' .. 'f'
                     {
                     matchRange('a','f'); 
 
@@ -2358,10 +2358,10 @@ public class CliLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:743:35: ( 'A' .. 'F' )
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:743:35: ( 'A' .. 'F' )
                     {
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:743:35: ( 'A' .. 'F' )
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:743:36: 'A' .. 'F'
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:743:35: ( 'A' .. 'F' )
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:743:36: 'A' .. 'F'
                     {
                     matchRange('A','F'); 
 
@@ -2381,8 +2381,8 @@ public class CliLexer extends Lexer {
     // $ANTLR start "DecimalDigit"
     public final void mDecimalDigit() throws RecognitionException {
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:747:5: ( ( '0' .. '9' ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:747:7: ( '0' .. '9' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:747:5: ( ( '0' .. '9' ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:747:7: ( '0' .. '9' )
             {
             if ( (input.LA(1)>='0' && input.LA(1)<='9') ) {
                 input.consume();
@@ -2407,8 +2407,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = SEMICOLON;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:755:5: ( ';' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:755:7: ';'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:755:5: ( ';' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:755:7: ';'
             {
             match(';'); 
 
@@ -2427,8 +2427,8 @@ public class CliLexer extends Lexer {
         try {
             int _type = WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:759:5: ( ( ' ' | '\\r' | '\\t' | '\\n' ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:759:8: ( ' ' | '\\r' | '\\t' | '\\n' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:759:5: ( ( ' ' | '\\r' | '\\t' | '\\n' ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:759:8: ( ' ' | '\\r' | '\\t' | '\\n' )
             {
             if ( (input.LA(1)>='\t' && input.LA(1)<='\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
                 input.consume();
@@ -2456,7 +2456,7 @@ public class CliLexer extends Lexer {
         try {
             int _type = COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:763:5: ( '--' (~ ( '\\n' | '\\r' ) )* | '/*' ( options {greedy=false; } : . )* '*/' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:763:5: ( '--' (~ ( '\\n' | '\\r' ) )* | '/*' ( options {greedy=false; } : . )* '*/' )
             int alt17=2;
             int LA17_0 = input.LA(1);
 
@@ -2474,11 +2474,11 @@ public class CliLexer extends Lexer {
             }
             switch (alt17) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:763:7: '--' (~ ( '\\n' | '\\r' ) )*
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:763:7: '--' (~ ( '\\n' | '\\r' ) )*
                     {
                     match("--"); 
 
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:763:12: (~ ( '\\n' | '\\r' ) )*
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:763:12: (~ ( '\\n' | '\\r' ) )*
                     loop15:
                     do {
                         int alt15=2;
@@ -2491,7 +2491,7 @@ public class CliLexer extends Lexer {
 
                         switch (alt15) {
                     	case 1 :
-                    	    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:763:13: ~ ( '\\n' | '\\r' )
+                    	    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:763:13: ~ ( '\\n' | '\\r' )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -2516,11 +2516,11 @@ public class CliLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:764:7: '/*' ( options {greedy=false; } : . )* '*/'
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:764:7: '/*' ( options {greedy=false; } : . )* '*/'
                     {
                     match("/*"); 
 
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:764:12: ( options {greedy=false; } : . )*
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:764:12: ( options {greedy=false; } : . )*
                     loop16:
                     do {
                         int alt16=2;
@@ -2545,7 +2545,7 @@ public class CliLexer extends Lexer {
 
                         switch (alt16) {
                     	case 1 :
-                    	    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:764:39: .
+                    	    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:764:39: .
                     	    {
                     	    matchAny(); 
 
@@ -2574,516 +2574,516 @@ public class CliLexer extends Lexer {
     // $ANTLR end "COMMENT"
 
     public void mTokens() throws RecognitionException {
-        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:8: ( T__118 | T__119 | T__120 | T__121 | T__122 | T__123 | T__124 | T__125 | T__126 | T__127 | T__128 | T__129 | T__130 | T__131 | T__132 | T__133 | T__134 | T__135 | T__136 | T__137 | T__138 | T__139 | CONFIG | CONNECT | COUNT | DEL | DESCRIBE | USE | TRACE | PROBABILITY | NEXT | QUERY | GET | HELP | EXIT | FILE | QUIT | SET | INCR | DECR | SHOW | KEYSPACE | KEYSPACES | API_VERSION | CREATE | DROP | COLUMN | FAMILY | WITH | BY | AND | UPDATE | LIST | LIMIT | TRUNCATE | ASSUME | TTL | CONSISTENCYLEVEL | INDEX | ON | SCHEMA | JOIN | OF | VIEW | IP_ADDRESS | IntegerPositiveLiteral | IntegerNegativeLiteral | DoubleLiteral | Identifier | StringLiteral | SEMICOLON | WS | COMMENT )
+        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:8: ( T__118 | T__119 | T__120 | T__121 | T__122 | T__123 | T__124 | T__125 | T__126 | T__127 | T__128 | T__129 | T__130 | T__131 | T__132 | T__133 | T__134 | T__135 | T__136 | T__137 | T__138 | T__139 | CONFIG | CONNECT | COUNT | DEL | DESCRIBE | USE | TRACE | PROBABILITY | NEXT | QUERY | GET | HELP | EXIT | FILE | QUIT | SET | INCR | DECR | SHOW | KEYSPACE | KEYSPACES | API_VERSION | CREATE | DROP | COLUMN | FAMILY | WITH | BY | AND | UPDATE | LIST | LIMIT | TRUNCATE | ASSUME | TTL | CONSISTENCYLEVEL | INDEX | ON | SCHEMA | JOIN | OF | VIEW | IP_ADDRESS | IntegerPositiveLiteral | IntegerNegativeLiteral | DoubleLiteral | Identifier | StringLiteral | SEMICOLON | WS | COMMENT )
         int alt18=73;
         alt18 = dfa18.predict(input);
         switch (alt18) {
             case 1 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:10: T__118
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:10: T__118
                 {
                 mT__118(); 
 
                 }
                 break;
             case 2 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:17: T__119
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:17: T__119
                 {
                 mT__119(); 
 
                 }
                 break;
             case 3 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:24: T__120
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:24: T__120
                 {
                 mT__120(); 
 
                 }
                 break;
             case 4 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:31: T__121
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:31: T__121
                 {
                 mT__121(); 
 
                 }
                 break;
             case 5 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:38: T__122
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:38: T__122
                 {
                 mT__122(); 
 
                 }
                 break;
             case 6 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:45: T__123
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:45: T__123
                 {
                 mT__123(); 
 
                 }
                 break;
             case 7 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:52: T__124
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:52: T__124
                 {
                 mT__124(); 
 
                 }
                 break;
             case 8 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:59: T__125
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:59: T__125
                 {
                 mT__125(); 
 
                 }
                 break;
             case 9 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:66: T__126
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:66: T__126
                 {
                 mT__126(); 
 
                 }
                 break;
             case 10 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:73: T__127
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:73: T__127
                 {
                 mT__127(); 
 
                 }
                 break;
             case 11 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:80: T__128
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:80: T__128
                 {
                 mT__128(); 
 
                 }
                 break;
             case 12 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:87: T__129
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:87: T__129
                 {
                 mT__129(); 
 
                 }
                 break;
             case 13 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:94: T__130
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:94: T__130
                 {
                 mT__130(); 
 
                 }
                 break;
             case 14 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:101: T__131
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:101: T__131
                 {
                 mT__131(); 
 
                 }
                 break;
             case 15 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:108: T__132
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:108: T__132
                 {
                 mT__132(); 
 
                 }
                 break;
             case 16 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:115: T__133
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:115: T__133
                 {
                 mT__133(); 
 
                 }
                 break;
             case 17 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:122: T__134
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:122: T__134
                 {
                 mT__134(); 
 
                 }
                 break;
             case 18 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:129: T__135
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:129: T__135
                 {
                 mT__135(); 
 
                 }
                 break;
             case 19 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:136: T__136
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:136: T__136
                 {
                 mT__136(); 
 
                 }
                 break;
             case 20 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:143: T__137
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:143: T__137
                 {
                 mT__137(); 
 
                 }
                 break;
             case 21 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:150: T__138
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:150: T__138
                 {
                 mT__138(); 
 
                 }
                 break;
             case 22 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:157: T__139
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:157: T__139
                 {
                 mT__139(); 
 
                 }
                 break;
             case 23 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:164: CONFIG
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:164: CONFIG
                 {
                 mCONFIG(); 
 
                 }
                 break;
             case 24 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:171: CONNECT
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:171: CONNECT
                 {
                 mCONNECT(); 
 
                 }
                 break;
             case 25 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:179: COUNT
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:179: COUNT
                 {
                 mCOUNT(); 
 
                 }
                 break;
             case 26 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:185: DEL
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:185: DEL
                 {
                 mDEL(); 
 
                 }
                 break;
             case 27 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:189: DESCRIBE
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:189: DESCRIBE
                 {
                 mDESCRIBE(); 
 
                 }
                 break;
             case 28 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:198: USE
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:198: USE
                 {
                 mUSE(); 
 
                 }
                 break;
             case 29 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:202: TRACE
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:202: TRACE
                 {
                 mTRACE(); 
 
                 }
                 break;
             case 30 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:208: PROBABILITY
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:208: PROBABILITY
                 {
                 mPROBABILITY(); 
 
                 }
                 break;
             case 31 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:220: NEXT
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:220: NEXT
                 {
                 mNEXT(); 
 
                 }
                 break;
             case 32 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:225: QUERY
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:225: QUERY
                 {
                 mQUERY(); 
 
                 }
                 break;
             case 33 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:231: GET
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:231: GET
                 {
                 mGET(); 
 
                 }
                 break;
             case 34 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:235: HELP
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:235: HELP
                 {
                 mHELP(); 
 
                 }
                 break;
             case 35 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:240: EXIT
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:240: EXIT
                 {
                 mEXIT(); 
 
                 }
                 break;
             case 36 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:245: FILE
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:245: FILE
                 {
                 mFILE(); 
 
                 }
                 break;
             case 37 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:250: QUIT
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:250: QUIT
                 {
                 mQUIT(); 
 
                 }
                 break;
             case 38 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:255: SET
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:255: SET
                 {
                 mSET(); 
 
                 }
                 break;
             case 39 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:259: INCR
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:259: INCR
                 {
                 mINCR(); 
 
                 }
                 break;
             case 40 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:264: DECR
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:264: DECR
                 {
                 mDECR(); 
 
                 }
                 break;
             case 41 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:269: SHOW
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:269: SHOW
                 {
                 mSHOW(); 
 
                 }
                 break;
             case 42 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:274: KEYSPACE
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:274: KEYSPACE
                 {
                 mKEYSPACE(); 
 
                 }
                 break;
             case 43 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:283: KEYSPACES
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:283: KEYSPACES
                 {
                 mKEYSPACES(); 
 
                 }
                 break;
             case 44 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:293: API_VERSION
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:293: API_VERSION
                 {
                 mAPI_VERSION(); 
 
                 }
                 break;
             case 45 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:305: CREATE
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:305: CREATE
                 {
                 mCREATE(); 
 
                 }
                 break;
             case 46 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:312: DROP
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:312: DROP
                 {
                 mDROP(); 
 
                 }
                 break;
             case 47 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:317: COLUMN
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:317: COLUMN
                 {
                 mCOLUMN(); 
 
                 }
                 break;
             case 48 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:324: FAMILY
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:324: FAMILY
                 {
                 mFAMILY(); 
 
                 }
                 break;
             case 49 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:331: WITH
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:331: WITH
                 {
                 mWITH(); 
 
                 }
                 break;
             case 50 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:336: BY
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:336: BY
                 {
                 mBY(); 
 
                 }
                 break;
             case 51 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:339: AND
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:339: AND
                 {
                 mAND(); 
 
                 }
                 break;
             case 52 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:343: UPDATE
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:343: UPDATE
                 {
                 mUPDATE(); 
 
                 }
                 break;
             case 53 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:350: LIST
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:350: LIST
                 {
                 mLIST(); 
 
                 }
                 break;
             case 54 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:355: LIMIT
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:355: LIMIT
                 {
                 mLIMIT(); 
 
                 }
                 break;
             case 55 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:361: TRUNCATE
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:361: TRUNCATE
                 {
                 mTRUNCATE(); 
 
                 }
                 break;
             case 56 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:370: ASSUME
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:370: ASSUME
                 {
                 mASSUME(); 
 
                 }
                 break;
             case 57 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:377: TTL
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:377: TTL
                 {
                 mTTL(); 
 
                 }
                 break;
             case 58 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:381: CONSISTENCYLEVEL
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:381: CONSISTENCYLEVEL
                 {
                 mCONSISTENCYLEVEL(); 
 
                 }
                 break;
             case 59 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:398: INDEX
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:398: INDEX
                 {
                 mINDEX(); 
 
                 }
                 break;
             case 60 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:404: ON
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:404: ON
                 {
                 mON(); 
 
                 }
                 break;
             case 61 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:407: SCHEMA
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:407: SCHEMA
                 {
                 mSCHEMA(); 
 
                 }
                 break;
             case 62 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:414: JOIN
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:414: JOIN
                 {
                 mJOIN(); 
 
                 }
                 break;
             case 63 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:419: OF
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:419: OF
                 {
                 mOF(); 
 
                 }
                 break;
             case 64 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:422: VIEW
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:422: VIEW
                 {
                 mVIEW(); 
 
                 }
                 break;
             case 65 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:427: IP_ADDRESS
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:427: IP_ADDRESS
                 {
                 mIP_ADDRESS(); 
 
                 }
                 break;
             case 66 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:438: IntegerPositiveLiteral
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:438: IntegerPositiveLiteral
                 {
                 mIntegerPositiveLiteral(); 
 
                 }
                 break;
             case 67 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:461: IntegerNegativeLiteral
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:461: IntegerNegativeLiteral
                 {
                 mIntegerNegativeLiteral(); 
 
                 }
                 break;
             case 68 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:484: DoubleLiteral
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:484: DoubleLiteral
                 {
                 mDoubleLiteral(); 
 
                 }
                 break;
             case 69 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:498: Identifier
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:498: Identifier
                 {
                 mIdentifier(); 
 
                 }
                 break;
             case 70 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:509: StringLiteral
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:509: StringLiteral
                 {
                 mStringLiteral(); 
 
                 }
                 break;
             case 71 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:523: SEMICOLON
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:523: SEMICOLON
                 {
                 mSEMICOLON(); 
 
                 }
                 break;
             case 72 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:533: WS
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:533: WS
                 {
                 mWS(); 
 
                 }
                 break;
             case 73 :
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:1:536: COMMENT
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:1:536: COMMENT
                 {
                 mCOMMENT(); 
 

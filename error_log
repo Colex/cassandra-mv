@@ -1,0 +1,66 @@
+Buildfile: /home/alex/workspace/cassandra-mv/build.xml
+
+maven-ant-tasks-retrieve-build:
+
+init:
+
+maven-ant-tasks-localrepo:
+
+maven-ant-tasks-download:
+
+maven-ant-tasks-init:
+
+maven-declare-dependencies:
+
+_maven-ant-tasks-retrieve-build:
+
+init-dependencies:
+     [echo] Loading dependency paths from file: /home/alex/cassandra-trunk/build/build-dependencies.xml
+
+init:
+
+check-avro-generate:
+
+avro-generate:
+
+check-gen-cli-grammar:
+
+gen-cli-grammar:
+
+check-gen-cql2-grammar:
+
+gen-cql2-grammar:
+
+check-gen-cql3-grammar:
+
+gen-cql3-grammar:
+
+build-project:
+     [echo] apache-cassandra: /home/alex/workspace/cassandra-mv/build.xml
+    [javac] Compiling 94 source files to /home/alex/workspace/cassandra-mv/build/classes/main
+    [javac] /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/utils/FastByteComparisons.java:25: warning: sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+    [javac] import sun.misc.Unsafe;
+    [javac]                ^
+    [javac] /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/utils/FastByteComparisons.java:114: warning: sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+    [javac]       static final Unsafe theUnsafe;
+    [javac]                    ^
+    [javac] /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/thrift/CassandraServer.java:912: contains(java.lang.CharSequence) in java.lang.String cannot be applied to (char)
+    [javac] 		if (colName.contains(':'))
+    [javac] 		           ^
+    [javac] /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/thrift/CassandraServer.java:913: cannot find symbol
+    [javac] symbol  : method split(char)
+    [javac] location: class java.lang.String
+    [javac] 			colName = colName.split(':')[1];
+    [javac] 			                 ^
+    [javac] /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/utils/FastByteComparisons.java:120: warning: sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+    [javac]         theUnsafe = (Unsafe) AccessController.doPrivileged(
+    [javac]                      ^
+    [javac] /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/utils/FastByteComparisons.java:125: warning: sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+    [javac]                   Field f = Unsafe.class.getDeclaredField("theUnsafe");
+    [javac]                             ^
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 2 errors
+    [javac] 4 warnings

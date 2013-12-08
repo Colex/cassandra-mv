@@ -1,4 +1,4 @@
-// $ANTLR 3.2 Sep 23, 2009 12:02:23 /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g 2013-10-30 14:10:21
+// $ANTLR 3.2 Sep 23, 2009 12:02:23 /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g 2013-12-08 22:32:42
 
 package org.apache.cassandra.cli;
 
@@ -193,7 +193,7 @@ public class CliParser extends Parser {
     }
 
     public String[] getTokenNames() { return CliParser.tokenNames; }
-    public String getGrammarFileName() { return "/home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g"; }
+    public String getGrammarFileName() { return "/home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g"; }
 
 
         public void reportError(RecognitionException e) 
@@ -210,7 +210,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "root"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:140:1: root : statement ( SEMICOLON )? EOF -> statement ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:140:1: root : statement ( SEMICOLON )? EOF -> statement ;
     public final CliParser.root_return root() throws RecognitionException {
         CliParser.root_return retval = new CliParser.root_return();
         retval.start = input.LT(1);
@@ -228,8 +228,8 @@ public class CliParser extends Parser {
         RewriteRuleTokenStream stream_EOF=new RewriteRuleTokenStream(adaptor,"token EOF");
         RewriteRuleSubtreeStream stream_statement=new RewriteRuleSubtreeStream(adaptor,"rule statement");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:140:5: ( statement ( SEMICOLON )? EOF -> statement )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:140:7: statement ( SEMICOLON )? EOF
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:140:5: ( statement ( SEMICOLON )? EOF -> statement )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:140:7: statement ( SEMICOLON )? EOF
             {
             pushFollow(FOLLOW_statement_in_root476);
             statement1=statement();
@@ -237,7 +237,7 @@ public class CliParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_statement.add(statement1.getTree());
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:140:17: ( SEMICOLON )?
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:140:17: ( SEMICOLON )?
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -246,7 +246,7 @@ public class CliParser extends Parser {
             }
             switch (alt1) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:0:0: SEMICOLON
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:0:0: SEMICOLON
                     {
                     SEMICOLON2=(Token)match(input,SEMICOLON,FOLLOW_SEMICOLON_in_root478); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_SEMICOLON.add(SEMICOLON2);
@@ -309,7 +309,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "statement"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:142:1: statement : ( connectStatement | exitStatement | countStatement | describeTable | describeCluster | addKeyspace | addColumnFamily | updateKeyspace | updateColumnFamily | delColumnFamily | delKeyspace | useKeyspace | traceNextQuery | setTraceProbability | delStatement | getStatement | helpStatement | setStatement | incrStatement | showStatement | listStatement | truncateStatement | assumeStatement | consistencyLevelStatement | dropIndex | addJoinStatement | addIndexViewStatement | addIndexViewStatement2 | -> ^( NODE_NO_OP ) );
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:142:1: statement : ( connectStatement | exitStatement | countStatement | describeTable | describeCluster | addKeyspace | addColumnFamily | updateKeyspace | updateColumnFamily | delColumnFamily | delKeyspace | useKeyspace | traceNextQuery | setTraceProbability | delStatement | getStatement | helpStatement | setStatement | incrStatement | showStatement | listStatement | truncateStatement | assumeStatement | consistencyLevelStatement | dropIndex | addJoinStatement | addIndexViewStatement | addIndexViewStatement2 | -> ^( NODE_NO_OP ) );
     public final CliParser.statement_return statement() throws RecognitionException {
         CliParser.statement_return retval = new CliParser.statement_return();
         retval.start = input.LT(1);
@@ -375,12 +375,12 @@ public class CliParser extends Parser {
 
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:143:5: ( connectStatement | exitStatement | countStatement | describeTable | describeCluster | addKeyspace | addColumnFamily | updateKeyspace | updateColumnFamily | delColumnFamily | delKeyspace | useKeyspace | traceNextQuery | setTraceProbability | delStatement | getStatement | helpStatement | setStatement | incrStatement | showStatement | listStatement | truncateStatement | assumeStatement | consistencyLevelStatement | dropIndex | addJoinStatement | addIndexViewStatement | addIndexViewStatement2 | -> ^( NODE_NO_OP ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:143:5: ( connectStatement | exitStatement | countStatement | describeTable | describeCluster | addKeyspace | addColumnFamily | updateKeyspace | updateColumnFamily | delColumnFamily | delKeyspace | useKeyspace | traceNextQuery | setTraceProbability | delStatement | getStatement | helpStatement | setStatement | incrStatement | showStatement | listStatement | truncateStatement | assumeStatement | consistencyLevelStatement | dropIndex | addJoinStatement | addIndexViewStatement | addIndexViewStatement2 | -> ^( NODE_NO_OP ) )
             int alt2=29;
             alt2 = dfa2.predict(input);
             switch (alt2) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:143:7: connectStatement
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:143:7: connectStatement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -394,7 +394,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:144:7: exitStatement
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:144:7: exitStatement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -408,7 +408,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:145:7: countStatement
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:145:7: countStatement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -422,7 +422,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:146:7: describeTable
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:146:7: describeTable
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -436,7 +436,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 5 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:147:7: describeCluster
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:147:7: describeCluster
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -450,7 +450,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 6 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:148:7: addKeyspace
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:148:7: addKeyspace
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -464,7 +464,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 7 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:149:7: addColumnFamily
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:149:7: addColumnFamily
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -478,7 +478,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 8 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:150:7: updateKeyspace
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:150:7: updateKeyspace
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -492,7 +492,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 9 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:151:7: updateColumnFamily
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:151:7: updateColumnFamily
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -506,7 +506,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 10 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:152:7: delColumnFamily
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:152:7: delColumnFamily
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -520,7 +520,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 11 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:153:7: delKeyspace
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:153:7: delKeyspace
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -534,7 +534,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 12 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:154:7: useKeyspace
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:154:7: useKeyspace
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -548,7 +548,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 13 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:155:7: traceNextQuery
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:155:7: traceNextQuery
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -562,7 +562,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 14 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:156:7: setTraceProbability
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:156:7: setTraceProbability
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -576,7 +576,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 15 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:157:7: delStatement
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:157:7: delStatement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -590,7 +590,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 16 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:158:7: getStatement
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:158:7: getStatement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -604,7 +604,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 17 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:159:7: helpStatement
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:159:7: helpStatement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -618,7 +618,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 18 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:160:7: setStatement
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:160:7: setStatement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -632,7 +632,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 19 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:161:7: incrStatement
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:161:7: incrStatement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -646,7 +646,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 20 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:162:7: showStatement
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:162:7: showStatement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -660,7 +660,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 21 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:163:7: listStatement
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:163:7: listStatement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -674,7 +674,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 22 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:164:7: truncateStatement
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:164:7: truncateStatement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -688,7 +688,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 23 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:165:7: assumeStatement
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:165:7: assumeStatement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -702,7 +702,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 24 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:166:7: consistencyLevelStatement
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:166:7: consistencyLevelStatement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -716,7 +716,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 25 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:167:7: dropIndex
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:167:7: dropIndex
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -730,7 +730,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 26 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:170:7: addJoinStatement
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:170:7: addJoinStatement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -744,7 +744,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 27 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:171:7: addIndexViewStatement
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:171:7: addIndexViewStatement
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -758,7 +758,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 28 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:172:7: addIndexViewStatement2
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:172:7: addIndexViewStatement2
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -772,7 +772,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 29 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:174:7: 
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:174:7: 
                     {
 
                     // AST REWRITE
@@ -789,7 +789,7 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 174:7: -> ^( NODE_NO_OP )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:174:10: ^( NODE_NO_OP )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:174:10: ^( NODE_NO_OP )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_NO_OP, "NODE_NO_OP"), root_1);
@@ -830,7 +830,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "connectStatement"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:177:1: connectStatement : ( CONNECT host '/' port ( username password )? -> ^( NODE_CONNECT host port ( username password )? ) | CONNECT ip_address '/' port ( username password )? -> ^( NODE_CONNECT ip_address port ( username password )? ) );
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:177:1: connectStatement : ( CONNECT host '/' port ( username password )? -> ^( NODE_CONNECT host port ( username password )? ) | CONNECT ip_address '/' port ( username password )? -> ^( NODE_CONNECT ip_address port ( username password )? ) );
     public final CliParser.connectStatement_return connectStatement() throws RecognitionException {
         CliParser.connectStatement_return retval = new CliParser.connectStatement_return();
         retval.start = input.LT(1);
@@ -870,7 +870,7 @@ public class CliParser extends Parser {
         RewriteRuleSubtreeStream stream_host=new RewriteRuleSubtreeStream(adaptor,"rule host");
         RewriteRuleSubtreeStream stream_password=new RewriteRuleSubtreeStream(adaptor,"rule password");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:178:5: ( CONNECT host '/' port ( username password )? -> ^( NODE_CONNECT host port ( username password )? ) | CONNECT ip_address '/' port ( username password )? -> ^( NODE_CONNECT ip_address port ( username password )? ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:178:5: ( CONNECT host '/' port ( username password )? -> ^( NODE_CONNECT host port ( username password )? ) | CONNECT ip_address '/' port ( username password )? -> ^( NODE_CONNECT ip_address port ( username password )? ) )
             int alt5=2;
             int LA5_0 = input.LA(1);
 
@@ -900,7 +900,7 @@ public class CliParser extends Parser {
             }
             switch (alt5) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:178:7: CONNECT host '/' port ( username password )?
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:178:7: CONNECT host '/' port ( username password )?
                     {
                     CONNECT32=(Token)match(input,CONNECT,FOLLOW_CONNECT_in_connectStatement749); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_CONNECT.add(CONNECT32);
@@ -920,7 +920,7 @@ public class CliParser extends Parser {
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_port.add(port35.getTree());
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:178:29: ( username password )?
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:178:29: ( username password )?
                     int alt3=2;
                     int LA3_0 = input.LA(1);
 
@@ -929,7 +929,7 @@ public class CliParser extends Parser {
                     }
                     switch (alt3) {
                         case 1 :
-                            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:178:30: username password
+                            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:178:30: username password
                             {
                             pushFollow(FOLLOW_username_in_connectStatement758);
                             username36=username();
@@ -952,7 +952,7 @@ public class CliParser extends Parser {
 
 
                     // AST REWRITE
-                    // elements: host, port, password, username
+                    // elements: username, port, password, host
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -965,21 +965,21 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 179:9: -> ^( NODE_CONNECT host port ( username password )? )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:179:12: ^( NODE_CONNECT host port ( username password )? )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:179:12: ^( NODE_CONNECT host port ( username password )? )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_CONNECT, "NODE_CONNECT"), root_1);
 
                         adaptor.addChild(root_1, stream_host.nextTree());
                         adaptor.addChild(root_1, stream_port.nextTree());
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:179:37: ( username password )?
-                        if ( stream_password.hasNext()||stream_username.hasNext() ) {
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:179:37: ( username password )?
+                        if ( stream_username.hasNext()||stream_password.hasNext() ) {
                             adaptor.addChild(root_1, stream_username.nextTree());
                             adaptor.addChild(root_1, stream_password.nextTree());
 
                         }
-                        stream_password.reset();
                         stream_username.reset();
+                        stream_password.reset();
 
                         adaptor.addChild(root_0, root_1);
                         }
@@ -990,7 +990,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:180:7: CONNECT ip_address '/' port ( username password )?
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:180:7: CONNECT ip_address '/' port ( username password )?
                     {
                     CONNECT38=(Token)match(input,CONNECT,FOLLOW_CONNECT_in_connectStatement795); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_CONNECT.add(CONNECT38);
@@ -1010,7 +1010,7 @@ public class CliParser extends Parser {
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_port.add(port41.getTree());
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:180:35: ( username password )?
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:180:35: ( username password )?
                     int alt4=2;
                     int LA4_0 = input.LA(1);
 
@@ -1019,7 +1019,7 @@ public class CliParser extends Parser {
                     }
                     switch (alt4) {
                         case 1 :
-                            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:180:36: username password
+                            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:180:36: username password
                             {
                             pushFollow(FOLLOW_username_in_connectStatement804);
                             username42=username();
@@ -1042,7 +1042,7 @@ public class CliParser extends Parser {
 
 
                     // AST REWRITE
-                    // elements: port, ip_address, username, password
+                    // elements: username, port, password, ip_address
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -1055,14 +1055,14 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 181:9: -> ^( NODE_CONNECT ip_address port ( username password )? )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:181:12: ^( NODE_CONNECT ip_address port ( username password )? )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:181:12: ^( NODE_CONNECT ip_address port ( username password )? )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_CONNECT, "NODE_CONNECT"), root_1);
 
                         adaptor.addChild(root_1, stream_ip_address.nextTree());
                         adaptor.addChild(root_1, stream_port.nextTree());
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:181:43: ( username password )?
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:181:43: ( username password )?
                         if ( stream_username.hasNext()||stream_password.hasNext() ) {
                             adaptor.addChild(root_1, stream_username.nextTree());
                             adaptor.addChild(root_1, stream_password.nextTree());
@@ -1107,7 +1107,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "helpStatement"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:184:1: helpStatement : ( HELP HELP -> ^( NODE_HELP NODE_HELP ) | HELP CONNECT -> ^( NODE_HELP NODE_CONNECT ) | HELP USE -> ^( NODE_HELP NODE_USE_TABLE ) | HELP TRACE NEXT QUERY -> ^( NODE_HELP NODE_TRACE_NEXT_QUERY ) | HELP SET TRACE PROBABILITY -> ^( NODE_HELP NODE_SET_TRACE_PROBABILITY ) | HELP DESCRIBE -> ^( NODE_HELP NODE_DESCRIBE ) | HELP DESCRIBE 'CLUSTER' -> ^( NODE_HELP NODE_DESCRIBE_CLUSTER ) | HELP EXIT -> ^( NODE_HELP NODE_EXIT ) | HELP QUIT -> ^( NODE_HELP NODE_EXIT ) | HELP SHOW 'CLUSTER NAME' -> ^( NODE_HELP NODE_SHOW_CLUSTER_NAME ) | HELP SHOW KEYSPACES -> ^( NODE_HELP NODE_SHOW_KEYSPACES ) | HELP SHOW SCHEMA -> ^( NODE_HELP NODE_SHOW_SCHEMA ) | HELP SHOW API_VERSION -> ^( NODE_HELP NODE_SHOW_VERSION ) | HELP CREATE KEYSPACE -> ^( NODE_HELP NODE_ADD_KEYSPACE ) | HELP UPDATE KEYSPACE -> ^( NODE_HELP NODE_UPDATE_KEYSPACE ) | HELP CREATE COLUMN FAMILY -> ^( NODE_HELP NODE_ADD_COLUMN_FAMILY ) | HELP UPDATE COLUMN FAMILY -> ^( NODE_HELP NODE_UPDATE_COLUMN_FAMILY ) | HELP DROP KEYSPACE -> ^( NODE_HELP NODE_DEL_KEYSPACE ) | HELP DROP COLUMN FAMILY -> ^( NODE_HELP NODE_DEL_COLUMN_FAMILY ) | HELP DROP INDEX -> ^( NODE_HELP NODE_DROP_INDEX ) | HELP GET -> ^( NODE_HELP NODE_THRIFT_GET ) | HELP SET -> ^( NODE_HELP NODE_THRIFT_SET ) | HELP INCR -> ^( NODE_HELP NODE_THRIFT_INCR ) | HELP DECR -> ^( NODE_HELP NODE_THRIFT_DECR ) | HELP DEL -> ^( NODE_HELP NODE_THRIFT_DEL ) | HELP COUNT -> ^( NODE_HELP NODE_THRIFT_COUNT ) | HELP LIST -> ^( NODE_HELP NODE_LIST ) | HELP TRUNCATE -> ^( NODE_HELP NODE_TRUNCATE ) | HELP ASSUME -> ^( NODE_HELP NODE_ASSUME ) | HELP CONSISTENCYLEVEL -> ^( NODE_HELP NODE_CONSISTENCY_LEVEL ) | HELP -> ^( NODE_HELP ) | '?' -> ^( NODE_HELP ) );
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:184:1: helpStatement : ( HELP HELP -> ^( NODE_HELP NODE_HELP ) | HELP CONNECT -> ^( NODE_HELP NODE_CONNECT ) | HELP USE -> ^( NODE_HELP NODE_USE_TABLE ) | HELP TRACE NEXT QUERY -> ^( NODE_HELP NODE_TRACE_NEXT_QUERY ) | HELP SET TRACE PROBABILITY -> ^( NODE_HELP NODE_SET_TRACE_PROBABILITY ) | HELP DESCRIBE -> ^( NODE_HELP NODE_DESCRIBE ) | HELP DESCRIBE 'CLUSTER' -> ^( NODE_HELP NODE_DESCRIBE_CLUSTER ) | HELP EXIT -> ^( NODE_HELP NODE_EXIT ) | HELP QUIT -> ^( NODE_HELP NODE_EXIT ) | HELP SHOW 'CLUSTER NAME' -> ^( NODE_HELP NODE_SHOW_CLUSTER_NAME ) | HELP SHOW KEYSPACES -> ^( NODE_HELP NODE_SHOW_KEYSPACES ) | HELP SHOW SCHEMA -> ^( NODE_HELP NODE_SHOW_SCHEMA ) | HELP SHOW API_VERSION -> ^( NODE_HELP NODE_SHOW_VERSION ) | HELP CREATE KEYSPACE -> ^( NODE_HELP NODE_ADD_KEYSPACE ) | HELP UPDATE KEYSPACE -> ^( NODE_HELP NODE_UPDATE_KEYSPACE ) | HELP CREATE COLUMN FAMILY -> ^( NODE_HELP NODE_ADD_COLUMN_FAMILY ) | HELP UPDATE COLUMN FAMILY -> ^( NODE_HELP NODE_UPDATE_COLUMN_FAMILY ) | HELP DROP KEYSPACE -> ^( NODE_HELP NODE_DEL_KEYSPACE ) | HELP DROP COLUMN FAMILY -> ^( NODE_HELP NODE_DEL_COLUMN_FAMILY ) | HELP DROP INDEX -> ^( NODE_HELP NODE_DROP_INDEX ) | HELP GET -> ^( NODE_HELP NODE_THRIFT_GET ) | HELP SET -> ^( NODE_HELP NODE_THRIFT_SET ) | HELP INCR -> ^( NODE_HELP NODE_THRIFT_INCR ) | HELP DECR -> ^( NODE_HELP NODE_THRIFT_DECR ) | HELP DEL -> ^( NODE_HELP NODE_THRIFT_DEL ) | HELP COUNT -> ^( NODE_HELP NODE_THRIFT_COUNT ) | HELP LIST -> ^( NODE_HELP NODE_LIST ) | HELP TRUNCATE -> ^( NODE_HELP NODE_TRUNCATE ) | HELP ASSUME -> ^( NODE_HELP NODE_ASSUME ) | HELP CONSISTENCYLEVEL -> ^( NODE_HELP NODE_CONSISTENCY_LEVEL ) | HELP -> ^( NODE_HELP ) | '?' -> ^( NODE_HELP ) );
     public final CliParser.helpStatement_return helpStatement() throws RecognitionException {
         CliParser.helpStatement_return retval = new CliParser.helpStatement_return();
         retval.start = input.LT(1);
@@ -1305,20 +1305,20 @@ public class CliParser extends Parser {
         RewriteRuleTokenStream stream_DECR=new RewriteRuleTokenStream(adaptor,"token DECR");
         RewriteRuleTokenStream stream_FAMILY=new RewriteRuleTokenStream(adaptor,"token FAMILY");
         RewriteRuleTokenStream stream_QUERY=new RewriteRuleTokenStream(adaptor,"token QUERY");
-        RewriteRuleTokenStream stream_GET=new RewriteRuleTokenStream(adaptor,"token GET");
         RewriteRuleTokenStream stream_NEXT=new RewriteRuleTokenStream(adaptor,"token NEXT");
+        RewriteRuleTokenStream stream_GET=new RewriteRuleTokenStream(adaptor,"token GET");
         RewriteRuleTokenStream stream_PROBABILITY=new RewriteRuleTokenStream(adaptor,"token PROBABILITY");
         RewriteRuleTokenStream stream_USE=new RewriteRuleTokenStream(adaptor,"token USE");
         RewriteRuleTokenStream stream_120=new RewriteRuleTokenStream(adaptor,"token 120");
         RewriteRuleTokenStream stream_SHOW=new RewriteRuleTokenStream(adaptor,"token SHOW");
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:185:5: ( HELP HELP -> ^( NODE_HELP NODE_HELP ) | HELP CONNECT -> ^( NODE_HELP NODE_CONNECT ) | HELP USE -> ^( NODE_HELP NODE_USE_TABLE ) | HELP TRACE NEXT QUERY -> ^( NODE_HELP NODE_TRACE_NEXT_QUERY ) | HELP SET TRACE PROBABILITY -> ^( NODE_HELP NODE_SET_TRACE_PROBABILITY ) | HELP DESCRIBE -> ^( NODE_HELP NODE_DESCRIBE ) | HELP DESCRIBE 'CLUSTER' -> ^( NODE_HELP NODE_DESCRIBE_CLUSTER ) | HELP EXIT -> ^( NODE_HELP NODE_EXIT ) | HELP QUIT -> ^( NODE_HELP NODE_EXIT ) | HELP SHOW 'CLUSTER NAME' -> ^( NODE_HELP NODE_SHOW_CLUSTER_NAME ) | HELP SHOW KEYSPACES -> ^( NODE_HELP NODE_SHOW_KEYSPACES ) | HELP SHOW SCHEMA -> ^( NODE_HELP NODE_SHOW_SCHEMA ) | HELP SHOW API_VERSION -> ^( NODE_HELP NODE_SHOW_VERSION ) | HELP CREATE KEYSPACE -> ^( NODE_HELP NODE_ADD_KEYSPACE ) | HELP UPDATE KEYSPACE -> ^( NODE_HELP NODE_UPDATE_KEYSPACE ) | HELP CREATE COLUMN FAMILY -> ^( NODE_HELP NODE_ADD_COLUMN_FAMILY ) | HELP UPDATE COLUMN FAMILY -> ^( NODE_HELP NODE_UPDATE_COLUMN_FAMILY ) | HELP DROP KEYSPACE -> ^( NODE_HELP NODE_DEL_KEYSPACE ) | HELP DROP COLUMN FAMILY -> ^( NODE_HELP NODE_DEL_COLUMN_FAMILY ) | HELP DROP INDEX -> ^( NODE_HELP NODE_DROP_INDEX ) | HELP GET -> ^( NODE_HELP NODE_THRIFT_GET ) | HELP SET -> ^( NODE_HELP NODE_THRIFT_SET ) | HELP INCR -> ^( NODE_HELP NODE_THRIFT_INCR ) | HELP DECR -> ^( NODE_HELP NODE_THRIFT_DECR ) | HELP DEL -> ^( NODE_HELP NODE_THRIFT_DEL ) | HELP COUNT -> ^( NODE_HELP NODE_THRIFT_COUNT ) | HELP LIST -> ^( NODE_HELP NODE_LIST ) | HELP TRUNCATE -> ^( NODE_HELP NODE_TRUNCATE ) | HELP ASSUME -> ^( NODE_HELP NODE_ASSUME ) | HELP CONSISTENCYLEVEL -> ^( NODE_HELP NODE_CONSISTENCY_LEVEL ) | HELP -> ^( NODE_HELP ) | '?' -> ^( NODE_HELP ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:185:5: ( HELP HELP -> ^( NODE_HELP NODE_HELP ) | HELP CONNECT -> ^( NODE_HELP NODE_CONNECT ) | HELP USE -> ^( NODE_HELP NODE_USE_TABLE ) | HELP TRACE NEXT QUERY -> ^( NODE_HELP NODE_TRACE_NEXT_QUERY ) | HELP SET TRACE PROBABILITY -> ^( NODE_HELP NODE_SET_TRACE_PROBABILITY ) | HELP DESCRIBE -> ^( NODE_HELP NODE_DESCRIBE ) | HELP DESCRIBE 'CLUSTER' -> ^( NODE_HELP NODE_DESCRIBE_CLUSTER ) | HELP EXIT -> ^( NODE_HELP NODE_EXIT ) | HELP QUIT -> ^( NODE_HELP NODE_EXIT ) | HELP SHOW 'CLUSTER NAME' -> ^( NODE_HELP NODE_SHOW_CLUSTER_NAME ) | HELP SHOW KEYSPACES -> ^( NODE_HELP NODE_SHOW_KEYSPACES ) | HELP SHOW SCHEMA -> ^( NODE_HELP NODE_SHOW_SCHEMA ) | HELP SHOW API_VERSION -> ^( NODE_HELP NODE_SHOW_VERSION ) | HELP CREATE KEYSPACE -> ^( NODE_HELP NODE_ADD_KEYSPACE ) | HELP UPDATE KEYSPACE -> ^( NODE_HELP NODE_UPDATE_KEYSPACE ) | HELP CREATE COLUMN FAMILY -> ^( NODE_HELP NODE_ADD_COLUMN_FAMILY ) | HELP UPDATE COLUMN FAMILY -> ^( NODE_HELP NODE_UPDATE_COLUMN_FAMILY ) | HELP DROP KEYSPACE -> ^( NODE_HELP NODE_DEL_KEYSPACE ) | HELP DROP COLUMN FAMILY -> ^( NODE_HELP NODE_DEL_COLUMN_FAMILY ) | HELP DROP INDEX -> ^( NODE_HELP NODE_DROP_INDEX ) | HELP GET -> ^( NODE_HELP NODE_THRIFT_GET ) | HELP SET -> ^( NODE_HELP NODE_THRIFT_SET ) | HELP INCR -> ^( NODE_HELP NODE_THRIFT_INCR ) | HELP DECR -> ^( NODE_HELP NODE_THRIFT_DECR ) | HELP DEL -> ^( NODE_HELP NODE_THRIFT_DEL ) | HELP COUNT -> ^( NODE_HELP NODE_THRIFT_COUNT ) | HELP LIST -> ^( NODE_HELP NODE_LIST ) | HELP TRUNCATE -> ^( NODE_HELP NODE_TRUNCATE ) | HELP ASSUME -> ^( NODE_HELP NODE_ASSUME ) | HELP CONSISTENCYLEVEL -> ^( NODE_HELP NODE_CONSISTENCY_LEVEL ) | HELP -> ^( NODE_HELP ) | '?' -> ^( NODE_HELP ) )
             int alt6=32;
             alt6 = dfa6.predict(input);
             switch (alt6) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:185:7: HELP HELP
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:185:7: HELP HELP
                     {
                     HELP44=(Token)match(input,HELP,FOLLOW_HELP_in_helpStatement850); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_HELP.add(HELP44);
@@ -1342,7 +1342,7 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 186:9: -> ^( NODE_HELP NODE_HELP )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:186:12: ^( NODE_HELP NODE_HELP )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:186:12: ^( NODE_HELP NODE_HELP )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_HELP, "NODE_HELP"), root_1);
@@ -1358,7 +1358,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:187:7: HELP CONNECT
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:187:7: HELP CONNECT
                     {
                     HELP46=(Token)match(input,HELP,FOLLOW_HELP_in_helpStatement877); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_HELP.add(HELP46);
@@ -1382,7 +1382,7 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 188:9: -> ^( NODE_HELP NODE_CONNECT )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:188:12: ^( NODE_HELP NODE_CONNECT )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:188:12: ^( NODE_HELP NODE_CONNECT )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_HELP, "NODE_HELP"), root_1);
@@ -1398,7 +1398,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:189:7: HELP USE
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:189:7: HELP USE
                     {
                     HELP48=(Token)match(input,HELP,FOLLOW_HELP_in_helpStatement904); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_HELP.add(HELP48);
@@ -1422,7 +1422,7 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 190:9: -> ^( NODE_HELP NODE_USE_TABLE )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:190:12: ^( NODE_HELP NODE_USE_TABLE )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:190:12: ^( NODE_HELP NODE_USE_TABLE )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_HELP, "NODE_HELP"), root_1);
@@ -1438,7 +1438,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:191:7: HELP TRACE NEXT QUERY
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:191:7: HELP TRACE NEXT QUERY
                     {
                     HELP50=(Token)match(input,HELP,FOLLOW_HELP_in_helpStatement931); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_HELP.add(HELP50);
@@ -1468,7 +1468,7 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 192:9: -> ^( NODE_HELP NODE_TRACE_NEXT_QUERY )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:192:12: ^( NODE_HELP NODE_TRACE_NEXT_QUERY )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:192:12: ^( NODE_HELP NODE_TRACE_NEXT_QUERY )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_HELP, "NODE_HELP"), root_1);
@@ -1484,7 +1484,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 5 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:193:7: HELP SET TRACE PROBABILITY
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:193:7: HELP SET TRACE PROBABILITY
                     {
                     HELP54=(Token)match(input,HELP,FOLLOW_HELP_in_helpStatement961); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_HELP.add(HELP54);
@@ -1514,7 +1514,7 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 194:9: -> ^( NODE_HELP NODE_SET_TRACE_PROBABILITY )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:194:12: ^( NODE_HELP NODE_SET_TRACE_PROBABILITY )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:194:12: ^( NODE_HELP NODE_SET_TRACE_PROBABILITY )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_HELP, "NODE_HELP"), root_1);
@@ -1530,7 +1530,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 6 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:195:7: HELP DESCRIBE
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:195:7: HELP DESCRIBE
                     {
                     HELP58=(Token)match(input,HELP,FOLLOW_HELP_in_helpStatement991); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_HELP.add(HELP58);
@@ -1554,7 +1554,7 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 196:9: -> ^( NODE_HELP NODE_DESCRIBE )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:196:12: ^( NODE_HELP NODE_DESCRIBE )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:196:12: ^( NODE_HELP NODE_DESCRIBE )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_HELP, "NODE_HELP"), root_1);
@@ -1570,7 +1570,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 7 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:197:7: HELP DESCRIBE 'CLUSTER'
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:197:7: HELP DESCRIBE 'CLUSTER'
                     {
                     HELP60=(Token)match(input,HELP,FOLLOW_HELP_in_helpStatement1017); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_HELP.add(HELP60);
@@ -1597,7 +1597,7 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 198:9: -> ^( NODE_HELP NODE_DESCRIBE_CLUSTER )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:198:12: ^( NODE_HELP NODE_DESCRIBE_CLUSTER )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:198:12: ^( NODE_HELP NODE_DESCRIBE_CLUSTER )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_HELP, "NODE_HELP"), root_1);
@@ -1613,7 +1613,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 8 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:199:7: HELP EXIT
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:199:7: HELP EXIT
                     {
                     HELP63=(Token)match(input,HELP,FOLLOW_HELP_in_helpStatement1045); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_HELP.add(HELP63);
@@ -1637,7 +1637,7 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 200:9: -> ^( NODE_HELP NODE_EXIT )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:200:12: ^( NODE_HELP NODE_EXIT )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:200:12: ^( NODE_HELP NODE_EXIT )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_HELP, "NODE_HELP"), root_1);
@@ -1653,7 +1653,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 9 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:201:7: HELP QUIT
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:201:7: HELP QUIT
                     {
                     HELP65=(Token)match(input,HELP,FOLLOW_HELP_in_helpStatement1072); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_HELP.add(HELP65);
@@ -1677,7 +1677,7 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 202:9: -> ^( NODE_HELP NODE_EXIT )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:202:12: ^( NODE_HELP NODE_EXIT )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:202:12: ^( NODE_HELP NODE_EXIT )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_HELP, "NODE_HELP"), root_1);
@@ -1693,7 +1693,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 10 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:203:7: HELP SHOW 'CLUSTER NAME'
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:203:7: HELP SHOW 'CLUSTER NAME'
                     {
                     HELP67=(Token)match(input,HELP,FOLLOW_HELP_in_helpStatement1099); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_HELP.add(HELP67);
@@ -1720,7 +1720,7 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 204:9: -> ^( NODE_HELP NODE_SHOW_CLUSTER_NAME )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:204:12: ^( NODE_HELP NODE_SHOW_CLUSTER_NAME )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:204:12: ^( NODE_HELP NODE_SHOW_CLUSTER_NAME )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_HELP, "NODE_HELP"), root_1);
@@ -1736,7 +1736,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 11 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:205:7: HELP SHOW KEYSPACES
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:205:7: HELP SHOW KEYSPACES
                     {
                     HELP70=(Token)match(input,HELP,FOLLOW_HELP_in_helpStatement1127); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_HELP.add(HELP70);
@@ -1763,7 +1763,7 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 206:9: -> ^( NODE_HELP NODE_SHOW_KEYSPACES )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:206:12: ^( NODE_HELP NODE_SHOW_KEYSPACES )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:206:12: ^( NODE_HELP NODE_SHOW_KEYSPACES )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_HELP, "NODE_HELP"), root_1);
@@ -1779,7 +1779,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 12 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:207:7: HELP SHOW SCHEMA
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:207:7: HELP SHOW SCHEMA
                     {
                     HELP73=(Token)match(input,HELP,FOLLOW_HELP_in_helpStatement1156); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_HELP.add(HELP73);
@@ -1806,7 +1806,7 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 208:13: -> ^( NODE_HELP NODE_SHOW_SCHEMA )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:208:16: ^( NODE_HELP NODE_SHOW_SCHEMA )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:208:16: ^( NODE_HELP NODE_SHOW_SCHEMA )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_HELP, "NODE_HELP"), root_1);
@@ -1822,7 +1822,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 13 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:209:7: HELP SHOW API_VERSION
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:209:7: HELP SHOW API_VERSION
                     {
                     HELP76=(Token)match(input,HELP,FOLLOW_HELP_in_helpStatement1188); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_HELP.add(HELP76);
@@ -1849,7 +1849,7 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 210:9: -> ^( NODE_HELP NODE_SHOW_VERSION )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:210:12: ^( NODE_HELP NODE_SHOW_VERSION )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:210:12: ^( NODE_HELP NODE_SHOW_VERSION )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_HELP, "NODE_HELP"), root_1);
@@ -1865,7 +1865,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 14 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:211:7: HELP CREATE KEYSPACE
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:211:7: HELP CREATE KEYSPACE
                     {
                     HELP79=(Token)match(input,HELP,FOLLOW_HELP_in_helpStatement1216); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_HELP.add(HELP79);
@@ -1892,7 +1892,7 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 212:9: -> ^( NODE_HELP NODE_ADD_KEYSPACE )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:212:12: ^( NODE_HELP NODE_ADD_KEYSPACE )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:212:12: ^( NODE_HELP NODE_ADD_KEYSPACE )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_HELP, "NODE_HELP"), root_1);
@@ -1908,7 +1908,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 15 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:213:7: HELP UPDATE KEYSPACE
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:213:7: HELP UPDATE KEYSPACE
                     {
                     HELP82=(Token)match(input,HELP,FOLLOW_HELP_in_helpStatement1245); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_HELP.add(HELP82);
@@ -1935,7 +1935,7 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 214:9: -> ^( NODE_HELP NODE_UPDATE_KEYSPACE )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:214:12: ^( NODE_HELP NODE_UPDATE_KEYSPACE )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:214:12: ^( NODE_HELP NODE_UPDATE_KEYSPACE )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_HELP, "NODE_HELP"), root_1);
@@ -1951,7 +1951,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 16 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:215:7: HELP CREATE COLUMN FAMILY
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:215:7: HELP CREATE COLUMN FAMILY
                     {
                     HELP85=(Token)match(input,HELP,FOLLOW_HELP_in_helpStatement1273); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_HELP.add(HELP85);
@@ -1981,7 +1981,7 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 216:9: -> ^( NODE_HELP NODE_ADD_COLUMN_FAMILY )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:216:12: ^( NODE_HELP NODE_ADD_COLUMN_FAMILY )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:216:12: ^( NODE_HELP NODE_ADD_COLUMN_FAMILY )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_HELP, "NODE_HELP"), root_1);
@@ -1997,7 +1997,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 17 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:217:7: HELP UPDATE COLUMN FAMILY
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:217:7: HELP UPDATE COLUMN FAMILY
                     {
                     HELP89=(Token)match(input,HELP,FOLLOW_HELP_in_helpStatement1304); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_HELP.add(HELP89);
@@ -2027,7 +2027,7 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 218:9: -> ^( NODE_HELP NODE_UPDATE_COLUMN_FAMILY )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:218:12: ^( NODE_HELP NODE_UPDATE_COLUMN_FAMILY )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:218:12: ^( NODE_HELP NODE_UPDATE_COLUMN_FAMILY )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_HELP, "NODE_HELP"), root_1);
@@ -2043,7 +2043,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 18 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:219:7: HELP DROP KEYSPACE
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:219:7: HELP DROP KEYSPACE
                     {
                     HELP93=(Token)match(input,HELP,FOLLOW_HELP_in_helpStatement1334); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_HELP.add(HELP93);
@@ -2070,7 +2070,7 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 220:9: -> ^( NODE_HELP NODE_DEL_KEYSPACE )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:220:12: ^( NODE_HELP NODE_DEL_KEYSPACE )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:220:12: ^( NODE_HELP NODE_DEL_KEYSPACE )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_HELP, "NODE_HELP"), root_1);
@@ -2086,7 +2086,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 19 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:221:7: HELP DROP COLUMN FAMILY
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:221:7: HELP DROP COLUMN FAMILY
                     {
                     HELP96=(Token)match(input,HELP,FOLLOW_HELP_in_helpStatement1363); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_HELP.add(HELP96);
@@ -2116,7 +2116,7 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 222:9: -> ^( NODE_HELP NODE_DEL_COLUMN_FAMILY )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:222:12: ^( NODE_HELP NODE_DEL_COLUMN_FAMILY )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:222:12: ^( NODE_HELP NODE_DEL_COLUMN_FAMILY )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_HELP, "NODE_HELP"), root_1);
@@ -2132,7 +2132,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 20 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:223:7: HELP DROP INDEX
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:223:7: HELP DROP INDEX
                     {
                     HELP100=(Token)match(input,HELP,FOLLOW_HELP_in_helpStatement1394); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_HELP.add(HELP100);
@@ -2159,7 +2159,7 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 224:9: -> ^( NODE_HELP NODE_DROP_INDEX )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:224:12: ^( NODE_HELP NODE_DROP_INDEX )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:224:12: ^( NODE_HELP NODE_DROP_INDEX )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_HELP, "NODE_HELP"), root_1);
@@ -2175,7 +2175,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 21 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:225:7: HELP GET
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:225:7: HELP GET
                     {
                     HELP103=(Token)match(input,HELP,FOLLOW_HELP_in_helpStatement1422); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_HELP.add(HELP103);
@@ -2199,7 +2199,7 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 226:9: -> ^( NODE_HELP NODE_THRIFT_GET )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:226:12: ^( NODE_HELP NODE_THRIFT_GET )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:226:12: ^( NODE_HELP NODE_THRIFT_GET )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_HELP, "NODE_HELP"), root_1);
@@ -2215,7 +2215,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 22 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:227:7: HELP SET
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:227:7: HELP SET
                     {
                     HELP105=(Token)match(input,HELP,FOLLOW_HELP_in_helpStatement1449); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_HELP.add(HELP105);
@@ -2239,7 +2239,7 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 228:9: -> ^( NODE_HELP NODE_THRIFT_SET )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:228:12: ^( NODE_HELP NODE_THRIFT_SET )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:228:12: ^( NODE_HELP NODE_THRIFT_SET )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_HELP, "NODE_HELP"), root_1);
@@ -2255,7 +2255,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 23 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:229:7: HELP INCR
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:229:7: HELP INCR
                     {
                     HELP107=(Token)match(input,HELP,FOLLOW_HELP_in_helpStatement1476); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_HELP.add(HELP107);
@@ -2279,7 +2279,7 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 230:9: -> ^( NODE_HELP NODE_THRIFT_INCR )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:230:12: ^( NODE_HELP NODE_THRIFT_INCR )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:230:12: ^( NODE_HELP NODE_THRIFT_INCR )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_HELP, "NODE_HELP"), root_1);
@@ -2295,7 +2295,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 24 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:231:7: HELP DECR
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:231:7: HELP DECR
                     {
                     HELP109=(Token)match(input,HELP,FOLLOW_HELP_in_helpStatement1502); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_HELP.add(HELP109);
@@ -2319,7 +2319,7 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 232:9: -> ^( NODE_HELP NODE_THRIFT_DECR )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:232:12: ^( NODE_HELP NODE_THRIFT_DECR )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:232:12: ^( NODE_HELP NODE_THRIFT_DECR )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_HELP, "NODE_HELP"), root_1);
@@ -2335,7 +2335,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 25 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:233:7: HELP DEL
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:233:7: HELP DEL
                     {
                     HELP111=(Token)match(input,HELP,FOLLOW_HELP_in_helpStatement1528); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_HELP.add(HELP111);
@@ -2359,7 +2359,7 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 234:9: -> ^( NODE_HELP NODE_THRIFT_DEL )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:234:12: ^( NODE_HELP NODE_THRIFT_DEL )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:234:12: ^( NODE_HELP NODE_THRIFT_DEL )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_HELP, "NODE_HELP"), root_1);
@@ -2375,7 +2375,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 26 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:235:7: HELP COUNT
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:235:7: HELP COUNT
                     {
                     HELP113=(Token)match(input,HELP,FOLLOW_HELP_in_helpStatement1555); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_HELP.add(HELP113);
@@ -2399,7 +2399,7 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 236:9: -> ^( NODE_HELP NODE_THRIFT_COUNT )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:236:12: ^( NODE_HELP NODE_THRIFT_COUNT )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:236:12: ^( NODE_HELP NODE_THRIFT_COUNT )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_HELP, "NODE_HELP"), root_1);
@@ -2415,7 +2415,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 27 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:237:7: HELP LIST
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:237:7: HELP LIST
                     {
                     HELP115=(Token)match(input,HELP,FOLLOW_HELP_in_helpStatement1582); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_HELP.add(HELP115);
@@ -2439,7 +2439,7 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 238:9: -> ^( NODE_HELP NODE_LIST )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:238:12: ^( NODE_HELP NODE_LIST )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:238:12: ^( NODE_HELP NODE_LIST )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_HELP, "NODE_HELP"), root_1);
@@ -2455,7 +2455,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 28 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:239:7: HELP TRUNCATE
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:239:7: HELP TRUNCATE
                     {
                     HELP117=(Token)match(input,HELP,FOLLOW_HELP_in_helpStatement1609); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_HELP.add(HELP117);
@@ -2479,7 +2479,7 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 240:9: -> ^( NODE_HELP NODE_TRUNCATE )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:240:12: ^( NODE_HELP NODE_TRUNCATE )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:240:12: ^( NODE_HELP NODE_TRUNCATE )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_HELP, "NODE_HELP"), root_1);
@@ -2495,7 +2495,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 29 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:241:7: HELP ASSUME
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:241:7: HELP ASSUME
                     {
                     HELP119=(Token)match(input,HELP,FOLLOW_HELP_in_helpStatement1635); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_HELP.add(HELP119);
@@ -2519,7 +2519,7 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 242:9: -> ^( NODE_HELP NODE_ASSUME )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:242:12: ^( NODE_HELP NODE_ASSUME )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:242:12: ^( NODE_HELP NODE_ASSUME )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_HELP, "NODE_HELP"), root_1);
@@ -2535,7 +2535,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 30 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:243:7: HELP CONSISTENCYLEVEL
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:243:7: HELP CONSISTENCYLEVEL
                     {
                     HELP121=(Token)match(input,HELP,FOLLOW_HELP_in_helpStatement1661); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_HELP.add(HELP121);
@@ -2559,7 +2559,7 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 244:9: -> ^( NODE_HELP NODE_CONSISTENCY_LEVEL )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:244:12: ^( NODE_HELP NODE_CONSISTENCY_LEVEL )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:244:12: ^( NODE_HELP NODE_CONSISTENCY_LEVEL )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_HELP, "NODE_HELP"), root_1);
@@ -2575,7 +2575,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 31 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:245:7: HELP
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:245:7: HELP
                     {
                     HELP123=(Token)match(input,HELP,FOLLOW_HELP_in_helpStatement1687); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_HELP.add(HELP123);
@@ -2596,7 +2596,7 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 246:9: -> ^( NODE_HELP )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:246:12: ^( NODE_HELP )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:246:12: ^( NODE_HELP )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_HELP, "NODE_HELP"), root_1);
@@ -2610,7 +2610,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 32 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:247:7: '?'
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:247:7: '?'
                     {
                     char_literal124=(Token)match(input,121,FOLLOW_121_in_helpStatement1710); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_121.add(char_literal124);
@@ -2631,7 +2631,7 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 248:9: -> ^( NODE_HELP )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:248:12: ^( NODE_HELP )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:248:12: ^( NODE_HELP )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_HELP, "NODE_HELP"), root_1);
@@ -2672,7 +2672,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "exitStatement"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:251:1: exitStatement : ( QUIT -> ^( NODE_EXIT ) | EXIT -> ^( NODE_EXIT ) );
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:251:1: exitStatement : ( QUIT -> ^( NODE_EXIT ) | EXIT -> ^( NODE_EXIT ) );
     public final CliParser.exitStatement_return exitStatement() throws RecognitionException {
         CliParser.exitStatement_return retval = new CliParser.exitStatement_return();
         retval.start = input.LT(1);
@@ -2688,7 +2688,7 @@ public class CliParser extends Parser {
         RewriteRuleTokenStream stream_QUIT=new RewriteRuleTokenStream(adaptor,"token QUIT");
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:252:5: ( QUIT -> ^( NODE_EXIT ) | EXIT -> ^( NODE_EXIT ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:252:5: ( QUIT -> ^( NODE_EXIT ) | EXIT -> ^( NODE_EXIT ) )
             int alt7=2;
             int LA7_0 = input.LA(1);
 
@@ -2707,7 +2707,7 @@ public class CliParser extends Parser {
             }
             switch (alt7) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:252:7: QUIT
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:252:7: QUIT
                     {
                     QUIT125=(Token)match(input,QUIT,FOLLOW_QUIT_in_exitStatement1745); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_QUIT.add(QUIT125);
@@ -2728,7 +2728,7 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 252:12: -> ^( NODE_EXIT )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:252:15: ^( NODE_EXIT )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:252:15: ^( NODE_EXIT )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_EXIT, "NODE_EXIT"), root_1);
@@ -2742,7 +2742,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:253:7: EXIT
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:253:7: EXIT
                     {
                     EXIT126=(Token)match(input,EXIT,FOLLOW_EXIT_in_exitStatement1759); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_EXIT.add(EXIT126);
@@ -2763,7 +2763,7 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 253:12: -> ^( NODE_EXIT )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:253:15: ^( NODE_EXIT )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:253:15: ^( NODE_EXIT )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_EXIT, "NODE_EXIT"), root_1);
@@ -2804,7 +2804,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "getStatement"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:256:1: getStatement : ( GET columnFamilyExpr ( 'AS' typeIdentifier )? ( 'LIMIT' limit= IntegerPositiveLiteral )? -> ^( NODE_THRIFT_GET columnFamilyExpr ( ^( CONVERT_TO_TYPE typeIdentifier ) )? ( ^( NODE_LIMIT $limit) )? ) | GET columnFamily 'WHERE' getCondition ( 'AND' getCondition )* ( 'LIMIT' limit= IntegerPositiveLiteral )? -> ^( NODE_THRIFT_GET_WITH_CONDITIONS columnFamily ^( CONDITIONS ( getCondition )+ ) ( ^( NODE_LIMIT $limit) )? ) );
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:256:1: getStatement : ( GET columnFamilyExpr ( 'AS' typeIdentifier )? ( 'LIMIT' limit= IntegerPositiveLiteral )? -> ^( NODE_THRIFT_GET columnFamilyExpr ( ^( CONVERT_TO_TYPE typeIdentifier ) )? ( ^( NODE_LIMIT $limit) )? ) | GET columnFamily 'WHERE' getCondition ( 'AND' getCondition )* ( 'LIMIT' limit= IntegerPositiveLiteral )? -> ^( NODE_THRIFT_GET_WITH_CONDITIONS columnFamily ^( CONDITIONS ( getCondition )+ ) ( ^( NODE_LIMIT $limit) )? ) );
     public final CliParser.getStatement_return getStatement() throws RecognitionException {
         CliParser.getStatement_return retval = new CliParser.getStatement_return();
         retval.start = input.LT(1);
@@ -2849,7 +2849,7 @@ public class CliParser extends Parser {
         RewriteRuleSubtreeStream stream_columnFamilyExpr=new RewriteRuleSubtreeStream(adaptor,"rule columnFamilyExpr");
         RewriteRuleSubtreeStream stream_columnFamily=new RewriteRuleSubtreeStream(adaptor,"rule columnFamily");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:257:5: ( GET columnFamilyExpr ( 'AS' typeIdentifier )? ( 'LIMIT' limit= IntegerPositiveLiteral )? -> ^( NODE_THRIFT_GET columnFamilyExpr ( ^( CONVERT_TO_TYPE typeIdentifier ) )? ( ^( NODE_LIMIT $limit) )? ) | GET columnFamily 'WHERE' getCondition ( 'AND' getCondition )* ( 'LIMIT' limit= IntegerPositiveLiteral )? -> ^( NODE_THRIFT_GET_WITH_CONDITIONS columnFamily ^( CONDITIONS ( getCondition )+ ) ( ^( NODE_LIMIT $limit) )? ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:257:5: ( GET columnFamilyExpr ( 'AS' typeIdentifier )? ( 'LIMIT' limit= IntegerPositiveLiteral )? -> ^( NODE_THRIFT_GET columnFamilyExpr ( ^( CONVERT_TO_TYPE typeIdentifier ) )? ( ^( NODE_LIMIT $limit) )? ) | GET columnFamily 'WHERE' getCondition ( 'AND' getCondition )* ( 'LIMIT' limit= IntegerPositiveLiteral )? -> ^( NODE_THRIFT_GET_WITH_CONDITIONS columnFamily ^( CONDITIONS ( getCondition )+ ) ( ^( NODE_LIMIT $limit) )? ) )
             int alt12=2;
             int LA12_0 = input.LA(1);
 
@@ -2890,7 +2890,7 @@ public class CliParser extends Parser {
             }
             switch (alt12) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:257:7: GET columnFamilyExpr ( 'AS' typeIdentifier )? ( 'LIMIT' limit= IntegerPositiveLiteral )?
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:257:7: GET columnFamilyExpr ( 'AS' typeIdentifier )? ( 'LIMIT' limit= IntegerPositiveLiteral )?
                     {
                     GET127=(Token)match(input,GET,FOLLOW_GET_in_getStatement1782); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_GET.add(GET127);
@@ -2901,7 +2901,7 @@ public class CliParser extends Parser {
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_columnFamilyExpr.add(columnFamilyExpr128.getTree());
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:257:28: ( 'AS' typeIdentifier )?
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:257:28: ( 'AS' typeIdentifier )?
                     int alt8=2;
                     int LA8_0 = input.LA(1);
 
@@ -2910,7 +2910,7 @@ public class CliParser extends Parser {
                     }
                     switch (alt8) {
                         case 1 :
-                            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:257:29: 'AS' typeIdentifier
+                            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:257:29: 'AS' typeIdentifier
                             {
                             string_literal129=(Token)match(input,122,FOLLOW_122_in_getStatement1787); if (state.failed) return retval; 
                             if ( state.backtracking==0 ) stream_122.add(string_literal129);
@@ -2927,7 +2927,7 @@ public class CliParser extends Parser {
 
                     }
 
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:257:51: ( 'LIMIT' limit= IntegerPositiveLiteral )?
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:257:51: ( 'LIMIT' limit= IntegerPositiveLiteral )?
                     int alt9=2;
                     int LA9_0 = input.LA(1);
 
@@ -2936,7 +2936,7 @@ public class CliParser extends Parser {
                     }
                     switch (alt9) {
                         case 1 :
-                            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:257:52: 'LIMIT' limit= IntegerPositiveLiteral
+                            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:257:52: 'LIMIT' limit= IntegerPositiveLiteral
                             {
                             string_literal131=(Token)match(input,LIMIT,FOLLOW_LIMIT_in_getStatement1794); if (state.failed) return retval; 
                             if ( state.backtracking==0 ) stream_LIMIT.add(string_literal131);
@@ -2953,7 +2953,7 @@ public class CliParser extends Parser {
 
 
                     // AST REWRITE
-                    // elements: limit, typeIdentifier, columnFamilyExpr
+                    // elements: limit, columnFamilyExpr, typeIdentifier
                     // token labels: limit
                     // rule labels: retval
                     // token list labels: 
@@ -2967,15 +2967,15 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 258:9: -> ^( NODE_THRIFT_GET columnFamilyExpr ( ^( CONVERT_TO_TYPE typeIdentifier ) )? ( ^( NODE_LIMIT $limit) )? )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:258:12: ^( NODE_THRIFT_GET columnFamilyExpr ( ^( CONVERT_TO_TYPE typeIdentifier ) )? ( ^( NODE_LIMIT $limit) )? )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:258:12: ^( NODE_THRIFT_GET columnFamilyExpr ( ^( CONVERT_TO_TYPE typeIdentifier ) )? ( ^( NODE_LIMIT $limit) )? )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_THRIFT_GET, "NODE_THRIFT_GET"), root_1);
 
                         adaptor.addChild(root_1, stream_columnFamilyExpr.nextTree());
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:258:47: ( ^( CONVERT_TO_TYPE typeIdentifier ) )?
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:258:47: ( ^( CONVERT_TO_TYPE typeIdentifier ) )?
                         if ( stream_typeIdentifier.hasNext() ) {
-                            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:258:49: ^( CONVERT_TO_TYPE typeIdentifier )
+                            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:258:49: ^( CONVERT_TO_TYPE typeIdentifier )
                             {
                             CommonTree root_2 = (CommonTree)adaptor.nil();
                             root_2 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(CONVERT_TO_TYPE, "CONVERT_TO_TYPE"), root_2);
@@ -2987,9 +2987,9 @@ public class CliParser extends Parser {
 
                         }
                         stream_typeIdentifier.reset();
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:258:86: ( ^( NODE_LIMIT $limit) )?
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:258:86: ( ^( NODE_LIMIT $limit) )?
                         if ( stream_limit.hasNext() ) {
-                            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:258:86: ^( NODE_LIMIT $limit)
+                            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:258:86: ^( NODE_LIMIT $limit)
                             {
                             CommonTree root_2 = (CommonTree)adaptor.nil();
                             root_2 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_LIMIT, "NODE_LIMIT"), root_2);
@@ -3011,7 +3011,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:259:7: GET columnFamily 'WHERE' getCondition ( 'AND' getCondition )* ( 'LIMIT' limit= IntegerPositiveLiteral )?
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:259:7: GET columnFamily 'WHERE' getCondition ( 'AND' getCondition )* ( 'LIMIT' limit= IntegerPositiveLiteral )?
                     {
                     GET132=(Token)match(input,GET,FOLLOW_GET_in_getStatement1843); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_GET.add(GET132);
@@ -3031,7 +3031,7 @@ public class CliParser extends Parser {
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_getCondition.add(getCondition135.getTree());
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:259:45: ( 'AND' getCondition )*
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:259:45: ( 'AND' getCondition )*
                     loop10:
                     do {
                         int alt10=2;
@@ -3044,7 +3044,7 @@ public class CliParser extends Parser {
 
                         switch (alt10) {
                     	case 1 :
-                    	    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:259:46: 'AND' getCondition
+                    	    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:259:46: 'AND' getCondition
                     	    {
                     	    string_literal136=(Token)match(input,AND,FOLLOW_AND_in_getStatement1852); if (state.failed) return retval; 
                     	    if ( state.backtracking==0 ) stream_AND.add(string_literal136);
@@ -3064,7 +3064,7 @@ public class CliParser extends Parser {
                         }
                     } while (true);
 
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:259:67: ( 'LIMIT' limit= IntegerPositiveLiteral )?
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:259:67: ( 'LIMIT' limit= IntegerPositiveLiteral )?
                     int alt11=2;
                     int LA11_0 = input.LA(1);
 
@@ -3073,7 +3073,7 @@ public class CliParser extends Parser {
                     }
                     switch (alt11) {
                         case 1 :
-                            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:259:68: 'LIMIT' limit= IntegerPositiveLiteral
+                            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:259:68: 'LIMIT' limit= IntegerPositiveLiteral
                             {
                             string_literal138=(Token)match(input,LIMIT,FOLLOW_LIMIT_in_getStatement1859); if (state.failed) return retval; 
                             if ( state.backtracking==0 ) stream_LIMIT.add(string_literal138);
@@ -3104,13 +3104,13 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 260:9: -> ^( NODE_THRIFT_GET_WITH_CONDITIONS columnFamily ^( CONDITIONS ( getCondition )+ ) ( ^( NODE_LIMIT $limit) )? )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:260:12: ^( NODE_THRIFT_GET_WITH_CONDITIONS columnFamily ^( CONDITIONS ( getCondition )+ ) ( ^( NODE_LIMIT $limit) )? )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:260:12: ^( NODE_THRIFT_GET_WITH_CONDITIONS columnFamily ^( CONDITIONS ( getCondition )+ ) ( ^( NODE_LIMIT $limit) )? )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_THRIFT_GET_WITH_CONDITIONS, "NODE_THRIFT_GET_WITH_CONDITIONS"), root_1);
 
                         adaptor.addChild(root_1, stream_columnFamily.nextTree());
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:260:59: ^( CONDITIONS ( getCondition )+ )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:260:59: ^( CONDITIONS ( getCondition )+ )
                         {
                         CommonTree root_2 = (CommonTree)adaptor.nil();
                         root_2 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(CONDITIONS, "CONDITIONS"), root_2);
@@ -3126,9 +3126,9 @@ public class CliParser extends Parser {
 
                         adaptor.addChild(root_1, root_2);
                         }
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:260:87: ( ^( NODE_LIMIT $limit) )?
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:260:87: ( ^( NODE_LIMIT $limit) )?
                         if ( stream_limit.hasNext() ) {
-                            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:260:87: ^( NODE_LIMIT $limit)
+                            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:260:87: ^( NODE_LIMIT $limit)
                             {
                             CommonTree root_2 = (CommonTree)adaptor.nil();
                             root_2 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_LIMIT, "NODE_LIMIT"), root_2);
@@ -3177,7 +3177,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "getCondition"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:263:1: getCondition : columnOrSuperColumn operator value -> ^( CONDITION operator columnOrSuperColumn value ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:263:1: getCondition : columnOrSuperColumn operator value -> ^( CONDITION operator columnOrSuperColumn value ) ;
     public final CliParser.getCondition_return getCondition() throws RecognitionException {
         CliParser.getCondition_return retval = new CliParser.getCondition_return();
         retval.start = input.LT(1);
@@ -3195,8 +3195,8 @@ public class CliParser extends Parser {
         RewriteRuleSubtreeStream stream_columnOrSuperColumn=new RewriteRuleSubtreeStream(adaptor,"rule columnOrSuperColumn");
         RewriteRuleSubtreeStream stream_operator=new RewriteRuleSubtreeStream(adaptor,"rule operator");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:264:5: ( columnOrSuperColumn operator value -> ^( CONDITION operator columnOrSuperColumn value ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:264:7: columnOrSuperColumn operator value
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:264:5: ( columnOrSuperColumn operator value -> ^( CONDITION operator columnOrSuperColumn value ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:264:7: columnOrSuperColumn operator value
             {
             pushFollow(FOLLOW_columnOrSuperColumn_in_getCondition1914);
             columnOrSuperColumn139=columnOrSuperColumn();
@@ -3219,7 +3219,7 @@ public class CliParser extends Parser {
 
 
             // AST REWRITE
-            // elements: columnOrSuperColumn, operator, value
+            // elements: operator, value, columnOrSuperColumn
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -3232,7 +3232,7 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 265:9: -> ^( CONDITION operator columnOrSuperColumn value )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:265:12: ^( CONDITION operator columnOrSuperColumn value )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:265:12: ^( CONDITION operator columnOrSuperColumn value )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(CONDITION, "CONDITION"), root_1);
@@ -3275,7 +3275,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "operator"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:268:1: operator : ( '=' | '>' | '<' | '>=' | '<=' );
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:268:1: operator : ( '=' | '>' | '<' | '>=' | '<=' );
     public final CliParser.operator_return operator() throws RecognitionException {
         CliParser.operator_return retval = new CliParser.operator_return();
         retval.start = input.LT(1);
@@ -3287,8 +3287,8 @@ public class CliParser extends Parser {
         CommonTree set142_tree=null;
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:269:5: ( '=' | '>' | '<' | '>=' | '<=' )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:269:5: ( '=' | '>' | '<' | '>=' | '<=' )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -3333,7 +3333,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "typeIdentifier"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:272:1: typeIdentifier : ( Identifier | StringLiteral | IntegerPositiveLiteral );
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:272:1: typeIdentifier : ( Identifier | StringLiteral | IntegerPositiveLiteral );
     public final CliParser.typeIdentifier_return typeIdentifier() throws RecognitionException {
         CliParser.typeIdentifier_return retval = new CliParser.typeIdentifier_return();
         retval.start = input.LT(1);
@@ -3345,8 +3345,8 @@ public class CliParser extends Parser {
         CommonTree set143_tree=null;
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:273:5: ( Identifier | StringLiteral | IntegerPositiveLiteral )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:273:5: ( Identifier | StringLiteral | IntegerPositiveLiteral )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -3391,7 +3391,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "setStatement"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:276:1: setStatement : SET columnFamilyExpr '=' objectValue= value ( WITH TTL '=' ttlValue= IntegerPositiveLiteral )? -> ^( NODE_THRIFT_SET columnFamilyExpr $objectValue ( $ttlValue)? ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:276:1: setStatement : SET columnFamilyExpr '=' objectValue= value ( WITH TTL '=' ttlValue= IntegerPositiveLiteral )? -> ^( NODE_THRIFT_SET columnFamilyExpr $objectValue ( $ttlValue)? ) ;
     public final CliParser.setStatement_return setStatement() throws RecognitionException {
         CliParser.setStatement_return retval = new CliParser.setStatement_return();
         retval.start = input.LT(1);
@@ -3423,8 +3423,8 @@ public class CliParser extends Parser {
         RewriteRuleSubtreeStream stream_columnFamilyExpr=new RewriteRuleSubtreeStream(adaptor,"rule columnFamilyExpr");
         RewriteRuleSubtreeStream stream_value=new RewriteRuleSubtreeStream(adaptor,"rule value");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:277:5: ( SET columnFamilyExpr '=' objectValue= value ( WITH TTL '=' ttlValue= IntegerPositiveLiteral )? -> ^( NODE_THRIFT_SET columnFamilyExpr $objectValue ( $ttlValue)? ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:277:7: SET columnFamilyExpr '=' objectValue= value ( WITH TTL '=' ttlValue= IntegerPositiveLiteral )?
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:277:5: ( SET columnFamilyExpr '=' objectValue= value ( WITH TTL '=' ttlValue= IntegerPositiveLiteral )? -> ^( NODE_THRIFT_SET columnFamilyExpr $objectValue ( $ttlValue)? ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:277:7: SET columnFamilyExpr '=' objectValue= value ( WITH TTL '=' ttlValue= IntegerPositiveLiteral )?
             {
             SET144=(Token)match(input,SET,FOLLOW_SET_in_setStatement2014); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_SET.add(SET144);
@@ -3444,7 +3444,7 @@ public class CliParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_value.add(objectValue.getTree());
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:277:50: ( WITH TTL '=' ttlValue= IntegerPositiveLiteral )?
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:277:50: ( WITH TTL '=' ttlValue= IntegerPositiveLiteral )?
             int alt13=2;
             int LA13_0 = input.LA(1);
 
@@ -3453,7 +3453,7 @@ public class CliParser extends Parser {
             }
             switch (alt13) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:277:51: WITH TTL '=' ttlValue= IntegerPositiveLiteral
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:277:51: WITH TTL '=' ttlValue= IntegerPositiveLiteral
                     {
                     WITH147=(Token)match(input,WITH,FOLLOW_WITH_in_setStatement2025); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_WITH.add(WITH147);
@@ -3476,7 +3476,7 @@ public class CliParser extends Parser {
 
 
             // AST REWRITE
-            // elements: objectValue, ttlValue, columnFamilyExpr
+            // elements: columnFamilyExpr, objectValue, ttlValue
             // token labels: ttlValue
             // rule labels: retval, objectValue
             // token list labels: 
@@ -3491,14 +3491,14 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 278:9: -> ^( NODE_THRIFT_SET columnFamilyExpr $objectValue ( $ttlValue)? )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:278:12: ^( NODE_THRIFT_SET columnFamilyExpr $objectValue ( $ttlValue)? )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:278:12: ^( NODE_THRIFT_SET columnFamilyExpr $objectValue ( $ttlValue)? )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_THRIFT_SET, "NODE_THRIFT_SET"), root_1);
 
                 adaptor.addChild(root_1, stream_columnFamilyExpr.nextTree());
                 adaptor.addChild(root_1, stream_objectValue.nextTree());
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:278:60: ( $ttlValue)?
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:278:60: ( $ttlValue)?
                 if ( stream_ttlValue.hasNext() ) {
                     adaptor.addChild(root_1, stream_ttlValue.nextNode());
 
@@ -3539,7 +3539,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "incrStatement"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:281:1: incrStatement : ( INCR columnFamilyExpr ( BY byValue= incrementValue )? -> ^( NODE_THRIFT_INCR columnFamilyExpr ( $byValue)? ) | DECR columnFamilyExpr ( BY byValue= incrementValue )? -> ^( NODE_THRIFT_DECR columnFamilyExpr ( $byValue)? ) );
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:281:1: incrStatement : ( INCR columnFamilyExpr ( BY byValue= incrementValue )? -> ^( NODE_THRIFT_INCR columnFamilyExpr ( $byValue)? ) | DECR columnFamilyExpr ( BY byValue= incrementValue )? -> ^( NODE_THRIFT_DECR columnFamilyExpr ( $byValue)? ) );
     public final CliParser.incrStatement_return incrStatement() throws RecognitionException {
         CliParser.incrStatement_return retval = new CliParser.incrStatement_return();
         retval.start = input.LT(1);
@@ -3567,7 +3567,7 @@ public class CliParser extends Parser {
         RewriteRuleSubtreeStream stream_columnFamilyExpr=new RewriteRuleSubtreeStream(adaptor,"rule columnFamilyExpr");
         RewriteRuleSubtreeStream stream_incrementValue=new RewriteRuleSubtreeStream(adaptor,"rule incrementValue");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:282:5: ( INCR columnFamilyExpr ( BY byValue= incrementValue )? -> ^( NODE_THRIFT_INCR columnFamilyExpr ( $byValue)? ) | DECR columnFamilyExpr ( BY byValue= incrementValue )? -> ^( NODE_THRIFT_DECR columnFamilyExpr ( $byValue)? ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:282:5: ( INCR columnFamilyExpr ( BY byValue= incrementValue )? -> ^( NODE_THRIFT_INCR columnFamilyExpr ( $byValue)? ) | DECR columnFamilyExpr ( BY byValue= incrementValue )? -> ^( NODE_THRIFT_DECR columnFamilyExpr ( $byValue)? ) )
             int alt16=2;
             int LA16_0 = input.LA(1);
 
@@ -3586,7 +3586,7 @@ public class CliParser extends Parser {
             }
             switch (alt16) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:282:7: INCR columnFamilyExpr ( BY byValue= incrementValue )?
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:282:7: INCR columnFamilyExpr ( BY byValue= incrementValue )?
                     {
                     INCR150=(Token)match(input,INCR,FOLLOW_INCR_in_incrStatement2079); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_INCR.add(INCR150);
@@ -3597,7 +3597,7 @@ public class CliParser extends Parser {
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_columnFamilyExpr.add(columnFamilyExpr151.getTree());
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:282:29: ( BY byValue= incrementValue )?
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:282:29: ( BY byValue= incrementValue )?
                     int alt14=2;
                     int LA14_0 = input.LA(1);
 
@@ -3606,7 +3606,7 @@ public class CliParser extends Parser {
                     }
                     switch (alt14) {
                         case 1 :
-                            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:282:30: BY byValue= incrementValue
+                            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:282:30: BY byValue= incrementValue
                             {
                             BY152=(Token)match(input,BY,FOLLOW_BY_in_incrStatement2084); if (state.failed) return retval; 
                             if ( state.backtracking==0 ) stream_BY.add(BY152);
@@ -3640,13 +3640,13 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 283:9: -> ^( NODE_THRIFT_INCR columnFamilyExpr ( $byValue)? )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:283:12: ^( NODE_THRIFT_INCR columnFamilyExpr ( $byValue)? )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:283:12: ^( NODE_THRIFT_INCR columnFamilyExpr ( $byValue)? )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_THRIFT_INCR, "NODE_THRIFT_INCR"), root_1);
 
                         adaptor.addChild(root_1, stream_columnFamilyExpr.nextTree());
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:283:48: ( $byValue)?
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:283:48: ( $byValue)?
                         if ( stream_byValue.hasNext() ) {
                             adaptor.addChild(root_1, stream_byValue.nextTree());
 
@@ -3662,7 +3662,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:284:7: DECR columnFamilyExpr ( BY byValue= incrementValue )?
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:284:7: DECR columnFamilyExpr ( BY byValue= incrementValue )?
                     {
                     DECR153=(Token)match(input,DECR,FOLLOW_DECR_in_incrStatement2122); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_DECR.add(DECR153);
@@ -3673,7 +3673,7 @@ public class CliParser extends Parser {
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) stream_columnFamilyExpr.add(columnFamilyExpr154.getTree());
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:284:29: ( BY byValue= incrementValue )?
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:284:29: ( BY byValue= incrementValue )?
                     int alt15=2;
                     int LA15_0 = input.LA(1);
 
@@ -3682,7 +3682,7 @@ public class CliParser extends Parser {
                     }
                     switch (alt15) {
                         case 1 :
-                            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:284:30: BY byValue= incrementValue
+                            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:284:30: BY byValue= incrementValue
                             {
                             BY155=(Token)match(input,BY,FOLLOW_BY_in_incrStatement2127); if (state.failed) return retval; 
                             if ( state.backtracking==0 ) stream_BY.add(BY155);
@@ -3702,7 +3702,7 @@ public class CliParser extends Parser {
 
 
                     // AST REWRITE
-                    // elements: byValue, columnFamilyExpr
+                    // elements: columnFamilyExpr, byValue
                     // token labels: 
                     // rule labels: retval, byValue
                     // token list labels: 
@@ -3716,13 +3716,13 @@ public class CliParser extends Parser {
                     root_0 = (CommonTree)adaptor.nil();
                     // 285:9: -> ^( NODE_THRIFT_DECR columnFamilyExpr ( $byValue)? )
                     {
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:285:12: ^( NODE_THRIFT_DECR columnFamilyExpr ( $byValue)? )
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:285:12: ^( NODE_THRIFT_DECR columnFamilyExpr ( $byValue)? )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_THRIFT_DECR, "NODE_THRIFT_DECR"), root_1);
 
                         adaptor.addChild(root_1, stream_columnFamilyExpr.nextTree());
-                        // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:285:48: ( $byValue)?
+                        // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:285:48: ( $byValue)?
                         if ( stream_byValue.hasNext() ) {
                             adaptor.addChild(root_1, stream_byValue.nextTree());
 
@@ -3765,7 +3765,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "countStatement"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:288:1: countStatement : COUNT columnFamilyExpr -> ^( NODE_THRIFT_COUNT columnFamilyExpr ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:288:1: countStatement : COUNT columnFamilyExpr -> ^( NODE_THRIFT_COUNT columnFamilyExpr ) ;
     public final CliParser.countStatement_return countStatement() throws RecognitionException {
         CliParser.countStatement_return retval = new CliParser.countStatement_return();
         retval.start = input.LT(1);
@@ -3780,8 +3780,8 @@ public class CliParser extends Parser {
         RewriteRuleTokenStream stream_COUNT=new RewriteRuleTokenStream(adaptor,"token COUNT");
         RewriteRuleSubtreeStream stream_columnFamilyExpr=new RewriteRuleSubtreeStream(adaptor,"rule columnFamilyExpr");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:289:5: ( COUNT columnFamilyExpr -> ^( NODE_THRIFT_COUNT columnFamilyExpr ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:289:7: COUNT columnFamilyExpr
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:289:5: ( COUNT columnFamilyExpr -> ^( NODE_THRIFT_COUNT columnFamilyExpr ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:289:7: COUNT columnFamilyExpr
             {
             COUNT156=(Token)match(input,COUNT,FOLLOW_COUNT_in_countStatement2174); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_COUNT.add(COUNT156);
@@ -3808,7 +3808,7 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 290:9: -> ^( NODE_THRIFT_COUNT columnFamilyExpr )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:290:12: ^( NODE_THRIFT_COUNT columnFamilyExpr )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:290:12: ^( NODE_THRIFT_COUNT columnFamilyExpr )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_THRIFT_COUNT, "NODE_THRIFT_COUNT"), root_1);
@@ -3849,7 +3849,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "delStatement"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:293:1: delStatement : DEL columnFamilyExpr -> ^( NODE_THRIFT_DEL columnFamilyExpr ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:293:1: delStatement : DEL columnFamilyExpr -> ^( NODE_THRIFT_DEL columnFamilyExpr ) ;
     public final CliParser.delStatement_return delStatement() throws RecognitionException {
         CliParser.delStatement_return retval = new CliParser.delStatement_return();
         retval.start = input.LT(1);
@@ -3864,8 +3864,8 @@ public class CliParser extends Parser {
         RewriteRuleTokenStream stream_DEL=new RewriteRuleTokenStream(adaptor,"token DEL");
         RewriteRuleSubtreeStream stream_columnFamilyExpr=new RewriteRuleSubtreeStream(adaptor,"rule columnFamilyExpr");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:294:5: ( DEL columnFamilyExpr -> ^( NODE_THRIFT_DEL columnFamilyExpr ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:294:7: DEL columnFamilyExpr
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:294:5: ( DEL columnFamilyExpr -> ^( NODE_THRIFT_DEL columnFamilyExpr ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:294:7: DEL columnFamilyExpr
             {
             DEL158=(Token)match(input,DEL,FOLLOW_DEL_in_delStatement2210); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_DEL.add(DEL158);
@@ -3892,7 +3892,7 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 295:9: -> ^( NODE_THRIFT_DEL columnFamilyExpr )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:295:12: ^( NODE_THRIFT_DEL columnFamilyExpr )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:295:12: ^( NODE_THRIFT_DEL columnFamilyExpr )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_THRIFT_DEL, "NODE_THRIFT_DEL"), root_1);
@@ -3933,7 +3933,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "showStatement"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:298:1: showStatement : ( showClusterName | showVersion | showKeyspaces | showSchema );
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:298:1: showStatement : ( showClusterName | showVersion | showKeyspaces | showSchema );
     public final CliParser.showStatement_return showStatement() throws RecognitionException {
         CliParser.showStatement_return retval = new CliParser.showStatement_return();
         retval.start = input.LT(1);
@@ -3951,7 +3951,7 @@ public class CliParser extends Parser {
 
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:299:5: ( showClusterName | showVersion | showKeyspaces | showSchema )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:299:5: ( showClusterName | showVersion | showKeyspaces | showSchema )
             int alt17=4;
             int LA17_0 = input.LA(1);
 
@@ -3995,7 +3995,7 @@ public class CliParser extends Parser {
             }
             switch (alt17) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:299:7: showClusterName
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:299:7: showClusterName
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -4009,7 +4009,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:300:7: showVersion
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:300:7: showVersion
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -4023,7 +4023,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:301:7: showKeyspaces
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:301:7: showKeyspaces
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -4037,7 +4037,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:302:7: showSchema
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:302:7: showSchema
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -4078,7 +4078,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "addJoinStatement"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:306:1: addJoinStatement : CREATE JOIN matView= columnFamily OF famA= columnFamily '.' keyA= rowKey 'AND' famB= columnFamily -> ^( NODE_CREATE_JOIN $matView $famA $keyA $famB) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:306:1: addJoinStatement : CREATE JOIN matView= columnFamily OF famA= columnFamily '.' keyA= rowKey 'AND' famB= columnFamily -> ^( NODE_CREATE_JOIN $matView $famA $keyA $famB) ;
     public final CliParser.addJoinStatement_return addJoinStatement() throws RecognitionException {
         CliParser.addJoinStatement_return retval = new CliParser.addJoinStatement_return();
         retval.start = input.LT(1);
@@ -4112,8 +4112,8 @@ public class CliParser extends Parser {
         RewriteRuleSubtreeStream stream_columnFamily=new RewriteRuleSubtreeStream(adaptor,"rule columnFamily");
         RewriteRuleSubtreeStream stream_rowKey=new RewriteRuleSubtreeStream(adaptor,"rule rowKey");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:307:5: ( CREATE JOIN matView= columnFamily OF famA= columnFamily '.' keyA= rowKey 'AND' famB= columnFamily -> ^( NODE_CREATE_JOIN $matView $famA $keyA $famB) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:307:7: CREATE JOIN matView= columnFamily OF famA= columnFamily '.' keyA= rowKey 'AND' famB= columnFamily
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:307:5: ( CREATE JOIN matView= columnFamily OF famA= columnFamily '.' keyA= rowKey 'AND' famB= columnFamily -> ^( NODE_CREATE_JOIN $matView $famA $keyA $famB) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:307:7: CREATE JOIN matView= columnFamily OF famA= columnFamily '.' keyA= rowKey 'AND' famB= columnFamily
             {
             CREATE164=(Token)match(input,CREATE,FOLLOW_CREATE_in_addJoinStatement2288); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_CREATE.add(CREATE164);
@@ -4157,7 +4157,7 @@ public class CliParser extends Parser {
 
 
             // AST REWRITE
-            // elements: matView, famB, keyA, famA
+            // elements: keyA, famA, famB, matView
             // token labels: 
             // rule labels: keyA, retval, famA, matView, famB
             // token list labels: 
@@ -4174,7 +4174,7 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 308:9: -> ^( NODE_CREATE_JOIN $matView $famA $keyA $famB)
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:308:12: ^( NODE_CREATE_JOIN $matView $famA $keyA $famB)
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:308:12: ^( NODE_CREATE_JOIN $matView $famA $keyA $famB)
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_CREATE_JOIN, "NODE_CREATE_JOIN"), root_1);
@@ -4218,7 +4218,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "addIndexViewStatement"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:311:1: addIndexViewStatement : CREATE INDEX VIEW columnFamily OF singleColumnFamilyExpr '[' rowKey ( ',' rowKey )* ']' ( 'AND' singleColumnFamilyExpr '[' rowKey ( ',' rowKey )* ']' )* -> ^( NODE_CREATE_INDEX_VIEW columnFamily ( singleColumnFamilyExpr )+ ( rowKey )+ ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:311:1: addIndexViewStatement : CREATE INDEX VIEW columnFamily OF singleColumnFamilyExpr '[' rowKey ( ',' rowKey )* ']' ( 'AND' singleColumnFamilyExpr '[' rowKey ( ',' rowKey )* ']' )* -> ^( NODE_CREATE_INDEX_VIEW columnFamily ( singleColumnFamilyExpr )+ ( rowKey )+ ) ;
     public final CliParser.addIndexViewStatement_return addIndexViewStatement() throws RecognitionException {
         CliParser.addIndexViewStatement_return retval = new CliParser.addIndexViewStatement_return();
         retval.start = input.LT(1);
@@ -4274,8 +4274,8 @@ public class CliParser extends Parser {
         RewriteRuleSubtreeStream stream_columnFamily=new RewriteRuleSubtreeStream(adaptor,"rule columnFamily");
         RewriteRuleSubtreeStream stream_rowKey=new RewriteRuleSubtreeStream(adaptor,"rule rowKey");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:312:5: ( CREATE INDEX VIEW columnFamily OF singleColumnFamilyExpr '[' rowKey ( ',' rowKey )* ']' ( 'AND' singleColumnFamilyExpr '[' rowKey ( ',' rowKey )* ']' )* -> ^( NODE_CREATE_INDEX_VIEW columnFamily ( singleColumnFamilyExpr )+ ( rowKey )+ ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:312:7: CREATE INDEX VIEW columnFamily OF singleColumnFamilyExpr '[' rowKey ( ',' rowKey )* ']' ( 'AND' singleColumnFamilyExpr '[' rowKey ( ',' rowKey )* ']' )*
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:312:5: ( CREATE INDEX VIEW columnFamily OF singleColumnFamilyExpr '[' rowKey ( ',' rowKey )* ']' ( 'AND' singleColumnFamilyExpr '[' rowKey ( ',' rowKey )* ']' )* -> ^( NODE_CREATE_INDEX_VIEW columnFamily ( singleColumnFamilyExpr )+ ( rowKey )+ ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:312:7: CREATE INDEX VIEW columnFamily OF singleColumnFamilyExpr '[' rowKey ( ',' rowKey )* ']' ( 'AND' singleColumnFamilyExpr '[' rowKey ( ',' rowKey )* ']' )*
             {
             CREATE169=(Token)match(input,CREATE,FOLLOW_CREATE_in_addIndexViewStatement2355); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_CREATE.add(CREATE169);
@@ -4310,7 +4310,7 @@ public class CliParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_rowKey.add(rowKey176.getTree());
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:312:75: ( ',' rowKey )*
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:312:75: ( ',' rowKey )*
             loop18:
             do {
                 int alt18=2;
@@ -4323,7 +4323,7 @@ public class CliParser extends Parser {
 
                 switch (alt18) {
             	case 1 :
-            	    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:312:76: ',' rowKey
+            	    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:312:76: ',' rowKey
             	    {
             	    char_literal177=(Token)match(input,131,FOLLOW_131_in_addIndexViewStatement2372); if (state.failed) return retval; 
             	    if ( state.backtracking==0 ) stream_131.add(char_literal177);
@@ -4346,7 +4346,7 @@ public class CliParser extends Parser {
             char_literal179=(Token)match(input,132,FOLLOW_132_in_addIndexViewStatement2378); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_132.add(char_literal179);
 
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:312:93: ( 'AND' singleColumnFamilyExpr '[' rowKey ( ',' rowKey )* ']' )*
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:312:93: ( 'AND' singleColumnFamilyExpr '[' rowKey ( ',' rowKey )* ']' )*
             loop20:
             do {
                 int alt20=2;
@@ -4359,7 +4359,7 @@ public class CliParser extends Parser {
 
                 switch (alt20) {
             	case 1 :
-            	    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:312:94: 'AND' singleColumnFamilyExpr '[' rowKey ( ',' rowKey )* ']'
+            	    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:312:94: 'AND' singleColumnFamilyExpr '[' rowKey ( ',' rowKey )* ']'
             	    {
             	    string_literal180=(Token)match(input,AND,FOLLOW_AND_in_addIndexViewStatement2381); if (state.failed) return retval; 
             	    if ( state.backtracking==0 ) stream_AND.add(string_literal180);
@@ -4379,7 +4379,7 @@ public class CliParser extends Parser {
             	    state._fsp--;
             	    if (state.failed) return retval;
             	    if ( state.backtracking==0 ) stream_rowKey.add(rowKey183.getTree());
-            	    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:312:134: ( ',' rowKey )*
+            	    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:312:134: ( ',' rowKey )*
             	    loop19:
             	    do {
             	        int alt19=2;
@@ -4392,7 +4392,7 @@ public class CliParser extends Parser {
 
             	        switch (alt19) {
             	    	case 1 :
-            	    	    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:312:135: ',' rowKey
+            	    	    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:312:135: ',' rowKey
             	    	    {
             	    	    char_literal184=(Token)match(input,131,FOLLOW_131_in_addIndexViewStatement2390); if (state.failed) return retval; 
             	    	    if ( state.backtracking==0 ) stream_131.add(char_literal184);
@@ -4427,7 +4427,7 @@ public class CliParser extends Parser {
 
 
             // AST REWRITE
-            // elements: rowKey, columnFamily, singleColumnFamilyExpr
+            // elements: columnFamily, rowKey, singleColumnFamilyExpr
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -4440,7 +4440,7 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 313:9: -> ^( NODE_CREATE_INDEX_VIEW columnFamily ( singleColumnFamilyExpr )+ ( rowKey )+ )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:313:12: ^( NODE_CREATE_INDEX_VIEW columnFamily ( singleColumnFamilyExpr )+ ( rowKey )+ )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:313:12: ^( NODE_CREATE_INDEX_VIEW columnFamily ( singleColumnFamilyExpr )+ ( rowKey )+ )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_CREATE_INDEX_VIEW, "NODE_CREATE_INDEX_VIEW"), root_1);
@@ -4497,7 +4497,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "addIndexViewStatement2"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:316:1: addIndexViewStatement2 : CREATE INDEX VIEW2 viewName= columnFamily OF colFam= columnFamily '.' rowKey -> ^( NODE_CREATE_INDEX_VIEW $viewName $colFam rowKey ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:316:1: addIndexViewStatement2 : CREATE INDEX VIEW2 viewName= columnFamily OF colFam= columnFamily '.' rowKey -> ^( NODE_CREATE_INDEX_VIEW $viewName $colFam rowKey ) ;
     public final CliParser.addIndexViewStatement2_return addIndexViewStatement2() throws RecognitionException {
         CliParser.addIndexViewStatement2_return retval = new CliParser.addIndexViewStatement2_return();
         retval.start = input.LT(1);
@@ -4529,8 +4529,8 @@ public class CliParser extends Parser {
         RewriteRuleSubtreeStream stream_columnFamily=new RewriteRuleSubtreeStream(adaptor,"rule columnFamily");
         RewriteRuleSubtreeStream stream_rowKey=new RewriteRuleSubtreeStream(adaptor,"rule rowKey");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:317:2: ( CREATE INDEX VIEW2 viewName= columnFamily OF colFam= columnFamily '.' rowKey -> ^( NODE_CREATE_INDEX_VIEW $viewName $colFam rowKey ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:317:4: CREATE INDEX VIEW2 viewName= columnFamily OF colFam= columnFamily '.' rowKey
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:317:2: ( CREATE INDEX VIEW2 viewName= columnFamily OF colFam= columnFamily '.' rowKey -> ^( NODE_CREATE_INDEX_VIEW $viewName $colFam rowKey ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:317:4: CREATE INDEX VIEW2 viewName= columnFamily OF colFam= columnFamily '.' rowKey
             {
             CREATE187=(Token)match(input,CREATE,FOLLOW_CREATE_in_addIndexViewStatement22434); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_CREATE.add(CREATE187);
@@ -4568,7 +4568,7 @@ public class CliParser extends Parser {
 
 
             // AST REWRITE
-            // elements: rowKey, colFam, viewName
+            // elements: rowKey, viewName, colFam
             // token labels: 
             // rule labels: retval, viewName, colFam
             // token list labels: 
@@ -4583,7 +4583,7 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 318:3: -> ^( NODE_CREATE_INDEX_VIEW $viewName $colFam rowKey )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:318:6: ^( NODE_CREATE_INDEX_VIEW $viewName $colFam rowKey )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:318:6: ^( NODE_CREATE_INDEX_VIEW $viewName $colFam rowKey )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_CREATE_INDEX_VIEW, "NODE_CREATE_INDEX_VIEW"), root_1);
@@ -4626,7 +4626,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "listStatement"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:321:1: listStatement : LIST columnFamily ( keyRangeExpr )? ( rowLimitExpr )? ( columnLimitExpr )? -> ^( NODE_LIST columnFamily ( keyRangeExpr )? ( rowLimitExpr )? ( columnLimitExpr )? ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:321:1: listStatement : LIST columnFamily ( keyRangeExpr )? ( rowLimitExpr )? ( columnLimitExpr )? -> ^( NODE_LIST columnFamily ( keyRangeExpr )? ( rowLimitExpr )? ( columnLimitExpr )? ) ;
     public final CliParser.listStatement_return listStatement() throws RecognitionException {
         CliParser.listStatement_return retval = new CliParser.listStatement_return();
         retval.start = input.LT(1);
@@ -4650,8 +4650,8 @@ public class CliParser extends Parser {
         RewriteRuleSubtreeStream stream_columnLimitExpr=new RewriteRuleSubtreeStream(adaptor,"rule columnLimitExpr");
         RewriteRuleSubtreeStream stream_keyRangeExpr=new RewriteRuleSubtreeStream(adaptor,"rule keyRangeExpr");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:322:5: ( LIST columnFamily ( keyRangeExpr )? ( rowLimitExpr )? ( columnLimitExpr )? -> ^( NODE_LIST columnFamily ( keyRangeExpr )? ( rowLimitExpr )? ( columnLimitExpr )? ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:322:7: LIST columnFamily ( keyRangeExpr )? ( rowLimitExpr )? ( columnLimitExpr )?
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:322:5: ( LIST columnFamily ( keyRangeExpr )? ( rowLimitExpr )? ( columnLimitExpr )? -> ^( NODE_LIST columnFamily ( keyRangeExpr )? ( rowLimitExpr )? ( columnLimitExpr )? ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:322:7: LIST columnFamily ( keyRangeExpr )? ( rowLimitExpr )? ( columnLimitExpr )?
             {
             LIST193=(Token)match(input,LIST,FOLLOW_LIST_in_listStatement2482); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_LIST.add(LIST193);
@@ -4662,7 +4662,7 @@ public class CliParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_columnFamily.add(columnFamily194.getTree());
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:322:25: ( keyRangeExpr )?
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:322:25: ( keyRangeExpr )?
             int alt21=2;
             int LA21_0 = input.LA(1);
 
@@ -4671,7 +4671,7 @@ public class CliParser extends Parser {
             }
             switch (alt21) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:0:0: keyRangeExpr
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:0:0: keyRangeExpr
                     {
                     pushFollow(FOLLOW_keyRangeExpr_in_listStatement2486);
                     keyRangeExpr195=keyRangeExpr();
@@ -4685,7 +4685,7 @@ public class CliParser extends Parser {
 
             }
 
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:322:39: ( rowLimitExpr )?
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:322:39: ( rowLimitExpr )?
             int alt22=2;
             int LA22_0 = input.LA(1);
 
@@ -4694,7 +4694,7 @@ public class CliParser extends Parser {
             }
             switch (alt22) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:0:0: rowLimitExpr
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:0:0: rowLimitExpr
                     {
                     pushFollow(FOLLOW_rowLimitExpr_in_listStatement2489);
                     rowLimitExpr196=rowLimitExpr();
@@ -4708,7 +4708,7 @@ public class CliParser extends Parser {
 
             }
 
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:322:53: ( columnLimitExpr )?
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:322:53: ( columnLimitExpr )?
             int alt23=2;
             int LA23_0 = input.LA(1);
 
@@ -4717,7 +4717,7 @@ public class CliParser extends Parser {
             }
             switch (alt23) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:0:0: columnLimitExpr
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:0:0: columnLimitExpr
                     {
                     pushFollow(FOLLOW_columnLimitExpr_in_listStatement2492);
                     columnLimitExpr197=columnLimitExpr();
@@ -4734,7 +4734,7 @@ public class CliParser extends Parser {
 
 
             // AST REWRITE
-            // elements: columnLimitExpr, keyRangeExpr, rowLimitExpr, columnFamily
+            // elements: keyRangeExpr, rowLimitExpr, columnFamily, columnLimitExpr
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -4747,25 +4747,25 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 323:9: -> ^( NODE_LIST columnFamily ( keyRangeExpr )? ( rowLimitExpr )? ( columnLimitExpr )? )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:323:12: ^( NODE_LIST columnFamily ( keyRangeExpr )? ( rowLimitExpr )? ( columnLimitExpr )? )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:323:12: ^( NODE_LIST columnFamily ( keyRangeExpr )? ( rowLimitExpr )? ( columnLimitExpr )? )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_LIST, "NODE_LIST"), root_1);
 
                 adaptor.addChild(root_1, stream_columnFamily.nextTree());
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:323:37: ( keyRangeExpr )?
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:323:37: ( keyRangeExpr )?
                 if ( stream_keyRangeExpr.hasNext() ) {
                     adaptor.addChild(root_1, stream_keyRangeExpr.nextTree());
 
                 }
                 stream_keyRangeExpr.reset();
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:323:51: ( rowLimitExpr )?
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:323:51: ( rowLimitExpr )?
                 if ( stream_rowLimitExpr.hasNext() ) {
                     adaptor.addChild(root_1, stream_rowLimitExpr.nextTree());
 
                 }
                 stream_rowLimitExpr.reset();
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:323:65: ( columnLimitExpr )?
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:323:65: ( columnLimitExpr )?
                 if ( stream_columnLimitExpr.hasNext() ) {
                     adaptor.addChild(root_1, stream_columnLimitExpr.nextTree());
 
@@ -4806,7 +4806,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "truncateStatement"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:326:1: truncateStatement : TRUNCATE columnFamily -> ^( NODE_TRUNCATE columnFamily ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:326:1: truncateStatement : TRUNCATE columnFamily -> ^( NODE_TRUNCATE columnFamily ) ;
     public final CliParser.truncateStatement_return truncateStatement() throws RecognitionException {
         CliParser.truncateStatement_return retval = new CliParser.truncateStatement_return();
         retval.start = input.LT(1);
@@ -4821,8 +4821,8 @@ public class CliParser extends Parser {
         RewriteRuleTokenStream stream_TRUNCATE=new RewriteRuleTokenStream(adaptor,"token TRUNCATE");
         RewriteRuleSubtreeStream stream_columnFamily=new RewriteRuleSubtreeStream(adaptor,"rule columnFamily");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:327:5: ( TRUNCATE columnFamily -> ^( NODE_TRUNCATE columnFamily ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:327:7: TRUNCATE columnFamily
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:327:5: ( TRUNCATE columnFamily -> ^( NODE_TRUNCATE columnFamily ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:327:7: TRUNCATE columnFamily
             {
             TRUNCATE198=(Token)match(input,TRUNCATE,FOLLOW_TRUNCATE_in_truncateStatement2535); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_TRUNCATE.add(TRUNCATE198);
@@ -4849,7 +4849,7 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 328:9: -> ^( NODE_TRUNCATE columnFamily )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:328:12: ^( NODE_TRUNCATE columnFamily )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:328:12: ^( NODE_TRUNCATE columnFamily )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_TRUNCATE, "NODE_TRUNCATE"), root_1);
@@ -4890,7 +4890,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "assumeStatement"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:331:1: assumeStatement : ASSUME columnFamily assumptionElement= Identifier 'AS' entityName -> ^( NODE_ASSUME columnFamily $assumptionElement entityName ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:331:1: assumeStatement : ASSUME columnFamily assumptionElement= Identifier 'AS' entityName -> ^( NODE_ASSUME columnFamily $assumptionElement entityName ) ;
     public final CliParser.assumeStatement_return assumeStatement() throws RecognitionException {
         CliParser.assumeStatement_return retval = new CliParser.assumeStatement_return();
         retval.start = input.LT(1);
@@ -4914,8 +4914,8 @@ public class CliParser extends Parser {
         RewriteRuleSubtreeStream stream_columnFamily=new RewriteRuleSubtreeStream(adaptor,"rule columnFamily");
         RewriteRuleSubtreeStream stream_entityName=new RewriteRuleSubtreeStream(adaptor,"rule entityName");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:332:5: ( ASSUME columnFamily assumptionElement= Identifier 'AS' entityName -> ^( NODE_ASSUME columnFamily $assumptionElement entityName ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:332:7: ASSUME columnFamily assumptionElement= Identifier 'AS' entityName
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:332:5: ( ASSUME columnFamily assumptionElement= Identifier 'AS' entityName -> ^( NODE_ASSUME columnFamily $assumptionElement entityName ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:332:7: ASSUME columnFamily assumptionElement= Identifier 'AS' entityName
             {
             ASSUME200=(Token)match(input,ASSUME,FOLLOW_ASSUME_in_assumeStatement2570); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_ASSUME.add(ASSUME200);
@@ -4941,7 +4941,7 @@ public class CliParser extends Parser {
 
 
             // AST REWRITE
-            // elements: columnFamily, entityName, assumptionElement
+            // elements: entityName, columnFamily, assumptionElement
             // token labels: assumptionElement
             // rule labels: retval
             // token list labels: 
@@ -4955,7 +4955,7 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 333:9: -> ^( NODE_ASSUME columnFamily $assumptionElement entityName )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:333:12: ^( NODE_ASSUME columnFamily $assumptionElement entityName )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:333:12: ^( NODE_ASSUME columnFamily $assumptionElement entityName )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_ASSUME, "NODE_ASSUME"), root_1);
@@ -4998,7 +4998,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "consistencyLevelStatement"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:336:1: consistencyLevelStatement : CONSISTENCYLEVEL 'AS' defaultType= Identifier -> ^( NODE_CONSISTENCY_LEVEL $defaultType) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:336:1: consistencyLevelStatement : CONSISTENCYLEVEL 'AS' defaultType= Identifier -> ^( NODE_CONSISTENCY_LEVEL $defaultType) ;
     public final CliParser.consistencyLevelStatement_return consistencyLevelStatement() throws RecognitionException {
         CliParser.consistencyLevelStatement_return retval = new CliParser.consistencyLevelStatement_return();
         retval.start = input.LT(1);
@@ -5017,8 +5017,8 @@ public class CliParser extends Parser {
         RewriteRuleTokenStream stream_Identifier=new RewriteRuleTokenStream(adaptor,"token Identifier");
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:337:5: ( CONSISTENCYLEVEL 'AS' defaultType= Identifier -> ^( NODE_CONSISTENCY_LEVEL $defaultType) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:337:7: CONSISTENCYLEVEL 'AS' defaultType= Identifier
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:337:5: ( CONSISTENCYLEVEL 'AS' defaultType= Identifier -> ^( NODE_CONSISTENCY_LEVEL $defaultType) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:337:7: CONSISTENCYLEVEL 'AS' defaultType= Identifier
             {
             CONSISTENCYLEVEL204=(Token)match(input,CONSISTENCYLEVEL,FOLLOW_CONSISTENCYLEVEL_in_consistencyLevelStatement2618); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_CONSISTENCYLEVEL.add(CONSISTENCYLEVEL204);
@@ -5046,7 +5046,7 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 338:9: -> ^( NODE_CONSISTENCY_LEVEL $defaultType)
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:338:12: ^( NODE_CONSISTENCY_LEVEL $defaultType)
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:338:12: ^( NODE_CONSISTENCY_LEVEL $defaultType)
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_CONSISTENCY_LEVEL, "NODE_CONSISTENCY_LEVEL"), root_1);
@@ -5087,7 +5087,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "showClusterName"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:341:1: showClusterName : SHOW 'CLUSTER NAME' -> ^( NODE_SHOW_CLUSTER_NAME ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:341:1: showClusterName : SHOW 'CLUSTER NAME' -> ^( NODE_SHOW_CLUSTER_NAME ) ;
     public final CliParser.showClusterName_return showClusterName() throws RecognitionException {
         CliParser.showClusterName_return retval = new CliParser.showClusterName_return();
         retval.start = input.LT(1);
@@ -5103,8 +5103,8 @@ public class CliParser extends Parser {
         RewriteRuleTokenStream stream_120=new RewriteRuleTokenStream(adaptor,"token 120");
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:342:5: ( SHOW 'CLUSTER NAME' -> ^( NODE_SHOW_CLUSTER_NAME ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:342:7: SHOW 'CLUSTER NAME'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:342:5: ( SHOW 'CLUSTER NAME' -> ^( NODE_SHOW_CLUSTER_NAME ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:342:7: SHOW 'CLUSTER NAME'
             {
             SHOW206=(Token)match(input,SHOW,FOLLOW_SHOW_in_showClusterName2658); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_SHOW.add(SHOW206);
@@ -5128,7 +5128,7 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 343:9: -> ^( NODE_SHOW_CLUSTER_NAME )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:343:12: ^( NODE_SHOW_CLUSTER_NAME )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:343:12: ^( NODE_SHOW_CLUSTER_NAME )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_SHOW_CLUSTER_NAME, "NODE_SHOW_CLUSTER_NAME"), root_1);
@@ -5167,7 +5167,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "addKeyspace"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:346:1: addKeyspace : CREATE KEYSPACE keyValuePairExpr -> ^( NODE_ADD_KEYSPACE keyValuePairExpr ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:346:1: addKeyspace : CREATE KEYSPACE keyValuePairExpr -> ^( NODE_ADD_KEYSPACE keyValuePairExpr ) ;
     public final CliParser.addKeyspace_return addKeyspace() throws RecognitionException {
         CliParser.addKeyspace_return retval = new CliParser.addKeyspace_return();
         retval.start = input.LT(1);
@@ -5185,8 +5185,8 @@ public class CliParser extends Parser {
         RewriteRuleTokenStream stream_KEYSPACE=new RewriteRuleTokenStream(adaptor,"token KEYSPACE");
         RewriteRuleSubtreeStream stream_keyValuePairExpr=new RewriteRuleSubtreeStream(adaptor,"rule keyValuePairExpr");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:347:5: ( CREATE KEYSPACE keyValuePairExpr -> ^( NODE_ADD_KEYSPACE keyValuePairExpr ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:347:7: CREATE KEYSPACE keyValuePairExpr
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:347:5: ( CREATE KEYSPACE keyValuePairExpr -> ^( NODE_ADD_KEYSPACE keyValuePairExpr ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:347:7: CREATE KEYSPACE keyValuePairExpr
             {
             CREATE208=(Token)match(input,CREATE,FOLLOW_CREATE_in_addKeyspace2691); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_CREATE.add(CREATE208);
@@ -5216,7 +5216,7 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 348:9: -> ^( NODE_ADD_KEYSPACE keyValuePairExpr )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:348:12: ^( NODE_ADD_KEYSPACE keyValuePairExpr )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:348:12: ^( NODE_ADD_KEYSPACE keyValuePairExpr )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_ADD_KEYSPACE, "NODE_ADD_KEYSPACE"), root_1);
@@ -5257,7 +5257,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "addColumnFamily"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:351:1: addColumnFamily : CREATE COLUMN FAMILY keyValuePairExpr -> ^( NODE_ADD_COLUMN_FAMILY keyValuePairExpr ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:351:1: addColumnFamily : CREATE COLUMN FAMILY keyValuePairExpr -> ^( NODE_ADD_COLUMN_FAMILY keyValuePairExpr ) ;
     public final CliParser.addColumnFamily_return addColumnFamily() throws RecognitionException {
         CliParser.addColumnFamily_return retval = new CliParser.addColumnFamily_return();
         retval.start = input.LT(1);
@@ -5278,8 +5278,8 @@ public class CliParser extends Parser {
         RewriteRuleTokenStream stream_COLUMN=new RewriteRuleTokenStream(adaptor,"token COLUMN");
         RewriteRuleSubtreeStream stream_keyValuePairExpr=new RewriteRuleSubtreeStream(adaptor,"rule keyValuePairExpr");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:352:5: ( CREATE COLUMN FAMILY keyValuePairExpr -> ^( NODE_ADD_COLUMN_FAMILY keyValuePairExpr ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:352:7: CREATE COLUMN FAMILY keyValuePairExpr
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:352:5: ( CREATE COLUMN FAMILY keyValuePairExpr -> ^( NODE_ADD_COLUMN_FAMILY keyValuePairExpr ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:352:7: CREATE COLUMN FAMILY keyValuePairExpr
             {
             CREATE211=(Token)match(input,CREATE,FOLLOW_CREATE_in_addColumnFamily2729); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_CREATE.add(CREATE211);
@@ -5312,7 +5312,7 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 353:9: -> ^( NODE_ADD_COLUMN_FAMILY keyValuePairExpr )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:353:12: ^( NODE_ADD_COLUMN_FAMILY keyValuePairExpr )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:353:12: ^( NODE_ADD_COLUMN_FAMILY keyValuePairExpr )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_ADD_COLUMN_FAMILY, "NODE_ADD_COLUMN_FAMILY"), root_1);
@@ -5353,7 +5353,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "updateKeyspace"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:356:1: updateKeyspace : UPDATE KEYSPACE keyValuePairExpr -> ^( NODE_UPDATE_KEYSPACE keyValuePairExpr ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:356:1: updateKeyspace : UPDATE KEYSPACE keyValuePairExpr -> ^( NODE_UPDATE_KEYSPACE keyValuePairExpr ) ;
     public final CliParser.updateKeyspace_return updateKeyspace() throws RecognitionException {
         CliParser.updateKeyspace_return retval = new CliParser.updateKeyspace_return();
         retval.start = input.LT(1);
@@ -5371,8 +5371,8 @@ public class CliParser extends Parser {
         RewriteRuleTokenStream stream_KEYSPACE=new RewriteRuleTokenStream(adaptor,"token KEYSPACE");
         RewriteRuleSubtreeStream stream_keyValuePairExpr=new RewriteRuleSubtreeStream(adaptor,"rule keyValuePairExpr");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:357:5: ( UPDATE KEYSPACE keyValuePairExpr -> ^( NODE_UPDATE_KEYSPACE keyValuePairExpr ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:357:7: UPDATE KEYSPACE keyValuePairExpr
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:357:5: ( UPDATE KEYSPACE keyValuePairExpr -> ^( NODE_UPDATE_KEYSPACE keyValuePairExpr ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:357:7: UPDATE KEYSPACE keyValuePairExpr
             {
             UPDATE215=(Token)match(input,UPDATE,FOLLOW_UPDATE_in_updateKeyspace2769); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_UPDATE.add(UPDATE215);
@@ -5402,7 +5402,7 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 358:9: -> ^( NODE_UPDATE_KEYSPACE keyValuePairExpr )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:358:12: ^( NODE_UPDATE_KEYSPACE keyValuePairExpr )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:358:12: ^( NODE_UPDATE_KEYSPACE keyValuePairExpr )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_UPDATE_KEYSPACE, "NODE_UPDATE_KEYSPACE"), root_1);
@@ -5443,7 +5443,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "updateColumnFamily"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:361:1: updateColumnFamily : UPDATE COLUMN FAMILY keyValuePairExpr -> ^( NODE_UPDATE_COLUMN_FAMILY keyValuePairExpr ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:361:1: updateColumnFamily : UPDATE COLUMN FAMILY keyValuePairExpr -> ^( NODE_UPDATE_COLUMN_FAMILY keyValuePairExpr ) ;
     public final CliParser.updateColumnFamily_return updateColumnFamily() throws RecognitionException {
         CliParser.updateColumnFamily_return retval = new CliParser.updateColumnFamily_return();
         retval.start = input.LT(1);
@@ -5464,8 +5464,8 @@ public class CliParser extends Parser {
         RewriteRuleTokenStream stream_COLUMN=new RewriteRuleTokenStream(adaptor,"token COLUMN");
         RewriteRuleSubtreeStream stream_keyValuePairExpr=new RewriteRuleSubtreeStream(adaptor,"rule keyValuePairExpr");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:362:5: ( UPDATE COLUMN FAMILY keyValuePairExpr -> ^( NODE_UPDATE_COLUMN_FAMILY keyValuePairExpr ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:362:7: UPDATE COLUMN FAMILY keyValuePairExpr
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:362:5: ( UPDATE COLUMN FAMILY keyValuePairExpr -> ^( NODE_UPDATE_COLUMN_FAMILY keyValuePairExpr ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:362:7: UPDATE COLUMN FAMILY keyValuePairExpr
             {
             UPDATE218=(Token)match(input,UPDATE,FOLLOW_UPDATE_in_updateColumnFamily2806); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_UPDATE.add(UPDATE218);
@@ -5498,7 +5498,7 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 363:9: -> ^( NODE_UPDATE_COLUMN_FAMILY keyValuePairExpr )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:363:12: ^( NODE_UPDATE_COLUMN_FAMILY keyValuePairExpr )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:363:12: ^( NODE_UPDATE_COLUMN_FAMILY keyValuePairExpr )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_UPDATE_COLUMN_FAMILY, "NODE_UPDATE_COLUMN_FAMILY"), root_1);
@@ -5539,7 +5539,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "delKeyspace"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:366:1: delKeyspace : DROP KEYSPACE keyspace -> ^( NODE_DEL_KEYSPACE keyspace ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:366:1: delKeyspace : DROP KEYSPACE keyspace -> ^( NODE_DEL_KEYSPACE keyspace ) ;
     public final CliParser.delKeyspace_return delKeyspace() throws RecognitionException {
         CliParser.delKeyspace_return retval = new CliParser.delKeyspace_return();
         retval.start = input.LT(1);
@@ -5557,8 +5557,8 @@ public class CliParser extends Parser {
         RewriteRuleTokenStream stream_KEYSPACE=new RewriteRuleTokenStream(adaptor,"token KEYSPACE");
         RewriteRuleSubtreeStream stream_keyspace=new RewriteRuleSubtreeStream(adaptor,"rule keyspace");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:367:5: ( DROP KEYSPACE keyspace -> ^( NODE_DEL_KEYSPACE keyspace ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:367:7: DROP KEYSPACE keyspace
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:367:5: ( DROP KEYSPACE keyspace -> ^( NODE_DEL_KEYSPACE keyspace ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:367:7: DROP KEYSPACE keyspace
             {
             DROP222=(Token)match(input,DROP,FOLLOW_DROP_in_delKeyspace2845); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_DROP.add(DROP222);
@@ -5588,7 +5588,7 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 368:9: -> ^( NODE_DEL_KEYSPACE keyspace )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:368:12: ^( NODE_DEL_KEYSPACE keyspace )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:368:12: ^( NODE_DEL_KEYSPACE keyspace )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_DEL_KEYSPACE, "NODE_DEL_KEYSPACE"), root_1);
@@ -5629,7 +5629,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "delColumnFamily"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:371:1: delColumnFamily : DROP COLUMN FAMILY columnFamily -> ^( NODE_DEL_COLUMN_FAMILY columnFamily ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:371:1: delColumnFamily : DROP COLUMN FAMILY columnFamily -> ^( NODE_DEL_COLUMN_FAMILY columnFamily ) ;
     public final CliParser.delColumnFamily_return delColumnFamily() throws RecognitionException {
         CliParser.delColumnFamily_return retval = new CliParser.delColumnFamily_return();
         retval.start = input.LT(1);
@@ -5650,8 +5650,8 @@ public class CliParser extends Parser {
         RewriteRuleTokenStream stream_COLUMN=new RewriteRuleTokenStream(adaptor,"token COLUMN");
         RewriteRuleSubtreeStream stream_columnFamily=new RewriteRuleSubtreeStream(adaptor,"rule columnFamily");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:372:5: ( DROP COLUMN FAMILY columnFamily -> ^( NODE_DEL_COLUMN_FAMILY columnFamily ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:372:7: DROP COLUMN FAMILY columnFamily
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:372:5: ( DROP COLUMN FAMILY columnFamily -> ^( NODE_DEL_COLUMN_FAMILY columnFamily ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:372:7: DROP COLUMN FAMILY columnFamily
             {
             DROP225=(Token)match(input,DROP,FOLLOW_DROP_in_delColumnFamily2883); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_DROP.add(DROP225);
@@ -5684,7 +5684,7 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 373:9: -> ^( NODE_DEL_COLUMN_FAMILY columnFamily )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:373:12: ^( NODE_DEL_COLUMN_FAMILY columnFamily )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:373:12: ^( NODE_DEL_COLUMN_FAMILY columnFamily )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_DEL_COLUMN_FAMILY, "NODE_DEL_COLUMN_FAMILY"), root_1);
@@ -5725,7 +5725,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "dropIndex"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:376:1: dropIndex : DROP INDEX ON columnFamily '.' columnName -> ^( NODE_DROP_INDEX columnFamily columnName ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:376:1: dropIndex : DROP INDEX ON columnFamily '.' columnName -> ^( NODE_DROP_INDEX columnFamily columnName ) ;
     public final CliParser.dropIndex_return dropIndex() throws RecognitionException {
         CliParser.dropIndex_return retval = new CliParser.dropIndex_return();
         retval.start = input.LT(1);
@@ -5752,8 +5752,8 @@ public class CliParser extends Parser {
         RewriteRuleSubtreeStream stream_columnFamily=new RewriteRuleSubtreeStream(adaptor,"rule columnFamily");
         RewriteRuleSubtreeStream stream_columnName=new RewriteRuleSubtreeStream(adaptor,"rule columnName");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:377:5: ( DROP INDEX ON columnFamily '.' columnName -> ^( NODE_DROP_INDEX columnFamily columnName ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:377:7: DROP INDEX ON columnFamily '.' columnName
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:377:5: ( DROP INDEX ON columnFamily '.' columnName -> ^( NODE_DROP_INDEX columnFamily columnName ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:377:7: DROP INDEX ON columnFamily '.' columnName
             {
             DROP229=(Token)match(input,DROP,FOLLOW_DROP_in_dropIndex2923); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_DROP.add(DROP229);
@@ -5782,7 +5782,7 @@ public class CliParser extends Parser {
 
 
             // AST REWRITE
-            // elements: columnFamily, columnName
+            // elements: columnName, columnFamily
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -5795,7 +5795,7 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 378:9: -> ^( NODE_DROP_INDEX columnFamily columnName )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:378:12: ^( NODE_DROP_INDEX columnFamily columnName )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:378:12: ^( NODE_DROP_INDEX columnFamily columnName )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_DROP_INDEX, "NODE_DROP_INDEX"), root_1);
@@ -5837,7 +5837,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "showVersion"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:381:1: showVersion : SHOW API_VERSION -> ^( NODE_SHOW_VERSION ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:381:1: showVersion : SHOW API_VERSION -> ^( NODE_SHOW_VERSION ) ;
     public final CliParser.showVersion_return showVersion() throws RecognitionException {
         CliParser.showVersion_return retval = new CliParser.showVersion_return();
         retval.start = input.LT(1);
@@ -5853,8 +5853,8 @@ public class CliParser extends Parser {
         RewriteRuleTokenStream stream_SHOW=new RewriteRuleTokenStream(adaptor,"token SHOW");
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:382:5: ( SHOW API_VERSION -> ^( NODE_SHOW_VERSION ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:382:7: SHOW API_VERSION
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:382:5: ( SHOW API_VERSION -> ^( NODE_SHOW_VERSION ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:382:7: SHOW API_VERSION
             {
             SHOW235=(Token)match(input,SHOW,FOLLOW_SHOW_in_showVersion2968); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_SHOW.add(SHOW235);
@@ -5878,7 +5878,7 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 383:9: -> ^( NODE_SHOW_VERSION )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:383:12: ^( NODE_SHOW_VERSION )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:383:12: ^( NODE_SHOW_VERSION )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_SHOW_VERSION, "NODE_SHOW_VERSION"), root_1);
@@ -5917,7 +5917,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "showKeyspaces"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:386:1: showKeyspaces : SHOW KEYSPACES -> ^( NODE_SHOW_KEYSPACES ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:386:1: showKeyspaces : SHOW KEYSPACES -> ^( NODE_SHOW_KEYSPACES ) ;
     public final CliParser.showKeyspaces_return showKeyspaces() throws RecognitionException {
         CliParser.showKeyspaces_return retval = new CliParser.showKeyspaces_return();
         retval.start = input.LT(1);
@@ -5933,8 +5933,8 @@ public class CliParser extends Parser {
         RewriteRuleTokenStream stream_SHOW=new RewriteRuleTokenStream(adaptor,"token SHOW");
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:387:5: ( SHOW KEYSPACES -> ^( NODE_SHOW_KEYSPACES ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:387:7: SHOW KEYSPACES
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:387:5: ( SHOW KEYSPACES -> ^( NODE_SHOW_KEYSPACES ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:387:7: SHOW KEYSPACES
             {
             SHOW237=(Token)match(input,SHOW,FOLLOW_SHOW_in_showKeyspaces3001); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_SHOW.add(SHOW237);
@@ -5958,7 +5958,7 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 388:9: -> ^( NODE_SHOW_KEYSPACES )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:388:12: ^( NODE_SHOW_KEYSPACES )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:388:12: ^( NODE_SHOW_KEYSPACES )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_SHOW_KEYSPACES, "NODE_SHOW_KEYSPACES"), root_1);
@@ -5997,7 +5997,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "showSchema"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:391:1: showSchema : SHOW SCHEMA ( keyspace )? -> ^( NODE_SHOW_SCHEMA ( keyspace )? ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:391:1: showSchema : SHOW SCHEMA ( keyspace )? -> ^( NODE_SHOW_SCHEMA ( keyspace )? ) ;
     public final CliParser.showSchema_return showSchema() throws RecognitionException {
         CliParser.showSchema_return retval = new CliParser.showSchema_return();
         retval.start = input.LT(1);
@@ -6015,8 +6015,8 @@ public class CliParser extends Parser {
         RewriteRuleTokenStream stream_SHOW=new RewriteRuleTokenStream(adaptor,"token SHOW");
         RewriteRuleSubtreeStream stream_keyspace=new RewriteRuleSubtreeStream(adaptor,"rule keyspace");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:392:5: ( SHOW SCHEMA ( keyspace )? -> ^( NODE_SHOW_SCHEMA ( keyspace )? ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:392:7: SHOW SCHEMA ( keyspace )?
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:392:5: ( SHOW SCHEMA ( keyspace )? -> ^( NODE_SHOW_SCHEMA ( keyspace )? ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:392:7: SHOW SCHEMA ( keyspace )?
             {
             SHOW239=(Token)match(input,SHOW,FOLLOW_SHOW_in_showSchema3035); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_SHOW.add(SHOW239);
@@ -6024,7 +6024,7 @@ public class CliParser extends Parser {
             SCHEMA240=(Token)match(input,SCHEMA,FOLLOW_SCHEMA_in_showSchema3037); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_SCHEMA.add(SCHEMA240);
 
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:392:19: ( keyspace )?
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:392:19: ( keyspace )?
             int alt24=2;
             int LA24_0 = input.LA(1);
 
@@ -6033,7 +6033,7 @@ public class CliParser extends Parser {
             }
             switch (alt24) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:392:20: keyspace
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:392:20: keyspace
                     {
                     pushFollow(FOLLOW_keyspace_in_showSchema3040);
                     keyspace241=keyspace();
@@ -6063,12 +6063,12 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 393:9: -> ^( NODE_SHOW_SCHEMA ( keyspace )? )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:393:12: ^( NODE_SHOW_SCHEMA ( keyspace )? )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:393:12: ^( NODE_SHOW_SCHEMA ( keyspace )? )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_SHOW_SCHEMA, "NODE_SHOW_SCHEMA"), root_1);
 
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:393:31: ( keyspace )?
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:393:31: ( keyspace )?
                 if ( stream_keyspace.hasNext() ) {
                     adaptor.addChild(root_1, stream_keyspace.nextTree());
 
@@ -6109,7 +6109,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "describeTable"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:396:1: describeTable : DESCRIBE ( keyspace )? -> ^( NODE_DESCRIBE ( keyspace )? ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:396:1: describeTable : DESCRIBE ( keyspace )? -> ^( NODE_DESCRIBE ( keyspace )? ) ;
     public final CliParser.describeTable_return describeTable() throws RecognitionException {
         CliParser.describeTable_return retval = new CliParser.describeTable_return();
         retval.start = input.LT(1);
@@ -6124,13 +6124,13 @@ public class CliParser extends Parser {
         RewriteRuleTokenStream stream_DESCRIBE=new RewriteRuleTokenStream(adaptor,"token DESCRIBE");
         RewriteRuleSubtreeStream stream_keyspace=new RewriteRuleSubtreeStream(adaptor,"rule keyspace");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:397:5: ( DESCRIBE ( keyspace )? -> ^( NODE_DESCRIBE ( keyspace )? ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:397:7: DESCRIBE ( keyspace )?
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:397:5: ( DESCRIBE ( keyspace )? -> ^( NODE_DESCRIBE ( keyspace )? ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:397:7: DESCRIBE ( keyspace )?
             {
             DESCRIBE242=(Token)match(input,DESCRIBE,FOLLOW_DESCRIBE_in_describeTable3078); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_DESCRIBE.add(DESCRIBE242);
 
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:397:16: ( keyspace )?
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:397:16: ( keyspace )?
             int alt25=2;
             int LA25_0 = input.LA(1);
 
@@ -6139,7 +6139,7 @@ public class CliParser extends Parser {
             }
             switch (alt25) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:397:17: keyspace
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:397:17: keyspace
                     {
                     pushFollow(FOLLOW_keyspace_in_describeTable3081);
                     keyspace243=keyspace();
@@ -6169,12 +6169,12 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 398:9: -> ^( NODE_DESCRIBE ( keyspace )? )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:398:12: ^( NODE_DESCRIBE ( keyspace )? )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:398:12: ^( NODE_DESCRIBE ( keyspace )? )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_DESCRIBE, "NODE_DESCRIBE"), root_1);
 
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:398:28: ( keyspace )?
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:398:28: ( keyspace )?
                 if ( stream_keyspace.hasNext() ) {
                     adaptor.addChild(root_1, stream_keyspace.nextTree());
 
@@ -6215,7 +6215,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "describeCluster"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:401:1: describeCluster : DESCRIBE 'CLUSTER' -> ^( NODE_DESCRIBE_CLUSTER ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:401:1: describeCluster : DESCRIBE 'CLUSTER' -> ^( NODE_DESCRIBE_CLUSTER ) ;
     public final CliParser.describeCluster_return describeCluster() throws RecognitionException {
         CliParser.describeCluster_return retval = new CliParser.describeCluster_return();
         retval.start = input.LT(1);
@@ -6231,8 +6231,8 @@ public class CliParser extends Parser {
         RewriteRuleTokenStream stream_119=new RewriteRuleTokenStream(adaptor,"token 119");
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:402:5: ( DESCRIBE 'CLUSTER' -> ^( NODE_DESCRIBE_CLUSTER ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:402:7: DESCRIBE 'CLUSTER'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:402:5: ( DESCRIBE 'CLUSTER' -> ^( NODE_DESCRIBE_CLUSTER ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:402:7: DESCRIBE 'CLUSTER'
             {
             DESCRIBE244=(Token)match(input,DESCRIBE,FOLLOW_DESCRIBE_in_describeCluster3123); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_DESCRIBE.add(DESCRIBE244);
@@ -6256,7 +6256,7 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 403:9: -> ^( NODE_DESCRIBE_CLUSTER )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:403:12: ^( NODE_DESCRIBE_CLUSTER )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:403:12: ^( NODE_DESCRIBE_CLUSTER )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_DESCRIBE_CLUSTER, "NODE_DESCRIBE_CLUSTER"), root_1);
@@ -6295,7 +6295,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "useKeyspace"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:406:1: useKeyspace : USE keyspace ( username )? ( password )? -> ^( NODE_USE_TABLE keyspace ( username )? ( password )? ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:406:1: useKeyspace : USE keyspace ( username )? ( password )? -> ^( NODE_USE_TABLE keyspace ( username )? ( password )? ) ;
     public final CliParser.useKeyspace_return useKeyspace() throws RecognitionException {
         CliParser.useKeyspace_return retval = new CliParser.useKeyspace_return();
         retval.start = input.LT(1);
@@ -6316,8 +6316,8 @@ public class CliParser extends Parser {
         RewriteRuleSubtreeStream stream_keyspace=new RewriteRuleSubtreeStream(adaptor,"rule keyspace");
         RewriteRuleSubtreeStream stream_password=new RewriteRuleSubtreeStream(adaptor,"rule password");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:407:5: ( USE keyspace ( username )? ( password )? -> ^( NODE_USE_TABLE keyspace ( username )? ( password )? ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:407:7: USE keyspace ( username )? ( password )?
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:407:5: ( USE keyspace ( username )? ( password )? -> ^( NODE_USE_TABLE keyspace ( username )? ( password )? ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:407:7: USE keyspace ( username )? ( password )?
             {
             USE246=(Token)match(input,USE,FOLLOW_USE_in_useKeyspace3156); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_USE.add(USE246);
@@ -6328,7 +6328,7 @@ public class CliParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_keyspace.add(keyspace247.getTree());
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:407:20: ( username )?
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:407:20: ( username )?
             int alt26=2;
             int LA26_0 = input.LA(1);
 
@@ -6337,7 +6337,7 @@ public class CliParser extends Parser {
             }
             switch (alt26) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:407:22: username
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:407:22: username
                     {
                     pushFollow(FOLLOW_username_in_useKeyspace3162);
                     username248=username();
@@ -6351,7 +6351,7 @@ public class CliParser extends Parser {
 
             }
 
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:407:34: ( password )?
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:407:34: ( password )?
             int alt27=2;
             int LA27_0 = input.LA(1);
 
@@ -6360,7 +6360,7 @@ public class CliParser extends Parser {
             }
             switch (alt27) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:407:36: password
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:407:36: password
                     {
                     pushFollow(FOLLOW_password_in_useKeyspace3169);
                     password249=password();
@@ -6377,7 +6377,7 @@ public class CliParser extends Parser {
 
 
             // AST REWRITE
-            // elements: password, username, keyspace
+            // elements: username, password, keyspace
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -6390,19 +6390,19 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 408:9: -> ^( NODE_USE_TABLE keyspace ( username )? ( password )? )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:408:12: ^( NODE_USE_TABLE keyspace ( username )? ( password )? )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:408:12: ^( NODE_USE_TABLE keyspace ( username )? ( password )? )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_USE_TABLE, "NODE_USE_TABLE"), root_1);
 
                 adaptor.addChild(root_1, stream_keyspace.nextTree());
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:408:38: ( username )?
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:408:38: ( username )?
                 if ( stream_username.hasNext() ) {
                     adaptor.addChild(root_1, stream_username.nextTree());
 
                 }
                 stream_username.reset();
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:408:52: ( password )?
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:408:52: ( password )?
                 if ( stream_password.hasNext() ) {
                     adaptor.addChild(root_1, stream_password.nextTree());
 
@@ -6443,7 +6443,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "traceNextQuery"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:411:1: traceNextQuery : TRACE NEXT QUERY -> ^( NODE_TRACE_NEXT_QUERY ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:411:1: traceNextQuery : TRACE NEXT QUERY -> ^( NODE_TRACE_NEXT_QUERY ) ;
     public final CliParser.traceNextQuery_return traceNextQuery() throws RecognitionException {
         CliParser.traceNextQuery_return retval = new CliParser.traceNextQuery_return();
         retval.start = input.LT(1);
@@ -6462,8 +6462,8 @@ public class CliParser extends Parser {
         RewriteRuleTokenStream stream_TRACE=new RewriteRuleTokenStream(adaptor,"token TRACE");
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:412:5: ( TRACE NEXT QUERY -> ^( NODE_TRACE_NEXT_QUERY ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:412:7: TRACE NEXT QUERY
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:412:5: ( TRACE NEXT QUERY -> ^( NODE_TRACE_NEXT_QUERY ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:412:7: TRACE NEXT QUERY
             {
             TRACE250=(Token)match(input,TRACE,FOLLOW_TRACE_in_traceNextQuery3224); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_TRACE.add(TRACE250);
@@ -6490,7 +6490,7 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 413:9: -> ^( NODE_TRACE_NEXT_QUERY )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:413:12: ^( NODE_TRACE_NEXT_QUERY )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:413:12: ^( NODE_TRACE_NEXT_QUERY )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_TRACE_NEXT_QUERY, "NODE_TRACE_NEXT_QUERY"), root_1);
@@ -6529,7 +6529,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "setTraceProbability"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:416:1: setTraceProbability : SET TRACE PROBABILITY tracingProbability -> ^( NODE_SET_TRACE_PROBABILITY tracingProbability ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:416:1: setTraceProbability : SET TRACE PROBABILITY tracingProbability -> ^( NODE_SET_TRACE_PROBABILITY tracingProbability ) ;
     public final CliParser.setTraceProbability_return setTraceProbability() throws RecognitionException {
         CliParser.setTraceProbability_return retval = new CliParser.setTraceProbability_return();
         retval.start = input.LT(1);
@@ -6550,8 +6550,8 @@ public class CliParser extends Parser {
         RewriteRuleTokenStream stream_TRACE=new RewriteRuleTokenStream(adaptor,"token TRACE");
         RewriteRuleSubtreeStream stream_tracingProbability=new RewriteRuleSubtreeStream(adaptor,"rule tracingProbability");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:417:5: ( SET TRACE PROBABILITY tracingProbability -> ^( NODE_SET_TRACE_PROBABILITY tracingProbability ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:417:7: SET TRACE PROBABILITY tracingProbability
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:417:5: ( SET TRACE PROBABILITY tracingProbability -> ^( NODE_SET_TRACE_PROBABILITY tracingProbability ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:417:7: SET TRACE PROBABILITY tracingProbability
             {
             SET253=(Token)match(input,SET,FOLLOW_SET_in_setTraceProbability3259); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_SET.add(SET253);
@@ -6584,7 +6584,7 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 418:9: -> ^( NODE_SET_TRACE_PROBABILITY tracingProbability )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:418:12: ^( NODE_SET_TRACE_PROBABILITY tracingProbability )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:418:12: ^( NODE_SET_TRACE_PROBABILITY tracingProbability )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_SET_TRACE_PROBABILITY, "NODE_SET_TRACE_PROBABILITY"), root_1);
@@ -6625,7 +6625,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "keyValuePairExpr"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:421:1: keyValuePairExpr : entityName ( ( AND | WITH ) keyValuePair )* -> ^( NODE_NEW_KEYSPACE_ACCESS entityName ( keyValuePair )* ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:421:1: keyValuePairExpr : entityName ( ( AND | WITH ) keyValuePair )* -> ^( NODE_NEW_KEYSPACE_ACCESS entityName ( keyValuePair )* ) ;
     public final CliParser.keyValuePairExpr_return keyValuePairExpr() throws RecognitionException {
         CliParser.keyValuePairExpr_return retval = new CliParser.keyValuePairExpr_return();
         retval.start = input.LT(1);
@@ -6646,8 +6646,8 @@ public class CliParser extends Parser {
         RewriteRuleSubtreeStream stream_keyValuePair=new RewriteRuleSubtreeStream(adaptor,"rule keyValuePair");
         RewriteRuleSubtreeStream stream_entityName=new RewriteRuleSubtreeStream(adaptor,"rule entityName");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:422:5: ( entityName ( ( AND | WITH ) keyValuePair )* -> ^( NODE_NEW_KEYSPACE_ACCESS entityName ( keyValuePair )* ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:422:7: entityName ( ( AND | WITH ) keyValuePair )*
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:422:5: ( entityName ( ( AND | WITH ) keyValuePair )* -> ^( NODE_NEW_KEYSPACE_ACCESS entityName ( keyValuePair )* ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:422:7: entityName ( ( AND | WITH ) keyValuePair )*
             {
             pushFollow(FOLLOW_entityName_in_keyValuePairExpr3298);
             entityName257=entityName();
@@ -6655,7 +6655,7 @@ public class CliParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_entityName.add(entityName257.getTree());
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:422:18: ( ( AND | WITH ) keyValuePair )*
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:422:18: ( ( AND | WITH ) keyValuePair )*
             loop29:
             do {
                 int alt29=2;
@@ -6668,9 +6668,9 @@ public class CliParser extends Parser {
 
                 switch (alt29) {
             	case 1 :
-            	    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:422:20: ( AND | WITH ) keyValuePair
+            	    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:422:20: ( AND | WITH ) keyValuePair
             	    {
-            	    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:422:20: ( AND | WITH )
+            	    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:422:20: ( AND | WITH )
             	    int alt28=2;
             	    int LA28_0 = input.LA(1);
 
@@ -6689,7 +6689,7 @@ public class CliParser extends Parser {
             	    }
             	    switch (alt28) {
             	        case 1 :
-            	            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:422:21: AND
+            	            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:422:21: AND
             	            {
             	            AND258=(Token)match(input,AND,FOLLOW_AND_in_keyValuePairExpr3303); if (state.failed) return retval; 
             	            if ( state.backtracking==0 ) stream_AND.add(AND258);
@@ -6698,7 +6698,7 @@ public class CliParser extends Parser {
             	            }
             	            break;
             	        case 2 :
-            	            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:422:27: WITH
+            	            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:422:27: WITH
             	            {
             	            WITH259=(Token)match(input,WITH,FOLLOW_WITH_in_keyValuePairExpr3307); if (state.failed) return retval; 
             	            if ( state.backtracking==0 ) stream_WITH.add(WITH259);
@@ -6740,13 +6740,13 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 423:9: -> ^( NODE_NEW_KEYSPACE_ACCESS entityName ( keyValuePair )* )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:423:12: ^( NODE_NEW_KEYSPACE_ACCESS entityName ( keyValuePair )* )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:423:12: ^( NODE_NEW_KEYSPACE_ACCESS entityName ( keyValuePair )* )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_NEW_KEYSPACE_ACCESS, "NODE_NEW_KEYSPACE_ACCESS"), root_1);
 
                 adaptor.addChild(root_1, stream_entityName.nextTree());
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:423:50: ( keyValuePair )*
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:423:50: ( keyValuePair )*
                 while ( stream_keyValuePair.hasNext() ) {
                     adaptor.addChild(root_1, stream_keyValuePair.nextTree());
 
@@ -6787,7 +6787,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "keyValuePair"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:426:1: keyValuePair : attr_name '=' attrValue -> attr_name attrValue ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:426:1: keyValuePair : attr_name '=' attrValue -> attr_name attrValue ;
     public final CliParser.keyValuePair_return keyValuePair() throws RecognitionException {
         CliParser.keyValuePair_return retval = new CliParser.keyValuePair_return();
         retval.start = input.LT(1);
@@ -6805,8 +6805,8 @@ public class CliParser extends Parser {
         RewriteRuleSubtreeStream stream_attr_name=new RewriteRuleSubtreeStream(adaptor,"rule attr_name");
         RewriteRuleSubtreeStream stream_attrValue=new RewriteRuleSubtreeStream(adaptor,"rule attrValue");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:427:5: ( attr_name '=' attrValue -> attr_name attrValue )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:427:7: attr_name '=' attrValue
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:427:5: ( attr_name '=' attrValue -> attr_name attrValue )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:427:7: attr_name '=' attrValue
             {
             pushFollow(FOLLOW_attr_name_in_keyValuePair3367);
             attr_name261=attr_name();
@@ -6873,7 +6873,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "attrValue"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:431:1: attrValue : ( arrayConstruct | hashConstruct | attrValueString | attrValueInt | attrValueDouble );
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:431:1: attrValue : ( arrayConstruct | hashConstruct | attrValueString | attrValueInt | attrValueDouble );
     public final CliParser.attrValue_return attrValue() throws RecognitionException {
         CliParser.attrValue_return retval = new CliParser.attrValue_return();
         retval.start = input.LT(1);
@@ -6893,7 +6893,7 @@ public class CliParser extends Parser {
 
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:432:5: ( arrayConstruct | hashConstruct | attrValueString | attrValueInt | attrValueDouble )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:432:5: ( arrayConstruct | hashConstruct | attrValueString | attrValueInt | attrValueDouble )
             int alt30=5;
             switch ( input.LA(1) ) {
             case 130:
@@ -6933,7 +6933,7 @@ public class CliParser extends Parser {
 
             switch (alt30) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:432:7: arrayConstruct
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:432:7: arrayConstruct
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -6947,7 +6947,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:433:7: hashConstruct
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:433:7: hashConstruct
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -6961,7 +6961,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:434:7: attrValueString
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:434:7: attrValueString
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -6975,7 +6975,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:435:7: attrValueInt
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:435:7: attrValueInt
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -6989,7 +6989,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 5 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:436:7: attrValueDouble
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:436:7: attrValueDouble
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -7030,7 +7030,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "arrayConstruct"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:440:1: arrayConstruct : '[' ( hashConstruct ( ',' )? )* ']' -> ^( ARRAY ( hashConstruct )* ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:440:1: arrayConstruct : '[' ( hashConstruct ( ',' )? )* ']' -> ^( ARRAY ( hashConstruct )* ) ;
     public final CliParser.arrayConstruct_return arrayConstruct() throws RecognitionException {
         CliParser.arrayConstruct_return retval = new CliParser.arrayConstruct_return();
         retval.start = input.LT(1);
@@ -7051,13 +7051,13 @@ public class CliParser extends Parser {
         RewriteRuleTokenStream stream_130=new RewriteRuleTokenStream(adaptor,"token 130");
         RewriteRuleSubtreeStream stream_hashConstruct=new RewriteRuleSubtreeStream(adaptor,"rule hashConstruct");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:441:5: ( '[' ( hashConstruct ( ',' )? )* ']' -> ^( ARRAY ( hashConstruct )* ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:441:7: '[' ( hashConstruct ( ',' )? )* ']'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:441:5: ( '[' ( hashConstruct ( ',' )? )* ']' -> ^( ARRAY ( hashConstruct )* ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:441:7: '[' ( hashConstruct ( ',' )? )* ']'
             {
             char_literal269=(Token)match(input,130,FOLLOW_130_in_arrayConstruct3454); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_130.add(char_literal269);
 
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:441:11: ( hashConstruct ( ',' )? )*
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:441:11: ( hashConstruct ( ',' )? )*
             loop32:
             do {
                 int alt32=2;
@@ -7070,7 +7070,7 @@ public class CliParser extends Parser {
 
                 switch (alt32) {
             	case 1 :
-            	    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:441:12: hashConstruct ( ',' )?
+            	    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:441:12: hashConstruct ( ',' )?
             	    {
             	    pushFollow(FOLLOW_hashConstruct_in_arrayConstruct3457);
             	    hashConstruct270=hashConstruct();
@@ -7078,7 +7078,7 @@ public class CliParser extends Parser {
             	    state._fsp--;
             	    if (state.failed) return retval;
             	    if ( state.backtracking==0 ) stream_hashConstruct.add(hashConstruct270.getTree());
-            	    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:441:26: ( ',' )?
+            	    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:441:26: ( ',' )?
             	    int alt31=2;
             	    int LA31_0 = input.LA(1);
 
@@ -7087,7 +7087,7 @@ public class CliParser extends Parser {
             	    }
             	    switch (alt31) {
             	        case 1 :
-            	            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:0:0: ','
+            	            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:0:0: ','
             	            {
             	            char_literal271=(Token)match(input,131,FOLLOW_131_in_arrayConstruct3459); if (state.failed) return retval; 
             	            if ( state.backtracking==0 ) stream_131.add(char_literal271);
@@ -7126,12 +7126,12 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 442:9: -> ^( ARRAY ( hashConstruct )* )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:442:12: ^( ARRAY ( hashConstruct )* )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:442:12: ^( ARRAY ( hashConstruct )* )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(ARRAY, "ARRAY"), root_1);
 
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:442:20: ( hashConstruct )*
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:442:20: ( hashConstruct )*
                 while ( stream_hashConstruct.hasNext() ) {
                     adaptor.addChild(root_1, stream_hashConstruct.nextTree());
 
@@ -7172,7 +7172,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "hashConstruct"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:445:1: hashConstruct : '{' hashElementPair ( ',' hashElementPair )* '}' -> ^( HASH ( hashElementPair )+ ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:445:1: hashConstruct : '{' hashElementPair ( ',' hashElementPair )* '}' -> ^( HASH ( hashElementPair )+ ) ;
     public final CliParser.hashConstruct_return hashConstruct() throws RecognitionException {
         CliParser.hashConstruct_return retval = new CliParser.hashConstruct_return();
         retval.start = input.LT(1);
@@ -7195,8 +7195,8 @@ public class CliParser extends Parser {
         RewriteRuleTokenStream stream_131=new RewriteRuleTokenStream(adaptor,"token 131");
         RewriteRuleSubtreeStream stream_hashElementPair=new RewriteRuleSubtreeStream(adaptor,"rule hashElementPair");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:446:5: ( '{' hashElementPair ( ',' hashElementPair )* '}' -> ^( HASH ( hashElementPair )+ ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:446:7: '{' hashElementPair ( ',' hashElementPair )* '}'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:446:5: ( '{' hashElementPair ( ',' hashElementPair )* '}' -> ^( HASH ( hashElementPair )+ ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:446:7: '{' hashElementPair ( ',' hashElementPair )* '}'
             {
             char_literal273=(Token)match(input,133,FOLLOW_133_in_hashConstruct3502); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_133.add(char_literal273);
@@ -7207,7 +7207,7 @@ public class CliParser extends Parser {
             state._fsp--;
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_hashElementPair.add(hashElementPair274.getTree());
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:446:27: ( ',' hashElementPair )*
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:446:27: ( ',' hashElementPair )*
             loop33:
             do {
                 int alt33=2;
@@ -7220,7 +7220,7 @@ public class CliParser extends Parser {
 
                 switch (alt33) {
             	case 1 :
-            	    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:446:28: ',' hashElementPair
+            	    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:446:28: ',' hashElementPair
             	    {
             	    char_literal275=(Token)match(input,131,FOLLOW_131_in_hashConstruct3507); if (state.failed) return retval; 
             	    if ( state.backtracking==0 ) stream_131.add(char_literal275);
@@ -7259,7 +7259,7 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 447:9: -> ^( HASH ( hashElementPair )+ )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:447:12: ^( HASH ( hashElementPair )+ )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:447:12: ^( HASH ( hashElementPair )+ )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(HASH, "HASH"), root_1);
@@ -7307,7 +7307,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "hashElementPair"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:450:1: hashElementPair : rowKey ':' rowValue -> ^( PAIR rowKey rowValue ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:450:1: hashElementPair : rowKey ':' rowValue -> ^( PAIR rowKey rowValue ) ;
     public final CliParser.hashElementPair_return hashElementPair() throws RecognitionException {
         CliParser.hashElementPair_return retval = new CliParser.hashElementPair_return();
         retval.start = input.LT(1);
@@ -7325,8 +7325,8 @@ public class CliParser extends Parser {
         RewriteRuleSubtreeStream stream_rowKey=new RewriteRuleSubtreeStream(adaptor,"rule rowKey");
         RewriteRuleSubtreeStream stream_rowValue=new RewriteRuleSubtreeStream(adaptor,"rule rowValue");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:451:5: ( rowKey ':' rowValue -> ^( PAIR rowKey rowValue ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:451:7: rowKey ':' rowValue
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:451:5: ( rowKey ':' rowValue -> ^( PAIR rowKey rowValue ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:451:7: rowKey ':' rowValue
             {
             pushFollow(FOLLOW_rowKey_in_hashElementPair3549);
             rowKey278=rowKey();
@@ -7359,7 +7359,7 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 452:9: -> ^( PAIR rowKey rowValue )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:452:12: ^( PAIR rowKey rowValue )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:452:12: ^( PAIR rowKey rowValue )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(PAIR, "PAIR"), root_1);
@@ -7401,7 +7401,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "columnFamilyExpr"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:455:1: columnFamilyExpr : columnFamily '[' rowKey ']' ( '[' column= columnOrSuperColumn ']' ( '[' super_column= columnOrSuperColumn ']' )? )? -> ^( NODE_COLUMN_ACCESS columnFamily rowKey ( $column ( $super_column)? )? ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:455:1: columnFamilyExpr : columnFamily '[' rowKey ']' ( '[' column= columnOrSuperColumn ']' ( '[' super_column= columnOrSuperColumn ']' )? )? -> ^( NODE_COLUMN_ACCESS columnFamily rowKey ( $column ( $super_column)? )? ) ;
     public final CliParser.columnFamilyExpr_return columnFamilyExpr() throws RecognitionException {
         CliParser.columnFamilyExpr_return retval = new CliParser.columnFamilyExpr_return();
         retval.start = input.LT(1);
@@ -7435,8 +7435,8 @@ public class CliParser extends Parser {
         RewriteRuleSubtreeStream stream_rowKey=new RewriteRuleSubtreeStream(adaptor,"rule rowKey");
         RewriteRuleSubtreeStream stream_columnOrSuperColumn=new RewriteRuleSubtreeStream(adaptor,"rule columnOrSuperColumn");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:456:5: ( columnFamily '[' rowKey ']' ( '[' column= columnOrSuperColumn ']' ( '[' super_column= columnOrSuperColumn ']' )? )? -> ^( NODE_COLUMN_ACCESS columnFamily rowKey ( $column ( $super_column)? )? ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:456:7: columnFamily '[' rowKey ']' ( '[' column= columnOrSuperColumn ']' ( '[' super_column= columnOrSuperColumn ']' )? )?
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:456:5: ( columnFamily '[' rowKey ']' ( '[' column= columnOrSuperColumn ']' ( '[' super_column= columnOrSuperColumn ']' )? )? -> ^( NODE_COLUMN_ACCESS columnFamily rowKey ( $column ( $super_column)? )? ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:456:7: columnFamily '[' rowKey ']' ( '[' column= columnOrSuperColumn ']' ( '[' super_column= columnOrSuperColumn ']' )? )?
             {
             pushFollow(FOLLOW_columnFamily_in_columnFamilyExpr3588);
             columnFamily281=columnFamily();
@@ -7456,7 +7456,7 @@ public class CliParser extends Parser {
             char_literal284=(Token)match(input,132,FOLLOW_132_in_columnFamilyExpr3594); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_132.add(char_literal284);
 
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:457:9: ( '[' column= columnOrSuperColumn ']' ( '[' super_column= columnOrSuperColumn ']' )? )?
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:457:9: ( '[' column= columnOrSuperColumn ']' ( '[' super_column= columnOrSuperColumn ']' )? )?
             int alt35=2;
             int LA35_0 = input.LA(1);
 
@@ -7465,7 +7465,7 @@ public class CliParser extends Parser {
             }
             switch (alt35) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:457:11: '[' column= columnOrSuperColumn ']' ( '[' super_column= columnOrSuperColumn ']' )?
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:457:11: '[' column= columnOrSuperColumn ']' ( '[' super_column= columnOrSuperColumn ']' )?
                     {
                     char_literal285=(Token)match(input,130,FOLLOW_130_in_columnFamilyExpr3607); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_130.add(char_literal285);
@@ -7479,7 +7479,7 @@ public class CliParser extends Parser {
                     char_literal286=(Token)match(input,132,FOLLOW_132_in_columnFamilyExpr3613); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_132.add(char_literal286);
 
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:458:13: ( '[' super_column= columnOrSuperColumn ']' )?
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:458:13: ( '[' super_column= columnOrSuperColumn ']' )?
                     int alt34=2;
                     int LA34_0 = input.LA(1);
 
@@ -7488,7 +7488,7 @@ public class CliParser extends Parser {
                     }
                     switch (alt34) {
                         case 1 :
-                            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:458:14: '[' super_column= columnOrSuperColumn ']'
+                            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:458:14: '[' super_column= columnOrSuperColumn ']'
                             {
                             char_literal287=(Token)match(input,130,FOLLOW_130_in_columnFamilyExpr3629); if (state.failed) return retval; 
                             if ( state.backtracking==0 ) stream_130.add(char_literal287);
@@ -7517,7 +7517,7 @@ public class CliParser extends Parser {
 
 
             // AST REWRITE
-            // elements: column, rowKey, columnFamily, super_column
+            // elements: super_column, column, columnFamily, rowKey
             // token labels: 
             // rule labels: retval, column, super_column
             // token list labels: 
@@ -7532,17 +7532,17 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 460:7: -> ^( NODE_COLUMN_ACCESS columnFamily rowKey ( $column ( $super_column)? )? )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:460:10: ^( NODE_COLUMN_ACCESS columnFamily rowKey ( $column ( $super_column)? )? )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:460:10: ^( NODE_COLUMN_ACCESS columnFamily rowKey ( $column ( $super_column)? )? )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_COLUMN_ACCESS, "NODE_COLUMN_ACCESS"), root_1);
 
                 adaptor.addChild(root_1, stream_columnFamily.nextTree());
                 adaptor.addChild(root_1, stream_rowKey.nextTree());
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:460:51: ( $column ( $super_column)? )?
-                if ( stream_column.hasNext()||stream_super_column.hasNext() ) {
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:460:51: ( $column ( $super_column)? )?
+                if ( stream_super_column.hasNext()||stream_column.hasNext() ) {
                     adaptor.addChild(root_1, stream_column.nextTree());
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:460:60: ( $super_column)?
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:460:60: ( $super_column)?
                     if ( stream_super_column.hasNext() ) {
                         adaptor.addChild(root_1, stream_super_column.nextTree());
 
@@ -7550,8 +7550,8 @@ public class CliParser extends Parser {
                     stream_super_column.reset();
 
                 }
-                stream_column.reset();
                 stream_super_column.reset();
+                stream_column.reset();
 
                 adaptor.addChild(root_0, root_1);
                 }
@@ -7587,7 +7587,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "keyRangeExpr"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:463:1: keyRangeExpr : '[' ( (startKey= entityName )? ':' (endKey= entityName )? )? ']' -> ^( NODE_KEY_RANGE ( $startKey)? ( $endKey)? ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:463:1: keyRangeExpr : '[' ( (startKey= entityName )? ':' (endKey= entityName )? )? ']' -> ^( NODE_KEY_RANGE ( $startKey)? ( $endKey)? ) ;
     public final CliParser.keyRangeExpr_return keyRangeExpr() throws RecognitionException {
         CliParser.keyRangeExpr_return retval = new CliParser.keyRangeExpr_return();
         retval.start = input.LT(1);
@@ -7610,13 +7610,13 @@ public class CliParser extends Parser {
         RewriteRuleTokenStream stream_130=new RewriteRuleTokenStream(adaptor,"token 130");
         RewriteRuleSubtreeStream stream_entityName=new RewriteRuleSubtreeStream(adaptor,"rule entityName");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:464:5: ( '[' ( (startKey= entityName )? ':' (endKey= entityName )? )? ']' -> ^( NODE_KEY_RANGE ( $startKey)? ( $endKey)? ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:464:10: '[' ( (startKey= entityName )? ':' (endKey= entityName )? )? ']'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:464:5: ( '[' ( (startKey= entityName )? ':' (endKey= entityName )? )? ']' -> ^( NODE_KEY_RANGE ( $startKey)? ( $endKey)? ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:464:10: '[' ( (startKey= entityName )? ':' (endKey= entityName )? )? ']'
             {
             char_literal289=(Token)match(input,130,FOLLOW_130_in_keyRangeExpr3698); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_130.add(char_literal289);
 
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:464:14: ( (startKey= entityName )? ':' (endKey= entityName )? )?
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:464:14: ( (startKey= entityName )? ':' (endKey= entityName )? )?
             int alt38=2;
             int LA38_0 = input.LA(1);
 
@@ -7625,9 +7625,9 @@ public class CliParser extends Parser {
             }
             switch (alt38) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:464:16: (startKey= entityName )? ':' (endKey= entityName )?
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:464:16: (startKey= entityName )? ':' (endKey= entityName )?
                     {
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:464:24: (startKey= entityName )?
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:464:24: (startKey= entityName )?
                     int alt36=2;
                     int LA36_0 = input.LA(1);
 
@@ -7636,7 +7636,7 @@ public class CliParser extends Parser {
                     }
                     switch (alt36) {
                         case 1 :
-                            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:0:0: startKey= entityName
+                            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:0:0: startKey= entityName
                             {
                             pushFollow(FOLLOW_entityName_in_keyRangeExpr3704);
                             startKey=entityName();
@@ -7653,7 +7653,7 @@ public class CliParser extends Parser {
                     char_literal290=(Token)match(input,135,FOLLOW_135_in_keyRangeExpr3707); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_135.add(char_literal290);
 
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:464:47: (endKey= entityName )?
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:464:47: (endKey= entityName )?
                     int alt37=2;
                     int LA37_0 = input.LA(1);
 
@@ -7662,7 +7662,7 @@ public class CliParser extends Parser {
                     }
                     switch (alt37) {
                         case 1 :
-                            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:0:0: endKey= entityName
+                            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:0:0: endKey= entityName
                             {
                             pushFollow(FOLLOW_entityName_in_keyRangeExpr3711);
                             endKey=entityName();
@@ -7688,7 +7688,7 @@ public class CliParser extends Parser {
 
 
             // AST REWRITE
-            // elements: startKey, endKey
+            // elements: endKey, startKey
             // token labels: 
             // rule labels: endKey, retval, startKey
             // token list labels: 
@@ -7703,18 +7703,18 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 465:7: -> ^( NODE_KEY_RANGE ( $startKey)? ( $endKey)? )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:465:10: ^( NODE_KEY_RANGE ( $startKey)? ( $endKey)? )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:465:10: ^( NODE_KEY_RANGE ( $startKey)? ( $endKey)? )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_KEY_RANGE, "NODE_KEY_RANGE"), root_1);
 
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:465:27: ( $startKey)?
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:465:27: ( $startKey)?
                 if ( stream_startKey.hasNext() ) {
                     adaptor.addChild(root_1, stream_startKey.nextTree());
 
                 }
                 stream_startKey.reset();
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:465:38: ( $endKey)?
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:465:38: ( $endKey)?
                 if ( stream_endKey.hasNext() ) {
                     adaptor.addChild(root_1, stream_endKey.nextTree());
 
@@ -7755,7 +7755,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "rowLimitExpr"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:468:1: rowLimitExpr : 'LIMIT' limit= IntegerPositiveLiteral -> ^( NODE_LIMIT $limit) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:468:1: rowLimitExpr : 'LIMIT' limit= IntegerPositiveLiteral -> ^( NODE_LIMIT $limit) ;
     public final CliParser.rowLimitExpr_return rowLimitExpr() throws RecognitionException {
         CliParser.rowLimitExpr_return retval = new CliParser.rowLimitExpr_return();
         retval.start = input.LT(1);
@@ -7771,8 +7771,8 @@ public class CliParser extends Parser {
         RewriteRuleTokenStream stream_LIMIT=new RewriteRuleTokenStream(adaptor,"token LIMIT");
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:469:5: ( 'LIMIT' limit= IntegerPositiveLiteral -> ^( NODE_LIMIT $limit) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:469:7: 'LIMIT' limit= IntegerPositiveLiteral
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:469:5: ( 'LIMIT' limit= IntegerPositiveLiteral -> ^( NODE_LIMIT $limit) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:469:7: 'LIMIT' limit= IntegerPositiveLiteral
             {
             string_literal292=(Token)match(input,LIMIT,FOLLOW_LIMIT_in_rowLimitExpr3754); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_LIMIT.add(string_literal292);
@@ -7797,7 +7797,7 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 470:9: -> ^( NODE_LIMIT $limit)
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:470:12: ^( NODE_LIMIT $limit)
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:470:12: ^( NODE_LIMIT $limit)
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_LIMIT, "NODE_LIMIT"), root_1);
@@ -7838,7 +7838,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "columnLimitExpr"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:473:1: columnLimitExpr : 'COLUMNS' columns= IntegerPositiveLiteral ( reversedExpr )? -> ^( NODE_COLUMNS $columns ( reversedExpr )? ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:473:1: columnLimitExpr : 'COLUMNS' columns= IntegerPositiveLiteral ( reversedExpr )? -> ^( NODE_COLUMNS $columns ( reversedExpr )? ) ;
     public final CliParser.columnLimitExpr_return columnLimitExpr() throws RecognitionException {
         CliParser.columnLimitExpr_return retval = new CliParser.columnLimitExpr_return();
         retval.start = input.LT(1);
@@ -7856,8 +7856,8 @@ public class CliParser extends Parser {
         RewriteRuleTokenStream stream_136=new RewriteRuleTokenStream(adaptor,"token 136");
         RewriteRuleSubtreeStream stream_reversedExpr=new RewriteRuleSubtreeStream(adaptor,"rule reversedExpr");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:474:5: ( 'COLUMNS' columns= IntegerPositiveLiteral ( reversedExpr )? -> ^( NODE_COLUMNS $columns ( reversedExpr )? ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:474:7: 'COLUMNS' columns= IntegerPositiveLiteral ( reversedExpr )?
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:474:5: ( 'COLUMNS' columns= IntegerPositiveLiteral ( reversedExpr )? -> ^( NODE_COLUMNS $columns ( reversedExpr )? ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:474:7: 'COLUMNS' columns= IntegerPositiveLiteral ( reversedExpr )?
             {
             string_literal293=(Token)match(input,136,FOLLOW_136_in_columnLimitExpr3792); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_136.add(string_literal293);
@@ -7865,7 +7865,7 @@ public class CliParser extends Parser {
             columns=(Token)match(input,IntegerPositiveLiteral,FOLLOW_IntegerPositiveLiteral_in_columnLimitExpr3796); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_IntegerPositiveLiteral.add(columns);
 
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:474:48: ( reversedExpr )?
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:474:48: ( reversedExpr )?
             int alt39=2;
             int LA39_0 = input.LA(1);
 
@@ -7874,7 +7874,7 @@ public class CliParser extends Parser {
             }
             switch (alt39) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:0:0: reversedExpr
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:0:0: reversedExpr
                     {
                     pushFollow(FOLLOW_reversedExpr_in_columnLimitExpr3798);
                     reversedExpr294=reversedExpr();
@@ -7891,7 +7891,7 @@ public class CliParser extends Parser {
 
 
             // AST REWRITE
-            // elements: reversedExpr, columns
+            // elements: columns, reversedExpr
             // token labels: columns
             // rule labels: retval
             // token list labels: 
@@ -7905,13 +7905,13 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 475:9: -> ^( NODE_COLUMNS $columns ( reversedExpr )? )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:475:12: ^( NODE_COLUMNS $columns ( reversedExpr )? )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:475:12: ^( NODE_COLUMNS $columns ( reversedExpr )? )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_COLUMNS, "NODE_COLUMNS"), root_1);
 
                 adaptor.addChild(root_1, stream_columns.nextNode());
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:475:36: ( reversedExpr )?
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:475:36: ( reversedExpr )?
                 if ( stream_reversedExpr.hasNext() ) {
                     adaptor.addChild(root_1, stream_reversedExpr.nextTree());
 
@@ -7952,7 +7952,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "reversedExpr"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:478:1: reversedExpr : 'REVERSED' -> ^( NODE_REVERSED ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:478:1: reversedExpr : 'REVERSED' -> ^( NODE_REVERSED ) ;
     public final CliParser.reversedExpr_return reversedExpr() throws RecognitionException {
         CliParser.reversedExpr_return retval = new CliParser.reversedExpr_return();
         retval.start = input.LT(1);
@@ -7965,8 +7965,8 @@ public class CliParser extends Parser {
         RewriteRuleTokenStream stream_137=new RewriteRuleTokenStream(adaptor,"token 137");
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:479:5: ( 'REVERSED' -> ^( NODE_REVERSED ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:479:7: 'REVERSED'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:479:5: ( 'REVERSED' -> ^( NODE_REVERSED ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:479:7: 'REVERSED'
             {
             string_literal295=(Token)match(input,137,FOLLOW_137_in_reversedExpr3836); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_137.add(string_literal295);
@@ -7987,7 +7987,7 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 480:9: -> ^( NODE_REVERSED )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:480:12: ^( NODE_REVERSED )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:480:12: ^( NODE_REVERSED )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_REVERSED, "NODE_REVERSED"), root_1);
@@ -8026,7 +8026,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "columnName"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:483:1: columnName : entityName ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:483:1: columnName : entityName ;
     public final CliParser.columnName_return columnName() throws RecognitionException {
         CliParser.columnName_return retval = new CliParser.columnName_return();
         retval.start = input.LT(1);
@@ -8038,8 +8038,8 @@ public class CliParser extends Parser {
 
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:484:2: ( entityName )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:484:4: entityName
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:484:2: ( entityName )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:484:4: entityName
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -8078,7 +8078,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "attr_name"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:487:1: attr_name : Identifier ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:487:1: attr_name : Identifier ;
     public final CliParser.attr_name_return attr_name() throws RecognitionException {
         CliParser.attr_name_return retval = new CliParser.attr_name_return();
         retval.start = input.LT(1);
@@ -8090,8 +8090,8 @@ public class CliParser extends Parser {
         CommonTree Identifier297_tree=null;
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:488:5: ( Identifier )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:488:7: Identifier
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:488:5: ( Identifier )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:488:7: Identifier
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -8129,7 +8129,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "attrValueString"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:491:1: attrValueString : ( Identifier | StringLiteral ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:491:1: attrValueString : ( Identifier | StringLiteral ) ;
     public final CliParser.attrValueString_return attrValueString() throws RecognitionException {
         CliParser.attrValueString_return retval = new CliParser.attrValueString_return();
         retval.start = input.LT(1);
@@ -8141,8 +8141,8 @@ public class CliParser extends Parser {
         CommonTree set298_tree=null;
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:492:5: ( ( Identifier | StringLiteral ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:492:7: ( Identifier | StringLiteral )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:492:5: ( ( Identifier | StringLiteral ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:492:7: ( Identifier | StringLiteral )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -8187,7 +8187,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "attrValueInt"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:495:1: attrValueInt : ( IntegerPositiveLiteral | IntegerNegativeLiteral );
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:495:1: attrValueInt : ( IntegerPositiveLiteral | IntegerNegativeLiteral );
     public final CliParser.attrValueInt_return attrValueInt() throws RecognitionException {
         CliParser.attrValueInt_return retval = new CliParser.attrValueInt_return();
         retval.start = input.LT(1);
@@ -8199,8 +8199,8 @@ public class CliParser extends Parser {
         CommonTree set299_tree=null;
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:496:5: ( IntegerPositiveLiteral | IntegerNegativeLiteral )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:496:5: ( IntegerPositiveLiteral | IntegerNegativeLiteral )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -8245,7 +8245,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "attrValueDouble"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:500:1: attrValueDouble : DoubleLiteral ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:500:1: attrValueDouble : DoubleLiteral ;
     public final CliParser.attrValueDouble_return attrValueDouble() throws RecognitionException {
         CliParser.attrValueDouble_return retval = new CliParser.attrValueDouble_return();
         retval.start = input.LT(1);
@@ -8257,8 +8257,8 @@ public class CliParser extends Parser {
         CommonTree DoubleLiteral300_tree=null;
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:501:5: ( DoubleLiteral )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:501:7: DoubleLiteral
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:501:5: ( DoubleLiteral )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:501:7: DoubleLiteral
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -8296,7 +8296,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "keyspace"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:504:1: keyspace : entityName ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:504:1: keyspace : entityName ;
     public final CliParser.keyspace_return keyspace() throws RecognitionException {
         CliParser.keyspace_return retval = new CliParser.keyspace_return();
         retval.start = input.LT(1);
@@ -8308,8 +8308,8 @@ public class CliParser extends Parser {
 
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:505:2: ( entityName )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:505:4: entityName
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:505:2: ( entityName )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:505:4: entityName
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -8348,7 +8348,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "replica_placement_strategy"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:508:1: replica_placement_strategy : StringLiteral ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:508:1: replica_placement_strategy : StringLiteral ;
     public final CliParser.replica_placement_strategy_return replica_placement_strategy() throws RecognitionException {
         CliParser.replica_placement_strategy_return retval = new CliParser.replica_placement_strategy_return();
         retval.start = input.LT(1);
@@ -8360,8 +8360,8 @@ public class CliParser extends Parser {
         CommonTree StringLiteral302_tree=null;
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:509:5: ( StringLiteral )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:509:7: StringLiteral
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:509:5: ( StringLiteral )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:509:7: StringLiteral
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -8399,7 +8399,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "keyspaceNewName"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:512:1: keyspaceNewName : entityName ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:512:1: keyspaceNewName : entityName ;
     public final CliParser.keyspaceNewName_return keyspaceNewName() throws RecognitionException {
         CliParser.keyspaceNewName_return retval = new CliParser.keyspaceNewName_return();
         retval.start = input.LT(1);
@@ -8411,8 +8411,8 @@ public class CliParser extends Parser {
 
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:513:2: ( entityName )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:513:4: entityName
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:513:2: ( entityName )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:513:4: entityName
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -8451,7 +8451,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "comparator"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:516:1: comparator : StringLiteral ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:516:1: comparator : StringLiteral ;
     public final CliParser.comparator_return comparator() throws RecognitionException {
         CliParser.comparator_return retval = new CliParser.comparator_return();
         retval.start = input.LT(1);
@@ -8463,8 +8463,8 @@ public class CliParser extends Parser {
         CommonTree StringLiteral304_tree=null;
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:517:5: ( StringLiteral )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:517:7: StringLiteral
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:517:5: ( StringLiteral )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:517:7: StringLiteral
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -8502,7 +8502,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "command"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:520:1: command : Identifier ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:520:1: command : Identifier ;
     public final CliParser.command_return command() throws RecognitionException {
         CliParser.command_return retval = new CliParser.command_return();
         retval.start = input.LT(1);
@@ -8514,8 +8514,8 @@ public class CliParser extends Parser {
         CommonTree Identifier305_tree=null;
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:520:9: ( Identifier )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:520:11: Identifier
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:520:9: ( Identifier )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:520:11: Identifier
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -8553,7 +8553,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "newColumnFamily"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:523:1: newColumnFamily : entityName ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:523:1: newColumnFamily : entityName ;
     public final CliParser.newColumnFamily_return newColumnFamily() throws RecognitionException {
         CliParser.newColumnFamily_return retval = new CliParser.newColumnFamily_return();
         retval.start = input.LT(1);
@@ -8565,8 +8565,8 @@ public class CliParser extends Parser {
 
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:524:2: ( entityName )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:524:4: entityName
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:524:2: ( entityName )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:524:4: entityName
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -8605,7 +8605,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "username"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:527:1: username : Identifier ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:527:1: username : Identifier ;
     public final CliParser.username_return username() throws RecognitionException {
         CliParser.username_return retval = new CliParser.username_return();
         retval.start = input.LT(1);
@@ -8617,8 +8617,8 @@ public class CliParser extends Parser {
         CommonTree Identifier307_tree=null;
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:527:9: ( Identifier )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:527:11: Identifier
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:527:9: ( Identifier )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:527:11: Identifier
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -8656,7 +8656,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "password"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:530:1: password : StringLiteral ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:530:1: password : StringLiteral ;
     public final CliParser.password_return password() throws RecognitionException {
         CliParser.password_return retval = new CliParser.password_return();
         retval.start = input.LT(1);
@@ -8668,8 +8668,8 @@ public class CliParser extends Parser {
         CommonTree StringLiteral308_tree=null;
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:530:9: ( StringLiteral )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:530:11: StringLiteral
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:530:9: ( StringLiteral )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:530:11: StringLiteral
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -8707,7 +8707,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "columnFamily"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:533:1: columnFamily : entityName ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:533:1: columnFamily : entityName ;
     public final CliParser.columnFamily_return columnFamily() throws RecognitionException {
         CliParser.columnFamily_return retval = new CliParser.columnFamily_return();
         retval.start = input.LT(1);
@@ -8719,8 +8719,8 @@ public class CliParser extends Parser {
 
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:534:3: ( entityName )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:534:5: entityName
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:534:3: ( entityName )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:534:5: entityName
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -8759,7 +8759,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "singleColumnFamilyExpr"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:537:1: singleColumnFamilyExpr : entityName -> ^( COLUMN_FAMILY entityName ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:537:1: singleColumnFamilyExpr : entityName -> ^( COLUMN_FAMILY entityName ) ;
     public final CliParser.singleColumnFamilyExpr_return singleColumnFamilyExpr() throws RecognitionException {
         CliParser.singleColumnFamilyExpr_return retval = new CliParser.singleColumnFamilyExpr_return();
         retval.start = input.LT(1);
@@ -8771,8 +8771,8 @@ public class CliParser extends Parser {
 
         RewriteRuleSubtreeStream stream_entityName=new RewriteRuleSubtreeStream(adaptor,"rule entityName");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:538:3: ( entityName -> ^( COLUMN_FAMILY entityName ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:538:5: entityName
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:538:3: ( entityName -> ^( COLUMN_FAMILY entityName ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:538:5: entityName
             {
             pushFollow(FOLLOW_entityName_in_singleColumnFamilyExpr4087);
             entityName310=entityName();
@@ -8796,7 +8796,7 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 539:5: -> ^( COLUMN_FAMILY entityName )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:539:8: ^( COLUMN_FAMILY entityName )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:539:8: ^( COLUMN_FAMILY entityName )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(COLUMN_FAMILY, "COLUMN_FAMILY"), root_1);
@@ -8837,7 +8837,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "entityName"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:542:1: entityName : ( Identifier | StringLiteral | IntegerPositiveLiteral | IntegerNegativeLiteral ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:542:1: entityName : ( Identifier | StringLiteral | IntegerPositiveLiteral | IntegerNegativeLiteral ) ;
     public final CliParser.entityName_return entityName() throws RecognitionException {
         CliParser.entityName_return retval = new CliParser.entityName_return();
         retval.start = input.LT(1);
@@ -8849,8 +8849,8 @@ public class CliParser extends Parser {
         CommonTree set311_tree=null;
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:543:3: ( ( Identifier | StringLiteral | IntegerPositiveLiteral | IntegerNegativeLiteral ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:543:5: ( Identifier | StringLiteral | IntegerPositiveLiteral | IntegerNegativeLiteral )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:543:3: ( ( Identifier | StringLiteral | IntegerPositiveLiteral | IntegerNegativeLiteral ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:543:5: ( Identifier | StringLiteral | IntegerPositiveLiteral | IntegerNegativeLiteral )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -8895,7 +8895,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "rowKey"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:546:1: rowKey : ( Identifier | StringLiteral | IntegerPositiveLiteral | IntegerNegativeLiteral | functionCall ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:546:1: rowKey : ( Identifier | StringLiteral | IntegerPositiveLiteral | IntegerNegativeLiteral | functionCall ) ;
     public final CliParser.rowKey_return rowKey() throws RecognitionException {
         CliParser.rowKey_return retval = new CliParser.rowKey_return();
         retval.start = input.LT(1);
@@ -8915,12 +8915,12 @@ public class CliParser extends Parser {
         CommonTree IntegerNegativeLiteral315_tree=null;
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:547:5: ( ( Identifier | StringLiteral | IntegerPositiveLiteral | IntegerNegativeLiteral | functionCall ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:547:8: ( Identifier | StringLiteral | IntegerPositiveLiteral | IntegerNegativeLiteral | functionCall )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:547:5: ( ( Identifier | StringLiteral | IntegerPositiveLiteral | IntegerNegativeLiteral | functionCall ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:547:8: ( Identifier | StringLiteral | IntegerPositiveLiteral | IntegerNegativeLiteral | functionCall )
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:547:8: ( Identifier | StringLiteral | IntegerPositiveLiteral | IntegerNegativeLiteral | functionCall )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:547:8: ( Identifier | StringLiteral | IntegerPositiveLiteral | IntegerNegativeLiteral | functionCall )
             int alt40=5;
             switch ( input.LA(1) ) {
             case Identifier:
@@ -8967,7 +8967,7 @@ public class CliParser extends Parser {
 
             switch (alt40) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:547:9: Identifier
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:547:9: Identifier
                     {
                     Identifier312=(Token)match(input,Identifier,FOLLOW_Identifier_in_rowKey4144); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -8978,7 +8978,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:547:22: StringLiteral
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:547:22: StringLiteral
                     {
                     StringLiteral313=(Token)match(input,StringLiteral,FOLLOW_StringLiteral_in_rowKey4148); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -8989,7 +8989,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:547:38: IntegerPositiveLiteral
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:547:38: IntegerPositiveLiteral
                     {
                     IntegerPositiveLiteral314=(Token)match(input,IntegerPositiveLiteral,FOLLOW_IntegerPositiveLiteral_in_rowKey4152); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -9000,7 +9000,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:547:63: IntegerNegativeLiteral
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:547:63: IntegerNegativeLiteral
                     {
                     IntegerNegativeLiteral315=(Token)match(input,IntegerNegativeLiteral,FOLLOW_IntegerNegativeLiteral_in_rowKey4156); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -9011,7 +9011,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 5 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:547:88: functionCall
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:547:88: functionCall
                     {
                     pushFollow(FOLLOW_functionCall_in_rowKey4160);
                     functionCall316=functionCall();
@@ -9054,7 +9054,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "rowValue"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:550:1: rowValue : ( Identifier | StringLiteral | IntegerPositiveLiteral | IntegerNegativeLiteral | functionCall | hashConstruct ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:550:1: rowValue : ( Identifier | StringLiteral | IntegerPositiveLiteral | IntegerNegativeLiteral | functionCall | hashConstruct ) ;
     public final CliParser.rowValue_return rowValue() throws RecognitionException {
         CliParser.rowValue_return retval = new CliParser.rowValue_return();
         retval.start = input.LT(1);
@@ -9076,12 +9076,12 @@ public class CliParser extends Parser {
         CommonTree IntegerNegativeLiteral320_tree=null;
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:551:5: ( ( Identifier | StringLiteral | IntegerPositiveLiteral | IntegerNegativeLiteral | functionCall | hashConstruct ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:551:8: ( Identifier | StringLiteral | IntegerPositiveLiteral | IntegerNegativeLiteral | functionCall | hashConstruct )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:551:5: ( ( Identifier | StringLiteral | IntegerPositiveLiteral | IntegerNegativeLiteral | functionCall | hashConstruct ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:551:8: ( Identifier | StringLiteral | IntegerPositiveLiteral | IntegerNegativeLiteral | functionCall | hashConstruct )
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:551:8: ( Identifier | StringLiteral | IntegerPositiveLiteral | IntegerNegativeLiteral | functionCall | hashConstruct )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:551:8: ( Identifier | StringLiteral | IntegerPositiveLiteral | IntegerNegativeLiteral | functionCall | hashConstruct )
             int alt41=6;
             switch ( input.LA(1) ) {
             case Identifier:
@@ -9133,7 +9133,7 @@ public class CliParser extends Parser {
 
             switch (alt41) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:551:9: Identifier
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:551:9: Identifier
                     {
                     Identifier317=(Token)match(input,Identifier,FOLLOW_Identifier_in_rowValue4182); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -9144,7 +9144,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:551:22: StringLiteral
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:551:22: StringLiteral
                     {
                     StringLiteral318=(Token)match(input,StringLiteral,FOLLOW_StringLiteral_in_rowValue4186); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -9155,7 +9155,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:551:38: IntegerPositiveLiteral
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:551:38: IntegerPositiveLiteral
                     {
                     IntegerPositiveLiteral319=(Token)match(input,IntegerPositiveLiteral,FOLLOW_IntegerPositiveLiteral_in_rowValue4190); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -9166,7 +9166,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:551:63: IntegerNegativeLiteral
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:551:63: IntegerNegativeLiteral
                     {
                     IntegerNegativeLiteral320=(Token)match(input,IntegerNegativeLiteral,FOLLOW_IntegerNegativeLiteral_in_rowValue4194); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -9177,7 +9177,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 5 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:551:88: functionCall
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:551:88: functionCall
                     {
                     pushFollow(FOLLOW_functionCall_in_rowValue4198);
                     functionCall321=functionCall();
@@ -9189,7 +9189,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 6 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:551:103: hashConstruct
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:551:103: hashConstruct
                     {
                     pushFollow(FOLLOW_hashConstruct_in_rowValue4202);
                     hashConstruct322=hashConstruct();
@@ -9232,7 +9232,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "value"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:554:1: value : ( Identifier | IntegerPositiveLiteral | IntegerNegativeLiteral | StringLiteral | functionCall ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:554:1: value : ( Identifier | IntegerPositiveLiteral | IntegerNegativeLiteral | StringLiteral | functionCall ) ;
     public final CliParser.value_return value() throws RecognitionException {
         CliParser.value_return retval = new CliParser.value_return();
         retval.start = input.LT(1);
@@ -9252,12 +9252,12 @@ public class CliParser extends Parser {
         CommonTree StringLiteral326_tree=null;
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:555:5: ( ( Identifier | IntegerPositiveLiteral | IntegerNegativeLiteral | StringLiteral | functionCall ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:555:7: ( Identifier | IntegerPositiveLiteral | IntegerNegativeLiteral | StringLiteral | functionCall )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:555:5: ( ( Identifier | IntegerPositiveLiteral | IntegerNegativeLiteral | StringLiteral | functionCall ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:555:7: ( Identifier | IntegerPositiveLiteral | IntegerNegativeLiteral | StringLiteral | functionCall )
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:555:7: ( Identifier | IntegerPositiveLiteral | IntegerNegativeLiteral | StringLiteral | functionCall )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:555:7: ( Identifier | IntegerPositiveLiteral | IntegerNegativeLiteral | StringLiteral | functionCall )
             int alt42=5;
             switch ( input.LA(1) ) {
             case Identifier:
@@ -9304,7 +9304,7 @@ public class CliParser extends Parser {
 
             switch (alt42) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:555:8: Identifier
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:555:8: Identifier
                     {
                     Identifier323=(Token)match(input,Identifier,FOLLOW_Identifier_in_value4224); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -9315,7 +9315,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:555:21: IntegerPositiveLiteral
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:555:21: IntegerPositiveLiteral
                     {
                     IntegerPositiveLiteral324=(Token)match(input,IntegerPositiveLiteral,FOLLOW_IntegerPositiveLiteral_in_value4228); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -9326,7 +9326,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:555:46: IntegerNegativeLiteral
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:555:46: IntegerNegativeLiteral
                     {
                     IntegerNegativeLiteral325=(Token)match(input,IntegerNegativeLiteral,FOLLOW_IntegerNegativeLiteral_in_value4232); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -9337,7 +9337,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:555:71: StringLiteral
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:555:71: StringLiteral
                     {
                     StringLiteral326=(Token)match(input,StringLiteral,FOLLOW_StringLiteral_in_value4236); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -9348,7 +9348,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 5 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:555:87: functionCall
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:555:87: functionCall
                     {
                     pushFollow(FOLLOW_functionCall_in_value4240);
                     functionCall327=functionCall();
@@ -9391,7 +9391,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "functionCall"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:558:1: functionCall : functionName= Identifier '(' ( functionArgument )? ')' -> ^( FUNCTION_CALL $functionName ( functionArgument )? ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:558:1: functionCall : functionName= Identifier '(' ( functionArgument )? ')' -> ^( FUNCTION_CALL $functionName ( functionArgument )? ) ;
     public final CliParser.functionCall_return functionCall() throws RecognitionException {
         CliParser.functionCall_return retval = new CliParser.functionCall_return();
         retval.start = input.LT(1);
@@ -9412,8 +9412,8 @@ public class CliParser extends Parser {
         RewriteRuleTokenStream stream_Identifier=new RewriteRuleTokenStream(adaptor,"token Identifier");
         RewriteRuleSubtreeStream stream_functionArgument=new RewriteRuleSubtreeStream(adaptor,"rule functionArgument");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:559:5: (functionName= Identifier '(' ( functionArgument )? ')' -> ^( FUNCTION_CALL $functionName ( functionArgument )? ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:559:7: functionName= Identifier '(' ( functionArgument )? ')'
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:559:5: (functionName= Identifier '(' ( functionArgument )? ')' -> ^( FUNCTION_CALL $functionName ( functionArgument )? ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:559:7: functionName= Identifier '(' ( functionArgument )? ')'
             {
             functionName=(Token)match(input,Identifier,FOLLOW_Identifier_in_functionCall4261); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_Identifier.add(functionName);
@@ -9421,7 +9421,7 @@ public class CliParser extends Parser {
             char_literal328=(Token)match(input,138,FOLLOW_138_in_functionCall4263); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_138.add(char_literal328);
 
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:559:35: ( functionArgument )?
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:559:35: ( functionArgument )?
             int alt43=2;
             int LA43_0 = input.LA(1);
 
@@ -9430,7 +9430,7 @@ public class CliParser extends Parser {
             }
             switch (alt43) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:0:0: functionArgument
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:0:0: functionArgument
                     {
                     pushFollow(FOLLOW_functionArgument_in_functionCall4265);
                     functionArgument329=functionArgument();
@@ -9464,13 +9464,13 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 560:9: -> ^( FUNCTION_CALL $functionName ( functionArgument )? )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:560:12: ^( FUNCTION_CALL $functionName ( functionArgument )? )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:560:12: ^( FUNCTION_CALL $functionName ( functionArgument )? )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(FUNCTION_CALL, "FUNCTION_CALL"), root_1);
 
                 adaptor.addChild(root_1, stream_functionName.nextNode());
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:560:42: ( functionArgument )?
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:560:42: ( functionArgument )?
                 if ( stream_functionArgument.hasNext() ) {
                     adaptor.addChild(root_1, stream_functionArgument.nextTree());
 
@@ -9511,7 +9511,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "functionArgument"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:563:1: functionArgument : ( Identifier | StringLiteral | IntegerPositiveLiteral | IntegerNegativeLiteral );
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:563:1: functionArgument : ( Identifier | StringLiteral | IntegerPositiveLiteral | IntegerNegativeLiteral );
     public final CliParser.functionArgument_return functionArgument() throws RecognitionException {
         CliParser.functionArgument_return retval = new CliParser.functionArgument_return();
         retval.start = input.LT(1);
@@ -9523,8 +9523,8 @@ public class CliParser extends Parser {
         CommonTree set331_tree=null;
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:564:5: ( Identifier | StringLiteral | IntegerPositiveLiteral | IntegerNegativeLiteral )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:564:5: ( Identifier | StringLiteral | IntegerPositiveLiteral | IntegerNegativeLiteral )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -9569,7 +9569,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "columnOrSuperColumn"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:567:1: columnOrSuperColumn : ( Identifier | IntegerPositiveLiteral | IntegerNegativeLiteral | StringLiteral | functionCall ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:567:1: columnOrSuperColumn : ( Identifier | IntegerPositiveLiteral | IntegerNegativeLiteral | StringLiteral | functionCall ) ;
     public final CliParser.columnOrSuperColumn_return columnOrSuperColumn() throws RecognitionException {
         CliParser.columnOrSuperColumn_return retval = new CliParser.columnOrSuperColumn_return();
         retval.start = input.LT(1);
@@ -9589,12 +9589,12 @@ public class CliParser extends Parser {
         CommonTree StringLiteral335_tree=null;
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:568:5: ( ( Identifier | IntegerPositiveLiteral | IntegerNegativeLiteral | StringLiteral | functionCall ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:568:7: ( Identifier | IntegerPositiveLiteral | IntegerNegativeLiteral | StringLiteral | functionCall )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:568:5: ( ( Identifier | IntegerPositiveLiteral | IntegerNegativeLiteral | StringLiteral | functionCall ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:568:7: ( Identifier | IntegerPositiveLiteral | IntegerNegativeLiteral | StringLiteral | functionCall )
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:568:7: ( Identifier | IntegerPositiveLiteral | IntegerNegativeLiteral | StringLiteral | functionCall )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:568:7: ( Identifier | IntegerPositiveLiteral | IntegerNegativeLiteral | StringLiteral | functionCall )
             int alt44=5;
             switch ( input.LA(1) ) {
             case Identifier:
@@ -9641,7 +9641,7 @@ public class CliParser extends Parser {
 
             switch (alt44) {
                 case 1 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:568:8: Identifier
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:568:8: Identifier
                     {
                     Identifier332=(Token)match(input,Identifier,FOLLOW_Identifier_in_columnOrSuperColumn4336); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -9652,7 +9652,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:568:21: IntegerPositiveLiteral
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:568:21: IntegerPositiveLiteral
                     {
                     IntegerPositiveLiteral333=(Token)match(input,IntegerPositiveLiteral,FOLLOW_IntegerPositiveLiteral_in_columnOrSuperColumn4340); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -9663,7 +9663,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:568:46: IntegerNegativeLiteral
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:568:46: IntegerNegativeLiteral
                     {
                     IntegerNegativeLiteral334=(Token)match(input,IntegerNegativeLiteral,FOLLOW_IntegerNegativeLiteral_in_columnOrSuperColumn4344); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -9674,7 +9674,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:568:71: StringLiteral
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:568:71: StringLiteral
                     {
                     StringLiteral335=(Token)match(input,StringLiteral,FOLLOW_StringLiteral_in_columnOrSuperColumn4348); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -9685,7 +9685,7 @@ public class CliParser extends Parser {
                     }
                     break;
                 case 5 :
-                    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:568:87: functionCall
+                    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:568:87: functionCall
                     {
                     pushFollow(FOLLOW_functionCall_in_columnOrSuperColumn4352);
                     functionCall336=functionCall();
@@ -9728,7 +9728,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "host"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:571:1: host : host_name -> ^( NODE_ID_LIST host_name ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:571:1: host : host_name -> ^( NODE_ID_LIST host_name ) ;
     public final CliParser.host_return host() throws RecognitionException {
         CliParser.host_return retval = new CliParser.host_return();
         retval.start = input.LT(1);
@@ -9740,8 +9740,8 @@ public class CliParser extends Parser {
 
         RewriteRuleSubtreeStream stream_host_name=new RewriteRuleSubtreeStream(adaptor,"rule host_name");
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:572:5: ( host_name -> ^( NODE_ID_LIST host_name ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:572:7: host_name
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:572:5: ( host_name -> ^( NODE_ID_LIST host_name ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:572:7: host_name
             {
             pushFollow(FOLLOW_host_name_in_host4374);
             host_name337=host_name();
@@ -9765,7 +9765,7 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 573:9: -> ^( NODE_ID_LIST host_name )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:573:12: ^( NODE_ID_LIST host_name )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:573:12: ^( NODE_ID_LIST host_name )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_ID_LIST, "NODE_ID_LIST"), root_1);
@@ -9806,7 +9806,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "host_name"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:576:1: host_name : Identifier ( '.' Identifier )* ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:576:1: host_name : Identifier ( '.' Identifier )* ;
     public final CliParser.host_name_return host_name() throws RecognitionException {
         CliParser.host_name_return retval = new CliParser.host_name_return();
         retval.start = input.LT(1);
@@ -9822,8 +9822,8 @@ public class CliParser extends Parser {
         CommonTree Identifier340_tree=null;
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:577:5: ( Identifier ( '.' Identifier )* )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:577:7: Identifier ( '.' Identifier )*
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:577:5: ( Identifier ( '.' Identifier )* )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:577:7: Identifier ( '.' Identifier )*
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -9832,7 +9832,7 @@ public class CliParser extends Parser {
             Identifier338_tree = (CommonTree)adaptor.create(Identifier338);
             adaptor.addChild(root_0, Identifier338_tree);
             }
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:577:18: ( '.' Identifier )*
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:577:18: ( '.' Identifier )*
             loop45:
             do {
                 int alt45=2;
@@ -9845,7 +9845,7 @@ public class CliParser extends Parser {
 
                 switch (alt45) {
             	case 1 :
-            	    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:577:19: '.' Identifier
+            	    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:577:19: '.' Identifier
             	    {
             	    char_literal339=(Token)match(input,129,FOLLOW_129_in_host_name4410); if (state.failed) return retval;
             	    if ( state.backtracking==0 ) {
@@ -9895,7 +9895,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "ip_address"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:580:1: ip_address : IP_ADDRESS -> ^( NODE_ID_LIST IP_ADDRESS ) ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:580:1: ip_address : IP_ADDRESS -> ^( NODE_ID_LIST IP_ADDRESS ) ;
     public final CliParser.ip_address_return ip_address() throws RecognitionException {
         CliParser.ip_address_return retval = new CliParser.ip_address_return();
         retval.start = input.LT(1);
@@ -9908,8 +9908,8 @@ public class CliParser extends Parser {
         RewriteRuleTokenStream stream_IP_ADDRESS=new RewriteRuleTokenStream(adaptor,"token IP_ADDRESS");
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:581:5: ( IP_ADDRESS -> ^( NODE_ID_LIST IP_ADDRESS ) )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:581:7: IP_ADDRESS
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:581:5: ( IP_ADDRESS -> ^( NODE_ID_LIST IP_ADDRESS ) )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:581:7: IP_ADDRESS
             {
             IP_ADDRESS341=(Token)match(input,IP_ADDRESS,FOLLOW_IP_ADDRESS_in_ip_address4435); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_IP_ADDRESS.add(IP_ADDRESS341);
@@ -9930,7 +9930,7 @@ public class CliParser extends Parser {
             root_0 = (CommonTree)adaptor.nil();
             // 582:9: -> ^( NODE_ID_LIST IP_ADDRESS )
             {
-                // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:582:12: ^( NODE_ID_LIST IP_ADDRESS )
+                // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:582:12: ^( NODE_ID_LIST IP_ADDRESS )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(NODE_ID_LIST, "NODE_ID_LIST"), root_1);
@@ -9971,7 +9971,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "port"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:585:1: port : IntegerPositiveLiteral ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:585:1: port : IntegerPositiveLiteral ;
     public final CliParser.port_return port() throws RecognitionException {
         CliParser.port_return retval = new CliParser.port_return();
         retval.start = input.LT(1);
@@ -9983,8 +9983,8 @@ public class CliParser extends Parser {
         CommonTree IntegerPositiveLiteral342_tree=null;
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:586:5: ( IntegerPositiveLiteral )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:586:7: IntegerPositiveLiteral
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:586:5: ( IntegerPositiveLiteral )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:586:7: IntegerPositiveLiteral
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -10022,7 +10022,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "incrementValue"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:589:1: incrementValue : ( IntegerPositiveLiteral | IntegerNegativeLiteral );
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:589:1: incrementValue : ( IntegerPositiveLiteral | IntegerNegativeLiteral );
     public final CliParser.incrementValue_return incrementValue() throws RecognitionException {
         CliParser.incrementValue_return retval = new CliParser.incrementValue_return();
         retval.start = input.LT(1);
@@ -10034,8 +10034,8 @@ public class CliParser extends Parser {
         CommonTree set343_tree=null;
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:590:5: ( IntegerPositiveLiteral | IntegerNegativeLiteral )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:590:5: ( IntegerPositiveLiteral | IntegerNegativeLiteral )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -10080,7 +10080,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "traceSessionId"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:594:1: traceSessionId : Identifier ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:594:1: traceSessionId : Identifier ;
     public final CliParser.traceSessionId_return traceSessionId() throws RecognitionException {
         CliParser.traceSessionId_return retval = new CliParser.traceSessionId_return();
         retval.start = input.LT(1);
@@ -10092,8 +10092,8 @@ public class CliParser extends Parser {
         CommonTree Identifier344_tree=null;
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:595:5: ( Identifier )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:595:7: Identifier
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:595:5: ( Identifier )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:595:7: Identifier
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -10131,7 +10131,7 @@ public class CliParser extends Parser {
     };
 
     // $ANTLR start "tracingProbability"
-    // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:598:1: tracingProbability : DoubleLiteral ;
+    // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:598:1: tracingProbability : DoubleLiteral ;
     public final CliParser.tracingProbability_return tracingProbability() throws RecognitionException {
         CliParser.tracingProbability_return retval = new CliParser.tracingProbability_return();
         retval.start = input.LT(1);
@@ -10143,8 +10143,8 @@ public class CliParser extends Parser {
         CommonTree DoubleLiteral345_tree=null;
 
         try {
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:599:5: ( DoubleLiteral )
-            // /home/alex/cassandra-trunk/src/java/org/apache/cassandra/cli/Cli.g:599:7: DoubleLiteral
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:599:5: ( DoubleLiteral )
+            // /home/alex/workspace/cassandra-mv/src/java/org/apache/cassandra/cli/Cli.g:599:7: DoubleLiteral
             {
             root_0 = (CommonTree)adaptor.nil();
 

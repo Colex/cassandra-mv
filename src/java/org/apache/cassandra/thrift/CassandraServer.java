@@ -734,8 +734,9 @@ public class CassandraServer implements Cassandra.Iface {
 		ColumnPath 			path 		= new ColumnPath(column_parent.column_family);
 		ColumnOrSuperColumn colValue 	= null;	
 		String 				colName 	= null;
+		String 				keyStr 		= metadata.comparator.getString(key);
 
-		String 	newValueStr, oldValueStr, newResult = "" , oldResult = "";
+		String 	newValueStr, oldValueStr, colReady, newResult = "" , oldResult = "";
 
 		// if a column was given, extract the name
 		if (column != null)
@@ -754,15 +755,26 @@ public class CassandraServer implements Cassandra.Iface {
 				oldValueStr = newValueStr = metadata.comparator.getString(key);
 
 			// Use the old and new value if it exists
-			} else if (column != null && colName.equals(col)) {
+			} else if (column != null && (colName.equals(col) || colName.endsWith(":"+col))) {
 
 				newValueStr = metadata.comparator.getString(column.value);
 				oldValueStr = metadata.comparator.getString(oldValue.column.value);
 
 			} else {
 
+				// If getting a value from a view, grab the prefix the colName
+				if (colName.contains(":")) {
+					String [] parts = colName.split(":");
+					parts[parts.length - 1] = col;
+					colReady = "";
+					for (String part : parts) colReady += (":"+part);
+					colReady = colReady.substring(1);
+				} else {
+					colReady = col;
+				}
+
 				// Convert the string column name into ByteBuffer using the metadata comparator
-				path.setColumn(metadata.comparator.fromString(col));
+				path.setColumn(metadata.comparator.fromString(colReady));
 			
 				// Try to get the column value
 				try {
@@ -770,7 +782,7 @@ public class CassandraServer implements Cassandra.Iface {
 				} catch (NotFoundException e) {
 				}
 				
-
+				System.out.println("[" + keyStr + "] Value " + colValue + " from " + colReady + " in " + column_parent.column_family);
 				if (colValue != null) 
 					oldValueStr = newValueStr = metadata.comparator.getString(colValue.column.value);
 			}
@@ -800,7 +812,7 @@ public class CassandraServer implements Cassandra.Iface {
 		int n_cols	= cols.size();		// Number of key columns
 		int per_cf 	= n_cols / count;	// Number of key columns per column family
 
-		System.out.println(cfName + " is at " + index);
+		// System.out.println(cfName + " is at " + index);
 
 
 		// Check if column family is part of the view
@@ -875,11 +887,14 @@ public class CassandraServer implements Cassandra.Iface {
         	if (cosc.isSetColumn())
             {
         		Column col 			= cosc.column;
-        		String colName 		= metadata.comparator.getString(col.name);				
-        		//System.out.println("Debug 3.2: " + colName);		        		
-        		
-        		//if (colName.contains(":"))
-        		//	colName = colName.split(":")[1];
+        		String colName 		= metadata.comparator.getString(col.name);
+
+
+        		// If copying from a view, it has to remove the prefix
+        		if (colName.contains(":")) {
+					String [] names = colName.split(":");
+				    colName = names[names.length - 1];
+				}
 
     			Column newCol = new Column(metadata.comparator.fromString(prefix + ":" + colName));
 				newCol.setValue(col.value);
@@ -906,6 +921,13 @@ public class CassandraServer implements Cassandra.Iface {
 		throws InvalidRequestException, UnavailableException, TimedOutException {
 
 		String 		colName 	= metadata.comparator.getString(column.name);
+
+		// If copying a column from another view (hierarchy), remove prefix
+		if (colName.contains(":")) {
+			String [] names = colName.split(":");
+		    colName = names[names.length - 1];
+		}
+
 		Column 		newCol 		= new Column(metadata.comparator.fromString(prefix + ":" + colName));
 		ByteBuffer 	viewKey 	= metadata.comparator.fromString(viewKeyStr);
 
@@ -922,6 +944,7 @@ public class CassandraServer implements Cassandra.Iface {
 	 * @throws RequestValidationException 
 	 * @throws NotFoundException 
 	**/
+	int debug_counter = 0;
 	public Boolean propagateToView(ByteBuffer key, ColumnParent column_parent,
 			Column column, ConsistencyLevel consistency_level, ColumnOrSuperColumn oldValue ) throws InvalidRequestException, UnavailableException,
 			TimedOutException, NotFoundException, RequestValidationException {
@@ -951,6 +974,8 @@ public class CassandraServer implements Cassandra.Iface {
 		String colStr = metadata.comparator.getString(column.name);
 		String valueStr = metadata.comparator.getString(column.value);
 
+		System.out.println(keyStr + " -> " + colStr + " -> " + valueStr);
+
 		//System.out.println("Debug -1 " + valueStr);
 		
 		// Sets the prefix for the columns
@@ -958,6 +983,8 @@ public class CassandraServer implements Cassandra.Iface {
 
 		// Get list of all the column families
 		Collection<CFMetaData> cfs = ksm.cfMetaData().values();
+
+		debug_counter++;
 
 		// Check which column family is a view
 		for (CFMetaData cf : cfs) {
@@ -980,6 +1007,8 @@ public class CassandraServer implements Cassandra.Iface {
 				//System.out.println("Debug 1");
 				String [] view_keys = buildViewKey(key, column_parent, column, oldValue, metadata, consistency_level, cols);
 				
+				System.out.println(debug_counter + "[]"+ view_keys[0] + " - " + view_keys[1]);
+
 				// If old key is different from the new key, remove the old key
 				if (!view_keys[0].equals(view_keys[1])) {
 
